@@ -35,8 +35,6 @@ $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
 $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015');
 $listFeed = $spreadsheet->getWorksheets()->getByTitle("Main")->getListFeed();
 $entries = $listFeed->getEntries();
-$listFeed->insert(array("firstname" => "Hello", "lastname" => "World!"));
-print_r($entries[0]->getValues ());
 
 ?>
 
