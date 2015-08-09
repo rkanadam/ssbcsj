@@ -1,7 +1,10 @@
 (function ($) {
     $(function () {
 
-        $("#searchForm").submit(function (e) {
+        $("#searchForm").validator ().on("submit", function (e) {
+            if (e.isDefaultPrevented()) {
+                return;
+            }
             e.preventDefault();
             var $this = $(this);
             $.get("server/sse/api.php", $this.serialize(), function (responses) {
@@ -61,6 +64,13 @@
                     }, "json");
                 }
             }
+        });
+
+        $("#registrationForm").validator ().on("submit", function (e) {
+            if (e.isDefaultPrevented()) {
+                return;
+            }
+
         });
     })
 })(jQuery);

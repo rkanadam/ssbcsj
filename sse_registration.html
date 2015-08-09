@@ -33,9 +33,8 @@
     <link rel="shortcut icon" href="/ssbcsj/styles/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/ssbcsj/styles/images/favicon.ico" type="image/x-icon">
 
+    <script src="scripts/validator.min.js"></script>
     <script src="scripts/sse_registration.js"></script>
-
-
 </head>
 <body>
 <div class="content">
@@ -52,20 +51,25 @@
         <h4>Search for exisiting or previous year's registrations. You may type in a few characters of the parent or the
             child and click on search.</h4>
 
-        <form class="form-inline" id="searchForm">
+        <form class="form" id="searchForm">
             <div class="form-group form-group-lg">
                 <div class="input-group">
                     <div class="input-group-addon"><span class="glyphicon glyphicon-search"
                                                          aria-hidden="true"></span></div>
                     <input type="text" size="25" class="form-control" id="search"
-                           
                            name="q"
-                           min="5">
+                           min="5"
+                           data-minlength="5"
+                           required="required"
+                           placeholder="Enter at least 5 characters or more and  click search">
 
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
             </div>
-
+            <div class="form-group form-group-lg">
+                <div class="input-group">
+                    <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
+                </div>
+            </div>
         </form>
     </div>
 </div>
@@ -94,26 +98,25 @@
     <div class="col-sm-3">
         <div class="form-group">
             <label for="mothersfirstname">Mother's First Name</label>
-            <input type="text" class="form-control" id="mothersfirstname" name="mothersfirstname" >
+            <input type="text" class="form-control" id="mothersfirstname" name="mothersfirstname" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="motherslastname">Mother's Last Name</label>
-            <input type="text" class="form-control" id="motherslastname" name="motherslastname" >
+            <input type="text" class="form-control" id="motherslastname" name="motherslastname" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="mothersemail">Mother's E-Mail</label>
-            <input type="email" class="form-control" id="mothersemail" name="mothersemail"
-                   >
+            <input type="email" class="form-control" id="mothersemail" name="mothersemail" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="mothersphone">Mother's Phone</label>
-            <input type="text" class="form-control" id="mothersphone" name="mothersphone" >
+            <input type="text" class="form-control" id="mothersphone" name="mothersphone" required="required">
         </div>
     </div>
 </div>
@@ -121,26 +124,25 @@
     <div class="col-sm-3">
         <div class="form-group">
             <label for="fathersfirstname">Father's First Name</label>
-            <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname" >
+            <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="fatherslastname">Father's Last Name</label>
-            <input type="text" class="form-control" id="fatherslastname" name="fatherslastname" >
+            <input type="text" class="form-control" id="fatherslastname" name="fatherslastname" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="fathersemail">Father's E-Mail</label>
-            <input type="email" class="form-control" id="fathersemail" name="fathersemail"
-                   >
+            <input type="email" class="form-control" id="fathersemail" name="fathersemail" required="required">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="fathersphone">Father's Phone</label>
-            <input type="text" class="form-control" id="fathersphone" name="fathersphone" >
+            <input type="text" class="form-control" id="fathersphone" name="fathersphone" required="required">
         </div>
     </div>
 </div>
@@ -148,14 +150,13 @@
     <div class="col-sm-3">
         <div class="form-group">
             <label for="firstnameofchild1">Child 1's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild1" name="firstnameofchild1"
-                   >
+            <input type="text" class="form-control" id="firstnameofchild1" name="firstnameofchild1">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="lastnameofchild1">Child 1's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild1" name="lastnameofchild1" >
+            <input type="text" class="form-control" id="lastnameofchild1" name="lastnameofchild1">
         </div>
     </div>
     <div class="col-sm-3">
@@ -196,14 +197,13 @@
     <div class="col-sm-3">
         <div class="form-group">
             <label for="firstnameofchild2">Child 2's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild2" name="firstnameofchild2"
-                   >
+            <input type="text" class="form-control" id="firstnameofchild2" name="firstnameofchild2">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="lastnameofchild2">Child 2's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild2" name="lastnameofchild2" >
+            <input type="text" class="form-control" id="lastnameofchild2" name="lastnameofchild2">
         </div>
     </div>
     <div class="col-sm-3">
@@ -244,14 +244,13 @@
     <div class="col-sm-3">
         <div class="form-group">
             <label for="firstnameofchild3">Child 3's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild3" name="firstnameofchild3"
-                   >
+            <input type="text" class="form-control" id="firstnameofchild3" name="firstnameofchild3">
         </div>
     </div>
     <div class="col-sm-3">
         <div class="form-group">
             <label for="lastnameofchild3">Child 3's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild3" name="lastnameofchild3" >
+            <input type="text" class="form-control" id="lastnameofchild3" name="lastnameofchild3">
         </div>
     </div>
     <div class="col-sm-3">
@@ -292,11 +291,10 @@
     <div class="col-sm-12">
         <button type="submit" class="btn btn-primary btn-lg">Register</button>
     </div>
+</div>
 </form>
 </div>
 </div>
 <!-- /container -->
-</div>
-
 </body>
 </html>

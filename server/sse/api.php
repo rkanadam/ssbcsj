@@ -130,29 +130,35 @@ if ($method === "get") {
     echo json_encode($result);
 } else if ($method === "post") {
     $entries = json_decode(stream_get_contents(STDIN));
-    foreach ($entries as $entry) {
-        if (!empty ($entry["firstnameofchild"]) && !empty ($entry["lastnameofchild"])) {
-            $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
-            if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows["sheetTitle"] === "2015 Registration") {
-                ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
-            }
-            $entry["timestamp"] = time();
+
+    $parentPropertiesToCopy = array(
+        "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
+        "mothersfirstname", "motherslastname", "mothersemail", "mothersphone");
+
+    $childPropertiesToCopy = array(
+        "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
+
+    for ($i = 1; $i < 3; ++$i) {
+        if (empty($_REQUEST["firstnameofchild$i"])) {
+            break;
+        }
+        $value = array();
+        $value["timestamp"] = date("n/j/Y H:i:s");
+        foreach ($parentPropertiesToCopy as $parentProperty) {
+            $value[$parentProperty] = trim($_REQUEST[$parentProperty]);
+        }
+        foreach ($childPropertiesToCopy as $childProperty) {
+            $value[$childProperty] = trim($_REQUEST["$childProperty$i"]);
         }
     }
 
-    foreach ($entries as $entry) {
-        $value = array();
-        $propertiesToCopy = array(
-            "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
-            "mothersfirstname", "motherslastname", "mothersemail", "mothersphone",
-            "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
-        $value["timestamp"] = date("n/j/Y H:i:s");
-        foreach ($properties as $property) {
-            $value[$property] = $entry[$property];
+    foreach ($values as $value) {
+        $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $value["mothersfirstname"], $value["motherslastname"], $value["firstnameofchild"], $value["lastnameofchild"]));
+        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows["sheetTitle"] === "2015 Registration") {
+            ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
         }
         $registrationFeed->insert($value);
     }
-
 }
 ?>
 
