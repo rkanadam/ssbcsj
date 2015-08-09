@@ -84,8 +84,7 @@ foreach ($registrationFeed->getEntries() as $entry) {
         $row["ssegroupofchild"] = trim($values["ssegroupofchild"]);
         $row["schoolgradeofchild"] = trim($values["schoolgradeofchild"]);
         $row["url"] = $entry->getEditUrl();
-        $row["sheetTitle"] === "2015 Registration";
-
+        $row["sheetTitle"] = "2015 Registration";
         $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
         $rows[$combinedKey] = $row;
     }
