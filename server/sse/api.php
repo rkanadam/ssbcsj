@@ -59,7 +59,7 @@ foreach ($mainFeed->getEntries() as $entry) {
                     $row[$key] = trim($values["$key$i"]);
                 }
 
-                $combinedKey = strtolower($row["firstname"] . $row["firstname"] . $row["firstnameofchild"] . $row["lastnameofchild"]);
+                $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
 
                 $rows[$combinedKey] = $row;
             }
@@ -82,7 +82,7 @@ foreach ($registrationFeed->getEntries() as $entry) {
         $row["schoolgradechild"] = trim($values["schoolgradechild"]);
         $row["url"] = $entry->getEditUrl();
 
-        $combinedKey = strtolower($row["firstnameofchild"] . "-" . $row["lastnameofchild"]);
+        $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
         $rows[$combinedKey] = $row;
     }
 }
@@ -93,17 +93,36 @@ foreach ($registrationFeed->getEntries() as $entry) {
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 if ($method === "get") {
-    $q = strtolower($_REQUEST["q"]);
+    $q = $_REQUEST["q"];
     $result = false;
     if (!empty($q) && strlen($q) >= 5) {
+        $json = json_decode($q);
         $result = array();
-        $keysToSearch = array("firstname", "lastname", "firstnameofchild", "lastnameofchild");
-        foreach ($rows as $row) {
-            foreach ($keysToSearch as $key) {
-                $value = strtolower($row[$key]);
-                if (strstr($value, $q)) {
+        if ($json && $json->{"firstnameofchild"}) {
+            //This if for an exact search
+            $propertiesToMatch = array("mothersfirstname", "motherslastname", "fathersfirstname", "fatherslastname");
+            $allPropertiesMatch = true;
+            foreach ($rows as $row) {
+                foreach ($propertiesToMatch as $property) {
+                    if ($row[$property] !== $json->{$property}) {
+                        $allPropertiesMatch = false;
+                        break;
+                    }
+                }
+                if ($allPropertiesMatch) {
+                    //We found children with the same parent!
                     array_push($result, $row);
-                    break;
+                }
+            }
+        } else {
+            $keysToSearch = array("firstname", "lastname", "firstnameofchild", "lastnameofchild");
+            foreach ($rows as $row) {
+                foreach ($keysToSearch as $key) {
+                    $value = strtolower($row[$key]);
+                    if (stristr($value, $q)) {
+                        array_push($result, $row);
+                        break;
+                    }
                 }
             }
         }
@@ -113,7 +132,7 @@ if ($method === "get") {
     $entries = json_decode(stream_get_contents(STDIN));
     foreach ($entries as $entry) {
         if (!empty ($entry["firstnameofchild"]) && !empty ($entry["lastnameofchild"])) {
-            $combinedKey = strtolower($entry["firstnameofchild"] . "-" . $entry["lastnameofchild"]);
+            $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
             if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows["sheetTitle"] === "2015 Registration") {
                 ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
             }
