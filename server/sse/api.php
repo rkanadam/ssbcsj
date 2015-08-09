@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 
 $base = realpath(dirname($_SERVER["SCRIPT_FILENAME"]) . "/../..") . "/";
 
@@ -129,7 +130,8 @@ if ($method === "get") {
     }
     echo json_encode($result);
 } else if ($method === "post") {
-    $entries = json_decode(stream_get_contents(STDIN));
+
+    $values = array ();
 
     $parentPropertiesToCopy = array(
         "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
@@ -150,6 +152,7 @@ if ($method === "get") {
         foreach ($childPropertiesToCopy as $childProperty) {
             $value[$childProperty] = trim($_REQUEST["$childProperty$i"]);
         }
+        array_push($values, $value);
     }
 
     foreach ($values as $value) {
@@ -159,6 +162,7 @@ if ($method === "get") {
         }
         $registrationFeed->insert($value);
     }
+    echo json_encode(true);
 }
 ?>
 

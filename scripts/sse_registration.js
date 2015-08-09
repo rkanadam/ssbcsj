@@ -1,7 +1,7 @@
 (function ($) {
     $(function () {
 
-        $("#searchForm").validator ().on("submit", function (e) {
+        $("#searchForm").validator().on("submit", function (e) {
             if (e.isDefaultPrevented()) {
                 return;
             }
@@ -66,10 +66,24 @@
             }
         });
 
-        $("#registrationForm").validator ().on("submit", function (e) {
+        $("#registrationForm").validator().on("submit", function (e) {
             if (e.isDefaultPrevented()) {
                 return;
             }
+
+            e.preventDefault();
+            var $this = $(this);
+            $.post("server/sse/api.php", $this.serialize(), function (response) {
+                if (response === false) {
+                    alert("Your information was successfully saved.");
+                    return false;
+                } else {
+
+                }
+                $("#registrationForm, #searchResults").hide();
+                $("#searchContent").show();
+            }, "json");
+
 
         });
     })
