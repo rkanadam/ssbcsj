@@ -118,7 +118,7 @@ if ($method === "get") {
                 }
             }
         } else {
-            $keysToSearch = array("firstname", "lastname", "firstnameofchild", "lastnameofchild");
+            $keysToSearch = array("mothersfirstname", "motherslastname", "firstnameofchild", "lastnameofchild");
             foreach ($rows as $row) {
                 foreach ($keysToSearch as $key) {
                     $value = strtolower($row[$key]);
