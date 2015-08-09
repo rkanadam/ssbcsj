@@ -74,14 +74,14 @@
             e.preventDefault();
             var $this = $(this);
             $.post("server/sse/api.php", $this.serialize(), function (response) {
-                if (response === false) {
-                    alert("Your information was successfully saved.");
-                    return false;
+                if (response !== true) {
+                    alert("Your information could not be saved. Please contact the web master.");
                 } else {
-
+                    alert("Your information was successfully saved.");
                 }
                 $("#registrationForm, #searchResults").hide();
                 $("#searchContent").show();
+                return false;
             }, "json");
 
 

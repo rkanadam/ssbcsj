@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/sse/api.php" afterPath="$PROJECT_DIR$/server/sse/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/sse_registration.js" afterPath="$PROJECT_DIR$/scripts/sse_registration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="api.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/sse/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74747473" vertical-offset="2046" max-vertical-offset="2640">
+            <state vertical-scroll-proportion="-18.5" vertical-offset="2046" max-vertical-offset="2640">
               <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="166" selection-end-column="4" />
               <folding>
                 <element signature="e#142#187#0#PHP" expanded="true" />
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sse_registration.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sse_registration.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1425">
-              <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.8335975" vertical-offset="719" max-vertical-offset="1425">
+              <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -129,8 +129,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/index.css" />
         <option value="$PROJECT_DIR$/sse_registration.html" />
-        <option value="$PROJECT_DIR$/scripts/sse_registration.js" />
         <option value="$PROJECT_DIR$/server/sse/api.php" />
+        <option value="$PROJECT_DIR$/scripts/sse_registration.js" />
       </list>
     </option>
   </component>
@@ -598,14 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="719" max-vertical-offset="1425">
-          <caret line="83" column="35" selection-start-line="83" selection-start-column="35" selection-end-line="83" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sse_registration.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375" vertical-offset="1050" max-vertical-offset="4590">
@@ -623,11 +615,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/sse/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74747473" vertical-offset="2046" max-vertical-offset="2640">
+        <state vertical-scroll-proportion="-18.5" vertical-offset="2046" max-vertical-offset="2640">
           <caret line="166" column="4" selection-start-line="166" selection-start-column="4" selection-end-line="166" selection-end-column="4" />
           <folding>
             <element signature="e#142#187#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8335975" vertical-offset="719" max-vertical-offset="1425">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
