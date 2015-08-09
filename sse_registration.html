@@ -66,8 +66,9 @@
                 </div>
             </div>
             <div class="form-group form-group-lg">
-                <div class="input-group">
+                <div class="input-group" style="width:100%">
                     <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
+                    <button type="button" class="btn btn-primary btn-lg pull-right" id = "newRegistration">New Registration &raquo;</button>
                 </div>
             </div>
         </form>
@@ -295,6 +296,16 @@
 </form>
 </div>
 </div>
+<div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
+    <div style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
+    </div>
+    <div  class="progress progress-striped active" style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
+        <div class="progress-bar progress-bar-info"  style="width: 100%">
+            <h4>Contacting the server for information ...</h4>
+        </div>
+    </div>
+</div>
+
 <!-- /container -->
 </body>
 </html>

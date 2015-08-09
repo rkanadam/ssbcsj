@@ -18,15 +18,22 @@
                     html.push("<tr><td ")
                     html.push("searchData='");
                     html.push(JSON.stringify(response));
-                    html.push("'>");
+                    html.push("'><a href = '#'>");
                     html.push(response["firstnameofchild"]);
                     html.push("&nbsp;");
                     html.push(response["lastnameofchild"]);
-                    html.push("</td></tr>");
+                    html.push("</a></td></tr>");
                 }
                 $("#searchContent").hide();
                 $("#searchResults").find("table").empty().html(html.join("")).end().show();
             }, "json");
+        });
+
+        $("#newRegistration").on("click", function (e) {
+            $("#searchContent").hide();
+            $("#registrationForm").find(":input").each(function () {
+                $(this).val("");
+            }).end ().show ();
         });
 
         $("#searchResults").on("click", "table tr td", function (e) {
@@ -84,7 +91,14 @@
                 return false;
             }, "json");
 
-
         });
+
+        $(document).ajaxStart(function () {
+            $("#indicator").show();
+        });
+        $(document).ajaxStop(function () {
+            $("#indicator").hide();
+        });
+
     })
 })(jQuery);
