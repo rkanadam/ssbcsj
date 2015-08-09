@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SSBCSJ - SSE Registration</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="shortcut icon" href="/ssbcsj/styles/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/ssbcsj/styles/images/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/sse_registration.js"></script>
+
+
+</head>
+<body>
+<div class="content">
+<div class="jumbotron" id="logo"></div>
+<div class="container content">
+<!-- Example row of columns -->
+<div class="row" style="margin: 0px 0px 25px 0px" id = "searchContent">
+    <div class="col-sm-12">
+        <h4>Search for exisiting or previous year's registrations. You may type in a few characters of the parent or the
+            child and click on search.</h4>
+
+        <form class="form-inline" id="searchForm">
+            <div class="form-group form-group-lg">
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-search"
+                                                         aria-hidden="true"></span></div>
+                    <input type="text" size="25" class="form-control" id="search"
+                           placeholder="Type in a few characters of the child or parents's name to search"
+                           name="q"
+                           min="5">
+
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="row" id="searchResults" style="display:none">
+    <div class="col-sm-12">
+        We found the following children. Please click on a child to continue editing their information. Please note we
+        will also populate all of their siblings from this information.
+    </div>
+    <div class="col-sm-12">
+        <table class="table table-bordered table-striped table-condensed">
+            <tbody>
+            <tr>
+                <td>Pallavi Kaipa</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<form id="registrationForm" style="display:none">
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="mothersfirstname">Mother's First Name</label>
+            <input type="text" class="form-control" id="mothersfirstname" placeholder="Mother's First Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="motherslastname">Mother's Last Name</label>
+            <input type="text" class="form-control" id="motherslastname" placeholder="Mother's Last Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="mothersemail">Mother's E-Mail</label>
+            <input type="email" class="form-control" id="mothersemail"
+                   placeholder="Mother's E-Mail">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="mothersphone">Mother's Phone</label>
+            <input type="text" class="form-control" id="mothersphone" placeholder="Mother's Phone">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="fathersfirstname">Father's First Name</label>
+            <input type="text" class="form-control" id="fathersfirstname" placeholder="Father's First Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="fatherslastname">Father's Last Name</label>
+            <input type="text" class="form-control" id="fatherslastname" placeholder="Father's Last Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="fathersemail">Father's E-Mail</label>
+            <input type="email" class="form-control" id="fathersemail"
+                   placeholder="Father's E-Mail">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="fathersphone">Father's Phone</label>
+            <input type="text" class="form-control" id="fathersphone" placeholder="Father's Phone">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child1sfirstname">Child 1's First Name</label>
+            <input type="text" class="form-control" id="child1sfirstname"
+                   placeholder="Child 1's First Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child1slastname">Child 1's Last Name</label>
+            <input type="text" class="form-control" id="child1slastname" placeholder="Child 1's Last Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child1sssegrade">Child 1's SSE Grade</label>
+            <select class="form-control" id="child1sssegrade">
+                <option>Sai Nursery</option>
+                <option>SSE Grade 1</option>
+                <option>SSE Grade 2</option>
+                <option>SSE Grade 3</option>
+                <option>SSE Grade 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child1sschoolgrade">Child 1's School Grade</label>
+            <select class="form-control" id="child1sschoolgrade">
+                <option>Pre K</option>
+                <option>Kindergarten</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child2sfirstname">Child 2's First Name</label>
+            <input type="text" class="form-control" id="child2sfirstname"
+                   placeholder="Child 2's First Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child2slastname">Child 2's Last Name</label>
+            <input type="text" class="form-control" id="child2slastname" placeholder="Child 2's Last Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child2sssegrade">Child 2's SSE Grade</label>
+            <select class="form-control" id="child2sssegrade">
+                <option>Sai Nursery</option>
+                <option>SSE Grade 1</option>
+                <option>SSE Grade 2</option>
+                <option>SSE Grade 3</option>
+                <option>SSE Grade 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child2sschoolgrade">Child 2's School Grade</label>
+            <select class="form-control" id="child2sschoolgrade">
+                <option>Pre K</option>
+                <option>Kindergarten</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child3sfirstname">Child 3's First Name</label>
+            <input type="text" class="form-control" id="child3sfirstname"
+                   placeholder="Child 3's First Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child3slastname">Child 3's Last Name</label>
+            <input type="text" class="form-control" id="child3slastname" placeholder="Child 3's Last Name">
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child3sssegrade">Child 3's SSE Grade</label>
+            <select class="form-control" id="child3sssegrade">
+                <option>Sai Nursery</option>
+                <option>SSE Grade 1</option>
+                <option>SSE Grade 2</option>
+                <option>SSE Grade 3</option>
+                <option>SSE Grade 4</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="child3sschoolgrade">Child 3's School Grade</label>
+            <select class="form-control" id="child3sschoolgrade">
+                <option>Pre K</option>
+                <option>Kindergarten</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <button type="submit" class="btn btn-default">Register</button>
+    </div>
+</form>
+</div>
+</div>
+<!-- /container -->
+</div>
+
+</body>
+</html>
