@@ -45,7 +45,7 @@ $rows = array();
 foreach ($mainFeed->getEntries() as $entry) {
     $values = $entry->getValues();
     if (!empty ($values["firstname"]) && !empty ($values["lastname"])) {
-        $properties = array("firstnameofchild", "lastnameofchild", "ssegroupchild", "schoolgradechild");
+        $properties = array("firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
         for ($i = 1; $i < 4; ++$i) {
             if (!empty($values["firstnameofchild$i"])) {
                 //A child is present at this index
@@ -78,8 +78,8 @@ foreach ($registrationFeed->getEntries() as $entry) {
         $row["lastname"] = trim($values["lastname"]);
         $row["firstnameofchild"] = trim($values["firstnameofchild"]);
         $row["lastnameofchild"] = trim($values["lastnameofchild"]);
-        $row["ssegroupchild"] = trim($values["ssegroupchild"]);
-        $row["schoolgradechild"] = trim($values["schoolgradechild"]);
+        $row["ssegroupofchild"] = trim($values["ssegroupofchild"]);
+        $row["schoolgradeofchild"] = trim($values["schoolgradeofchild"]);
         $row["url"] = $entry->getEditUrl();
 
         $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
@@ -100,9 +100,9 @@ if ($method === "get") {
         $result = array();
         if ($json && $json->{"firstnameofchild"}) {
             //This if for an exact search
-            $propertiesToMatch = array("mothersfirstname", "motherslastname", "fathersfirstname", "fatherslastname");
-            $allPropertiesMatch = true;
+            $propertiesToMatch = array("mothersfirstname", "motherslastname");
             foreach ($rows as $row) {
+                $allPropertiesMatch = true;
                 foreach ($propertiesToMatch as $property) {
                     if ($row[$property] !== $json->{$property}) {
                         $allPropertiesMatch = false;
@@ -145,7 +145,7 @@ if ($method === "get") {
         $propertiesToCopy = array(
             "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
             "mothersfirstname", "motherslastname", "mothersemail", "mothersphone",
-            "firstnameofchild", "lastnameofchild", "ssegroupchild", "schoolgradechild");
+            "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
         $value["timestamp"] = date("n/j/Y H:i:s");
         foreach ($properties as $property) {
             $value[$property] = $entry[$property];
