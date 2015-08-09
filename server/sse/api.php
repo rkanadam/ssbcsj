@@ -72,16 +72,19 @@ $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2015 Registration
 
 foreach ($registrationFeed->getEntries() as $entry) {
     $values = $entry->getValues();
-    if (!empty ($values["firstname"]) && !empty ($values["lastname"])) {
+    if (!empty ($values["mothersfirstname"]) && !empty ($values["motherslastname"])) {
         $row = array();
         $row["timestamp"] = trim($values["timestamp"]);
-        $row["firstname"] = trim($values["firstname"]);
-        $row["lastname"] = trim($values["lastname"]);
+        $row["mothersfirstname"] = trim($values["mothersfirstname"]);
+        $row["motherslastname"] = trim($values["motherslastname"]);
+        $row["fathersfirstname"] = trim($values["fathersfirstname"]);
+        $row["fatherslastname"] = trim($values["fatherslastname"]);
         $row["firstnameofchild"] = trim($values["firstnameofchild"]);
         $row["lastnameofchild"] = trim($values["lastnameofchild"]);
         $row["ssegroupofchild"] = trim($values["ssegroupofchild"]);
         $row["schoolgradeofchild"] = trim($values["schoolgradeofchild"]);
         $row["url"] = $entry->getEditUrl();
+        $row["sheetTitle"] === "2015 Registration";
 
         $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
         $rows[$combinedKey] = $row;
@@ -131,7 +134,7 @@ if ($method === "get") {
     echo json_encode($result);
 } else if ($method === "post") {
 
-    $values = array ();
+    $values = array();
 
     $parentPropertiesToCopy = array(
         "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
@@ -157,7 +160,7 @@ if ($method === "get") {
 
     foreach ($values as $value) {
         $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $value["mothersfirstname"], $value["motherslastname"], $value["firstnameofchild"], $value["lastnameofchild"]));
-        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows["sheetTitle"] === "2015 Registration") {
+        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2015 Registration") {
             ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
         }
         $registrationFeed->insert($value);
