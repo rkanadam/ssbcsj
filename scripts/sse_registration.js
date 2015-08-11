@@ -66,6 +66,9 @@
                             });
                         }
 
+                        $("select.form-control").trigger ("change");
+
+
                         $("#searchResults").hide();
                         $form.show();
                     }, "json");
@@ -108,6 +111,5 @@
                 $this.next (".warning").hide ();
             }
         });
-
     })
 })(jQuery);
