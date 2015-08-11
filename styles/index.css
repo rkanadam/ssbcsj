@@ -4,6 +4,7 @@ body {
     font-family: "Lato";
     background: #EEE;
 }
+
 #logo {
     background: url(images/small_logo.png) center no-repeat;
     height: 146px;
@@ -18,9 +19,15 @@ body {
         min-height: 25em
     }
 
-    .content {
-        width: 692px;
-        margin: auto;
+    .form-control::-webkit-input-placeholder { opacity:0; }
+    .form-control:-moz-placeholder { color:transparent; } /* FF 4-18 */
+    .form-control::-moz-placeholder { color:transparent; } /* FF 19+ */
+    .form-control:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+}
+
+@media only screen and (max-width: 692px) {
+    .tableHeader {
+        display:none;
     }
 }
 
@@ -28,4 +35,6 @@ body {
     background: #FFF;
     padding-bottom: 5em;
 }
+
+
 

@@ -60,7 +60,7 @@ foreach ($mainFeed->getEntries() as $entry) {
                     $row[$key] = trim($values["$key$i"]);
                 }
 
-                $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
+                $combinedKey = strtolower(sprintf("%s-%s", $row["firstnameofchild"], $row["lastnameofchild"]));
 
                 $rows[$combinedKey] = $row;
             }
@@ -85,11 +85,10 @@ foreach ($registrationFeed->getEntries() as $entry) {
         $row["schoolgradeofchild"] = trim($values["schoolgradeofchild"]);
         $row["url"] = $entry->getEditUrl();
         $row["sheetTitle"] = "2015 Registration";
-        $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $row["mothersfirstname"], $row["motherslastname"], $row["firstnameofchild"], $row["lastnameofchild"]));
+        $combinedKey = strtolower(sprintf("%s-%s", $row["firstnameofchild"], $row["lastnameofchild"]));
         $rows[$combinedKey] = $row;
     }
 }
-
 
 //ServiceRequestFactory::getInstance()->post($this->getPostUrl(), $entry);
 
@@ -118,7 +117,7 @@ if ($method === "get") {
                 }
             }
         } else {
-            $keysToSearch = array("mothersfirstname", "motherslastname", "firstnameofchild", "lastnameofchild");
+            $keysToSearch = array("mothersfirstname", "motherslastname", "firstnameofchild", "lastnameofchild", "fathersfirstname", "fatherslastname");
             foreach ($rows as $row) {
                 foreach ($keysToSearch as $key) {
                     $value = strtolower($row[$key]);
@@ -140,7 +139,7 @@ if ($method === "get") {
         "mothersfirstname", "motherslastname", "mothersemail", "mothersphone");
 
     $childPropertiesToCopy = array(
-        "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
+        "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild", "allergiesofchild");
 
     for ($i = 1; $i < 3; ++$i) {
         if (empty($_REQUEST["firstnameofchild$i"])) {
@@ -158,7 +157,7 @@ if ($method === "get") {
     }
 
     foreach ($values as $value) {
-        $combinedKey = strtolower(sprintf("%s-%s-%s-%s", $value["mothersfirstname"], $value["motherslastname"], $value["firstnameofchild"], $value["lastnameofchild"]));
+        $combinedKey = strtolower(sprintf("%s-%s", $value["firstnameofchild"], $value["lastnameofchild"]));
         if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2015 Registration") {
             ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
         }

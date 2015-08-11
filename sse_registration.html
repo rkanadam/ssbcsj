@@ -68,7 +68,8 @@
             <div class="form-group form-group-lg">
                 <div class="input-group" style="width:100%">
                     <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
-                    <button type="button" class="btn btn-primary btn-lg pull-right" id = "newRegistration">New Registration &raquo;</button>
+                    <button type="button" class="btn btn-primary btn-lg pull-right" id="newRegistration">New
+                        Registration &raquo;</button>
                 </div>
             </div>
         </form>
@@ -90,79 +91,139 @@
     </div>
 </div>
 <form id="registrationForm" style="display:none;">
-<div class="row">
-    <div class="col-sm-12" style="padding-top: 10px;padding-bottom: 10px;">
-        All the fields are required. Please do fill them in and then click submit.
+<fieldset>
+    <legend>Information of Parents</legend>
+    <div class="row">
+        <div class="col-sm-12" style="padding-top: 10px;padding-bottom: 10px;">
+            All the fields are required. Please do fill them in and then click submit.
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="mothersfirstname">Mother's First Name</label>
+                <input type="text" class="form-control" id="mothersfirstname" name="mothersfirstname"
+                       required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="motherslastname">Mother's Last Name</label>
+                <input type="text" class="form-control" id="motherslastname" name="motherslastname" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="mothersemail">Mother's E-Mail</label>
+                <input type="email" class="form-control" id="mothersemail" name="mothersemail" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="mothersphone">Mother's Phone</label>
+                <input type="text" class="form-control" id="mothersphone" name="mothersphone" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="fathersfirstname">Father's First Name</label>
+                <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname"
+                       required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="fatherslastname">Father's Last Name</label>
+                <input type="text" class="form-control" id="fatherslastname" name="fatherslastname" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="fathersemail">Father's E-Mail</label>
+                <input type="email" class="form-control" id="fathersemail" name="fathersemail" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <label for="fathersphone">Father's Phone</label>
+                <input type="text" class="form-control" id="fathersphone" name="fathersphone" required="required">
+                <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<fieldset>
+<legend>Information of Children</legend>
+<div class="row bordered-row tableHeader">
+    <div class="col-sm-1">
+        <div class="form-group">
+            <label>&nbsp;</label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label>First Name</label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label>Last Name</label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label>SSE Group</label>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+            <label>School Grade</label>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label>Known Allergies</label>
+        </div>
     </div>
 </div>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-1">
         <div class="form-group">
-            <label for="mothersfirstname">Mother's First Name</label>
-            <input type="text" class="form-control" id="mothersfirstname" name="mothersfirstname" required="required">
+            <label>1<sup>st</sup> Child</label>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="motherslastname">Mother's Last Name</label>
-            <input type="text" class="form-control" id="motherslastname" name="motherslastname" required="required">
+            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild1"
+                   name="firstnameofchild1">
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="mothersemail">Mother's E-Mail</label>
-            <input type="email" class="form-control" id="mothersemail" name="mothersemail" required="required">
+            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild1"
+                   name="lastnameofchild1">
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="mothersphone">Mother's Phone</label>
-            <input type="text" class="form-control" id="mothersphone" name="mothersphone" required="required">
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="fathersfirstname">Father's First Name</label>
-            <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname" required="required">
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="fatherslastname">Father's Last Name</label>
-            <input type="text" class="form-control" id="fatherslastname" name="fatherslastname" required="required">
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="fathersemail">Father's E-Mail</label>
-            <input type="email" class="form-control" id="fathersemail" name="fathersemail" required="required">
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="fathersphone">Father's Phone</label>
-            <input type="text" class="form-control" id="fathersphone" name="fathersphone" required="required">
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="firstnameofchild1">Child 1's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild1" name="firstnameofchild1">
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="lastnameofchild1">Child 1's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild1" name="lastnameofchild1">
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="form-group">
-            <label for="ssegroupofchild1">Child 1's SSE Group</label>
             <select class="form-control" id="ssegroupofchild1" name="ssegroupofchild1">
                 <option>Sai Nursery</option>
                 <option>Group 1</option>
@@ -172,9 +233,8 @@
             </select>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="schoolgradeofchild1">Child 1's School Grade</label>
             <select class="form-control" id="schoolgradeofchild1" name="schoolgradeofchild1">
                 <option>Pre K</option>
                 <option>Kindergarten</option>
@@ -193,23 +253,33 @@
             </select>
         </div>
     </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?"
+                      id="allergiesofchild1" name="allergiesofchild1"></textarea>
+        </div>
+    </div>
 </div>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-1">
         <div class="form-group">
-            <label for="firstnameofchild2">Child 2's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild2" name="firstnameofchild2">
+            <label>2<sup>nd</sup> Child</label>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="lastnameofchild2">Child 2's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild2" name="lastnameofchild2">
+            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild2"
+                   name="firstnameofchild2">
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="ssegroupofchild2">Child 2's SSE Group</label>
+            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild2"
+                   name="lastnameofchild2">
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
             <select class="form-control" id="ssegroupofchild2" name="ssegroupofchild2">
                 <option>Sai Nursery</option>
                 <option>Group 1</option>
@@ -219,9 +289,8 @@
             </select>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="schoolgradeofchild2">Child 2's School Grade</label>
             <select class="form-control" id="schoolgradeofchild2" name="schoolgradeofchild2">
                 <option>Pre K</option>
                 <option>Kindergarten</option>
@@ -240,23 +309,33 @@
             </select>
         </div>
     </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?"
+                      id="allergiesofchild2" name="allergiesofchild2"></textarea>
+        </div>
+    </div>
 </div>
 <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-1">
         <div class="form-group">
-            <label for="firstnameofchild3">Child 3's First Name</label>
-            <input type="text" class="form-control" id="firstnameofchild3" name="firstnameofchild3">
+            <label>3<sup>rd</sup> Child</label>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="lastnameofchild3">Child 3's Last Name</label>
-            <input type="text" class="form-control" id="lastnameofchild3" name="lastnameofchild3">
+            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild3"
+                   name="firstnameofchild3">
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="ssegroupofchild3">Child 3's SSE Group</label>
+            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild3"
+                   name="lastnameofchild3">
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
             <select class="form-control" id="ssegroupofchild3" name="ssegroupofchild3">
                 <option>Sai Nursery</option>
                 <option>Group 1</option>
@@ -266,9 +345,8 @@
             </select>
         </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-2">
         <div class="form-group">
-            <label for="schoolgradeofchild3">Child 3's School Grade</label>
             <select class="form-control" id="schoolgradeofchild3" name="schoolgradeofchild3">
                 <option>Pre K</option>
                 <option>Kindergarten</option>
@@ -287,20 +365,28 @@
             </select>
         </div>
     </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?" id="allergiesofchild3"
+                      name="allergiesofchild3"></textarea>
+        </div>
+    </div>
 </div>
 <div class="row">
     <div class="col-sm-12">
         <button type="submit" class="btn btn-primary btn-lg">Register</button>
     </div>
 </div>
+</fieldset>
 </form>
 </div>
 </div>
 <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
     <div style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
     </div>
-    <div  class="progress progress-striped active" style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
-        <div class="progress-bar progress-bar-info"  style="width: 100%">
+    <div class="progress progress-striped active"
+         style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
+        <div class="progress-bar progress-bar-info" style="width: 100%">
             <h4>Contacting the server for information ...</h4>
         </div>
     </div>
