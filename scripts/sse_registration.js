@@ -34,6 +34,7 @@
             $("#registrationForm").find(":input").each(function () {
                 $(this).val("");
             }).end().show();
+            $("select.form-control").trigger ("change");
         });
 
         $("#searchResults").on("click", "table tr td", function (e) {
@@ -111,5 +112,7 @@
                 $this.next (".warning").hide ();
             }
         });
+
+        $("select.form-control").trigger ("change");
     })
 })(jQuery);
