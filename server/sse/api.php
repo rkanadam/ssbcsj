@@ -136,7 +136,8 @@ if ($method === "get") {
 
     $parentPropertiesToCopy = array(
         "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
-        "mothersfirstname", "motherslastname", "mothersemail", "mothersphone");
+        "mothersfirstname", "motherslastname", "mothersemail", "mothersphone",
+        "comment");
 
     $childPropertiesToCopy = array(
         "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild", "allergiesofchild");
