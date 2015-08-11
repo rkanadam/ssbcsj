@@ -49,7 +49,7 @@
                         }
 
                         var propertiesToCopy = ["fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
-                            "mothersfirstname", "motherslastname", "mothersemail", "mothersphone"
+                            "mothersfirstname", "motherslastname", "mothersemail", "mothersphone", "comments"
                         ];
 
                         var $form = $("#registrationForm");
@@ -98,6 +98,7 @@
         });
 
         $(document).ajaxStart(function () {
+            window.scrollTo(0, 0);
             $("#indicator").show();
         });
         $(document).ajaxStop(function () {
