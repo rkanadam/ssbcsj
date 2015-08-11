@@ -33,7 +33,7 @@
             $("#searchContent").hide();
             $("#registrationForm").find(":input").each(function () {
                 $(this).val("");
-            }).end ().show ();
+            }).end().show();
         });
 
         $("#searchResults").on("click", "table tr td", function (e) {
@@ -98,6 +98,15 @@
         });
         $(document).ajaxStop(function () {
             $("#indicator").hide();
+        });
+
+        $("select.form-control").change(function () {
+            var $this = $(this);
+            if (/nursery/i.exec($this.val())) {
+                $this.next (".warning").show ();
+            } else {
+                $this.next (".warning").hide ();
+            }
         });
 
     })
