@@ -45,15 +45,18 @@ $rows = array();
 
 foreach ($mainFeed->getEntries() as $entry) {
     $values = $entry->getValues();
-    if (!empty ($values["firstname"]) && !empty ($values["lastname"])) {
+    if (   (!empty ($values["fathersfirstname"]) && !empty ($values["fatherslastname"]))
+        || (!empty ($values["mothersfirstname"]) && !empty ($values["motherslastname"]))) {
         $properties = array("firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
         for ($i = 1; $i < 4; ++$i) {
             if (!empty($values["firstnameofchild$i"])) {
                 //A child is present at this index
                 $row = array();
                 $row["timestamp"] = trim($values["timestamp"]);
-                $row["mothersfirstname"] = trim($values["firstname"]);
-                $row["motherslastname"] = trim($values["lastname"]);
+                $row["mothersfirstname"] = trim($values["mothersfirstname"]);
+                $row["motherslastname"] = trim($values["motherslastname"]);
+                $row["fathersfirstname"] = trim($values["fathersfirstname"]);
+                $row["fatherslastname"] = trim($values["fatherslastname"]);
 
                 //Copy Child Properties
                 foreach ($properties as $key) {
@@ -67,6 +70,7 @@ foreach ($mainFeed->getEntries() as $entry) {
         }
     }
 }
+
 
 $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2015 Registration")->getListFeed();
 
@@ -102,14 +106,14 @@ if ($method === "get") {
         $result = array();
         if ($json && $json->{"firstnameofchild"}) {
             //This if for an exact search
-            $propertiesToMatch = array("mothersfirstname", "motherslastname");
             foreach ($rows as $row) {
                 $allPropertiesMatch = true;
-                foreach ($propertiesToMatch as $property) {
-                    if ($row[$property] !== $json->{$property}) {
-                        $allPropertiesMatch = false;
-                        break;
-                    }
+                if (!empty ($json->{"fathersfirstname"}) && !empty ($json->{"fatherslastname"})) {
+                    $allPropertiesMatch = $row["fathersfirstname"] == $json->{"fathersfirstname"} && $row["fatherslastname"] == $json->{"fatherslastname"};
+                } else if (!empty ($json->{"mothersfirstname"}) && !empty ($json->{"motherslastname"})) {
+                    $allPropertiesMatch = $row["mothersfirstname"] == $json->{"mothersfirstname"} && $row["motherslastname"] == $json->{"motherslastname"};
+                } else {
+                    $allPropertiesMatch = false;
                 }
                 if ($allPropertiesMatch) {
                     //We found children with the same parent!
