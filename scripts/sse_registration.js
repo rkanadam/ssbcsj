@@ -11,6 +11,9 @@
                 if (responses === false) {
                     alert("Looks like we were not able to complete the search. Please let the web master know");
                     return false;
+                } else if (responses.length === 0) {
+                    alert ("We found no children matching this search string. Please try again or you might want to try a new registration.");
+                    return;
                 }
                 var html = [];
                 for (var i = 0, len = responses.length; i < len; ++i) {
