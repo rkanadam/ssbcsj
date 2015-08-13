@@ -37,7 +37,6 @@ $optParams = array(
 
 
 $results = $service->events->listEvents($calendarId, $optParams);
-
 if (count($results->getItems()) == 0) {
     print "No upcoming events found.\n";
 } else {
@@ -47,6 +46,7 @@ if (count($results->getItems()) == 0) {
         if (empty($start)) {
             $start = $event->start->date;
         }
+        echo json_encode($event);
         printf("%s (%s) (%s) (%s)\n", $event->getSummary(), $start, $event->location, print_r($event->getAttendees ()[0]->getEmail (), true));
     }
 }
