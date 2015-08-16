@@ -19,21 +19,41 @@ body {
         min-height: 25em
     }
 
-    .form-control::-webkit-input-placeholder { opacity:0; }
-    .form-control:-moz-placeholder { color:transparent; } /* FF 4-18 */
-    .form-control::-moz-placeholder { color:transparent; } /* FF 19+ */
-    .form-control:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+    .form-control::-webkit-input-placeholder {
+        opacity: 0;
+    }
+
+    .form-control:-moz-placeholder {
+        color: transparent;
+    }
+
+    /* FF 4-18 */
+    .form-control::-moz-placeholder {
+        color: transparent;
+    }
+
+    /* FF 19+ */
+    .form-control:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    /* IE 10+ */
 }
 
 @media only screen and (max-width: 692px) {
     .tableHeader {
-        display:none;
+        display: none;
     }
 }
 
 .content {
     background: #FFF;
     padding-bottom: 5em;
+}
+
+#bhajan_signup .selectContainer {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 

@@ -17,6 +17,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
+    <link rel="stylesheet" href="styles/bootstrap-select.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -34,67 +36,107 @@
     <link rel="icon" href="/ssbcsj/styles/images/favicon.ico" type="image/x-icon">
 
     <script src="scripts/validator.min.js"></script>
-    <script src="scripts/sse_registration.js"></script>
+    <script src="scripts/bootstrap-select.min.js"></script>
+    <script src="scripts/bhajan_signup.js"></script>
 </head>
-<body>
-<form>
+<body id="bhajan_signup">
+<form id="bhajanSignupForm">
     <div class="content">
-        <div class="jumbotron" id="logo"></div>
+        <a href="index.html">
+            <div class="jumbotron" id="logo"></div>
+        </a>
+
         <div class="container content" style="margin-top: -25px">
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <h1>Celebrate Swami at Home</h1>
 
-                    <h1>90 Day Sadhana for Swami's Birthday - Home Bhajans</h1>
+                    <h2>90 Day Sadhana for Swami's Birthday - Home Bhajans</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="city">
                 <div class="col-sm-6 text-left">
                     <h1>1. Select the City you live in</h1>
                     <h4>Or the one closest to your home</h4>
                 </div>
-                <div class="col-sm-6 text-left">
-                    <select class="form-control">
-                        <option>Sunnyvale</option>
-                        <option>Santa Clara</option>
-                        <option>San Jose</option>
-                        <option>Evergreen</option>
-                        <option>Cupertino / Saratoga</option>
-                        <option>Fremont / Milpitas</option>
+                <div class="col-sm-6 text-left selectContainer">
+                    <select class="form-control" name="city" required="required">
+                        <option value=""></option>
+                        <option value="1">Sunnyvale</option>
+                        <option value="2">Santa Clara</option>
+                        <option value="3">San Jose</option>
+                        <option value="4">Evergreen</option>
+                        <option value="5">Cupertino / Saratoga</option>
+                        <option value="6">Fremont / Milpitas</option>
                     </select>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="date" style="display:none">
                 <div class="col-sm-6 text-left">
                     <h1>2. Select a date</h1>
+                    <h4>If you do not see a date in here that is because some one reserved it already</h4>
                 </div>
-                <div class="col-sm-6 text-left">
-                    <select class="form-control">
-                        <option>Sunnyvale</option>
-                        <option>Santa Clara</option>
-                        <option>San Jose</option>
-                        <option>Evergreen</option>
-                        <option>Cupertino / Saratoga</option>
-                        <option>Fremont / Milpitas</option>
+                <div class="col-sm-6 text-left selectContainer">
+                    <select class="form-control" name="date" required="required">
                     </select>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 text-left">
-                    <h1>3. Give us some details</h1>
+            <div id="details" style="display:none">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h1>3. Give us some details</h1>
+                    </div>
                 </div>
-                <div class="col-sm-6 text-left">
-                    <select class="form-control">
-                        <option>Sunnyvale</option>
-                        <option>Santa Clara</option>
-                        <option>San Jose</option>
-                        <option>Evergreen</option>
-                        <option>Cupertino / Saratoga</option>
-                        <option>Fremont / Milpitas</option>
-                    </select>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                   required="required">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                   required="required">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone"
+                                   placeholder="Phone Number" required="required">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="address">Home Address</label>
+                            <input type="text" class="form-control" id="address" name="address"
+                                   placeholder="Home Address" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="comments">Comments / Additional Instructions ? Parking, Gate Code, anything
+                                else you want folks to know</label>
+                            <textarea type="text" class="form-control" id="comments" name="comments"
+                                      placeholder="comments"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group text-center">
+                            <input type="submit" class="btn btn-lg btn-primary" value="Signup!">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </form>
 <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
