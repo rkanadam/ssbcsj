@@ -1,0 +1,153 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Lato|Great+Vibes|Astigmatic|Tangerine);
+
+@page {
+    width: 850px;
+    height: 1100px;
+    margin: 0px;
+    padding: 0px;
+    @bottom-left {
+        content: counter(page) " of " counter(pages);
+    }
+}
+
+
+body {
+    font-family: "Lato";
+    background: #FFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page, .titlePage {
+    padding: 0px;
+    background: url(images/flowers.png) -70px -90px no-repeat #FFF;
+    page-break-after: always;
+    height: 1100px;
+    width: 850px;
+    border: 1px solid #CCC;
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.titlePage {
+    background: url(images/full_logo.png) 0px 0px no-repeat #FFF;
+    padding-top: 90px;
+    background-size: contain;
+}
+.titlePage .image {
+    background: url(images/swami_full.jpg) center 15px no-repeat transparent;
+    height: 650px;
+    background-size: contain;
+}
+
+.titlePage h1 {
+    padding: 500px 125px 200px 150px;
+    font-size: 96pt;
+    font-family: 'Tangerine';
+    text-align: center;
+    color:navy;
+}
+
+.titlePage .logo {
+    left: 50px;
+    top: 950px;
+}
+
+.samskrit {
+    font-family: 'Astigmatic';
+    font-size: 16pt;
+    margin-top: 10px;
+    color: navy;
+    padding-left: 180px;
+}
+
+.meaning {
+    font-family: 'Lato';
+    font-size: 12pt;
+    padding-left: 180px;
+    font-style: italic;
+    color: #777;
+}
+
+.swami {
+    background: url(images/swami.png) center 0px no-repeat;
+    margin-top: 100px;
+    background-size: contain;
+    width: 850px;
+    height: 150px;
+}
+
+.logo {
+    background: url(images/small_logo.png) center 0px no-repeat;
+    height: 90px;
+    background-size: contain;
+    position: absolute;
+    top: 1010px;
+    left: 730px;
+    width: 100px;
+}
+
+.pageNumber {
+    height: 50px;
+    position: absolute;
+    top: 1020px;
+    left: 80px;
+    width: 50px;
+    font-family: 'Great Vibes';
+    font-size: 26pt;
+    font-weight: bold;
+    border: 2px solid #CCC;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.pageNumber > div {
+    height: 5px;
+}
+
+
+.multifaith_logo {
+    background: url(images/multifaith.png) center 0px no-repeat;
+    height: 90px;
+    background-size: contain;
+    position: absolute;
+    top: 1010px;
+    left: 30px;
+    width: 100px;
+}
+
+.multifaith .samskrit {
+    font-size: 18pt;
+    margin-top: 20px;
+    font-weight: bold;
+    padding-left: 250px;
+    width: 400px;
+}
+
+.multifaith .meaning {
+    margin-top: 20px;
+    line-height: 30px;
+    padding-left: 250px;
+    width: 400px;
+}
+
+.multifaith h1 {
+    font-family: 'Tangerine';
+    text-align: center;
+    margin: 1em 2em;
+    padding: 1em;
+    font-size: 32pt;
+    border-radius: 10px;
+    color: navy;
+    background-color: #ffefd5;
+}
+
+.om {
+    background: url('http://rlv.zcache.com/golden_om_wax_seal_sticker-rd4db72862a4a4bb6af6f329c9913a64e_v9waf_8byvr_324.jpg') no-repeat;
+    background-size: contain;
+    height: 100px;
+}
+
+
+
