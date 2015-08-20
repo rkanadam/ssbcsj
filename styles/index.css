@@ -14,7 +14,7 @@ body {
 
 @media only screen and (min-width: 692px) {
     #logo {
-        background: url(images/full_logo.png) center no-repeat;
+        background: url(images/scaled_logo.png) center no-repeat;
         background-size: contain;
         min-height: 25em
     }
