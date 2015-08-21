@@ -36,21 +36,22 @@
 
             for (var i = 0; i < 2; ++i) {
                 if (allEvents.length > i) {
-                    var day = allEvents[i];
-                    var $day = $("#day" + i);
-                    if (!$day.length) {
-                        $day = $("<div />");
-                        $day.attr("id", "day" + i);
-                        $("#day0").parent().append($day);
-                        $day.html($("#day0").html ());
+                    var event = allEvents[i];
+                    var $event = $("#event" + i);
+                    if (!$event.length) {
+                        $event = $("<div />");
+                        $event.attr("id", "event" + i);
+                        $("#event0").parent().append($event);
+                        $event.html($("#event0").html());
                     }
-                    $day.find(".day").text(getUserFriendlyDayName(day.start));
-                    $day.find(".address").text(day.location);
-                    $day.find("date").text(day.start.getDate());
-                    $day.find(".month").text(months[day.start.getMonth()]);
-                    $day.find(".address_link").attr ("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(day.location));
-                    $day.find(".address_link").attr ("target", "_blank");
-                    $day.show();
+                    $event.find(".day").text(getUserFriendlyDayName(event.start));
+                    $event.find(".address").text(event.location);
+                    $event.find("date").text(event.start.getDate());
+                    $event.find(".month").text(months[event.start.getMonth()]);
+                    $event.find(".summary").text(event.summary.split(/\-/).splice (2).join (" - "));
+                    $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
+                    $event.find(".address_link").attr("target", "_blank");
+                    $event.show();
                 }
             }
         }, "json");
