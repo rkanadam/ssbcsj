@@ -26,7 +26,7 @@
             for (var i = 0, len = events.length; i < len; ++i) {
                 var event = events[i];
                 event.start = new Date(event.start);
-                if (event.start.getHours() === 20 || event.start.getHours() === 17) {
+                if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
                     allEvents.push(event);
                 }
             }
@@ -34,7 +34,7 @@
                 return e1.start.getTime() - e2.start.getTime();
             });
 
-            for (var i = 0; i < 2; ++i) {
+            for (var i = 0; i < 7; ++i) {
                 if (allEvents.length > i) {
                     var event = allEvents[i];
                     var $event = $("#event" + i);
@@ -48,7 +48,7 @@
                     $event.find(".address").text(event.location);
                     $event.find("date").text(event.start.getDate());
                     $event.find(".month").text(months[event.start.getMonth()]);
-                    $event.find(".summary").text(event.summary.split(/\-/).splice (2).join (" - "));
+                    $event.find(".summary").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
                     $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
                     $event.find(".address_link").attr("target", "_blank");
                     $event.show();
