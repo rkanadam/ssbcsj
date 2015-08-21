@@ -32,6 +32,7 @@
 
     <link rel="shortcut icon" href="styles/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="styles/images/favicon.ico" type="image/x-icon">
+    <script src="scripts/index.js"></script>
 
 </head>
 <body>
@@ -40,39 +41,99 @@
         <div class="jumbotron" id="logo"></div>
     </a>
 
-    <div class="container content">
+    <div class="container-fluid content">
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-sm-2">&nbsp;</div>
-            <div class="col-sm-4">
-                <h2>SSE Registration</h2>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="day0" style="display: none">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h4><span class="day">Today</span>'s Bhajan</h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="row" style="border-bottom: 1px solid #EEE">
+                                                <div class="col-xs-3">
+                                                    <img
+                                                            src="styles/images/map_icon.jpg"/>
+                                                </div>
+                                                <div class="col-xs-9">
+                                                    <a href="#" class="address_link"><span class = "address">167 Acalanes Dr APT 1 Sunnyvale CA 94086</span></a>
 
-                <p>Register for 2015</p>
+                                                    <p>
+                                                        <a href="#" class="btn btn-primary btn-xs address_link"
+                                                           aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-map-marker"
+                                                          aria-hidden="true"></span>
+                                                            <span>Click to Navigate</span>
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="padding-top: 10px">
+                                                <div class="col-xs-3">
+                                                    <div class="calendar_icon">
+                                                        <p class="date"><date>7</date><span class="month">Sep</span></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-9" style="vertical-align: middle">
+                                                    <h4><span class="day">Today</span>, 8-9 PM</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>SSE Registration</h2>
 
-                <p><a class="btn btn-lg btn-primary" href="sse_registration.html" role="button">Register &raquo;</a></p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Home Bhajans</h2>
+                                <p>Register for 2015</p>
 
-                <p>Signup to celebrate Swami's Birthday at Home</p>
+                                <p><a class="btn btn-lg btn-primary" href="sse_registration.html"
+                                      role="button">Register &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Home Bhajans</h2>
 
-                <p><a class="btn btn-lg btn-primary" href="bhajan_signup.html" role="button">Signup &raquo;</a></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">&nbsp;</div>
-            <div class="col-sm-4">
-                <h2>Habitat for Humanity</h2>
+                                <p>Signup to celebrate Swami's Birthday at Home</p>
 
-                <p>We will be washing, caulking, sanding, priming, and/or painting house exteriors.We will be working on
-                    Houses of families and individuals, including veterans, elderly, and those with disabilities.</p>
+                                <p><a class="btn btn-lg btn-primary" href="bhajan_signup.html"
+                                      role="button">Signup &raquo;</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Habitat for Humanity</h2>
 
-                <p><a class="btn btn-lg btn-primary" href="habitat_signup.html" role="button">Signup &raquo;</a></p>
+                                <p>We will be washing, caulking, sanding, priming, and/or painting house
+                                    exteriors.We
+                                    will
+                                    be
+                                    working on
+                                    Houses of families and individuals, including veterans, elderly, and those with
+
+                                <p><a class="btn btn-lg btn-primary" href="habitat_signup.html"
+                                      role="button">Signup &raquo;</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
             </div>
         </div>
     </div>
-    <!-- /container -->
-</div>
 
 </body>
 </html>
