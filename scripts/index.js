@@ -18,7 +18,21 @@
                 now.setDate(now.getDate() + 1);
             }
             return days[date.getDay()];
-        }
+        };
+
+        var getUserFriendlyTime = function (start, end) {
+            if (start.getHours() > 12 && end.getHours() > 12) {
+                return (start.getHours() - 12) + ":" + (start.getMinutes() / 100).toFixed(2).toString().substr(2) + " - "
+                    + (end.getHours() - 12) + ":" + (end.getMinutes() / 100).toFixed(2).toString().substr(2) + " P.M.";
+            } else if (start.getHours() <= 12 && end.getHours() > 12) {
+                return start.getHours() + ":" + (start.getMinutes() / 100).toFixed(2).toString().substr(2) + " A.M. - "
+                    + (end.getHours() - 12) + ":" + (end.getMinutes() / 100).toFixed(2).toString().substr(2) + " P.M.";
+            } else {
+                return start.getHours() + ":" + (start.getMinutes() / 100).toFixed(2).toString().substr(2) + " - "
+                    + end.getHours() + ":" + (end.getMinutes() / 100).toFixed(2).toString().substr(2) + " A.M.";
+            }
+
+        };
 
         var allEvents = [];
         $.get("server/bhajan_signup/api.php", function (events) {
@@ -26,6 +40,7 @@
             for (var i = 0, len = events.length; i < len; ++i) {
                 var event = events[i];
                 event.start = new Date(event.start);
+                event.end = new Date(event.end);
                 if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
                     allEvents.push(event);
                 }
@@ -34,7 +49,7 @@
                 return e1.start.getTime() - e2.start.getTime();
             });
 
-            for (var i = 0; i < 7; ++i) {
+            for (var i = 0; i < 9; ++i) {
                 if (allEvents.length > i) {
                     var event = allEvents[i];
                     var $event = $("#event" + i);
@@ -51,7 +66,10 @@
                     $event.find(".summary").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
                     $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
                     $event.find(".address_link").attr("target", "_blank");
+                    $event.find(".time").text(getUserFriendlyTime (event.start, event.end));
                     $event.show();
+                } else {
+                    break;
                 }
             }
         }, "json");
