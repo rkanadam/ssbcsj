@@ -35,14 +35,21 @@
         };
 
         var allEvents = [];
+        var today = new Date();
+        today.setHours(0);
+        today.setMinutes(0);
+        today.setSeconds(0);
+        today.setMilliseconds(0);
         $.get("server/bhajan_signup/api.php", function (events) {
             events = events || [];
             for (var i = 0, len = events.length; i < len; ++i) {
                 var event = events[i];
                 event.start = new Date(event.start);
                 event.end = new Date(event.end);
-                if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
-                    allEvents.push(event);
+                if (event.start.getTime() >= today.getTime()) {
+                    if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
+                        allEvents.push(event);
+                    }
                 }
             }
             allEvents.sort(function (e1, e2) {
@@ -66,7 +73,7 @@
                     $event.find(".summary").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
                     $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
                     $event.find(".address_link").attr("target", "_blank");
-                    $event.find(".time").text(getUserFriendlyTime (event.start, event.end));
+                    $event.find(".time").text(getUserFriendlyTime(event.start, event.end));
                     $event.show();
                 } else {
                     break;
