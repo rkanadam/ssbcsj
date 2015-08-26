@@ -34,7 +34,7 @@
 
         };
 
-        var allEvents = [];
+        var currentAndFutureEvents = [], pastEvents = [];
         var today = new Date();
         today.setHours(0);
         today.setMinutes(0);
@@ -46,19 +46,26 @@
                 var event = events[i];
                 event.start = new Date(event.start);
                 event.end = new Date(event.end);
-                if (event.start.getTime() >= today.getTime()) {
-                    if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
-                        allEvents.push(event);
+                if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
+                    if (event.start.getTime() >= today.getTime()) {
+                        currentAndFutureEvents.push(event);
+                    } else {
+                        pastEvents.push(event);
                     }
                 }
             }
-            allEvents.sort(function (e1, e2) {
+            currentAndFutureEvents.sort(function (e1, e2) {
                 return e1.start.getTime() - e2.start.getTime();
             });
 
+            //Sort past events in descending order
+            pastEvents.sort(function (e1, e2) {
+                return e2.start.getTime() - e1.start.getTime();
+            });
+
             for (var i = 0; i < 9; ++i) {
-                if (allEvents.length > i) {
-                    var event = allEvents[i];
+                if (currentAndFutureEvents.length > i) {
+                    var event = currentAndFutureEvents[i];
                     var $event = $("#event" + i);
                     if (!$event.length) {
                         $event = $("<div />");
@@ -79,6 +86,33 @@
                     break;
                 }
             }
+
+            $.get("server/blogger.php", function (blogs) {
+                var first = true;
+                for (var i = 0, len = Math.min(9, pastEvents.length); i < len; ++i) {
+                    var event = pastEvents[i];
+                    for (var j = 0, jlen = blogs.length; j < jlen; ++j) {
+                        var pub = new Date(blogs[j].published);
+                        if (pub.getDate() === event.start.getDate() && pub.getMonth() === event.start.getMonth() && pub.getYear() === event.start.getYear()) {
+                            var $div = $("<div />");
+                            $div.html(blogs[j].content);
+                            var src = $div.find("img").attr("src");
+                            $div.remove();
+                            $div = $('<div class="item"><h6 style="text-align: center"></h6><a href = "#" target = "blank"><img src="" alt="" style="height:218px"></a><br/></div>');
+                            $div.find("h6").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
+                            $div.find("img").attr("src", src);
+                            $div.find("a").attr("href", src);
+                            if (first) {
+                                $("#carousel-inner div").first().removeClass("active");
+                                $div.addClass("active");
+                                first = false;
+                            }
+                            $div.appendTo("#carousel-inner");
+                            break;
+                        }
+                    }
+                }
+            }, "json");
         }, "json");
     });
 })(jQuery);

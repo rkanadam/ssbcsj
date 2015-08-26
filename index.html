@@ -38,7 +38,33 @@
 <body>
 <div class="content">
     <a href="index.html">
-        <div class="jumbotron" id="logo"></div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" id = "carousel-inner">
+                <div class="item active">
+                    <h6 style="text-align: center">Swami's 90th Birthday</h6>
+                    <img src="styles/images/scaled_logo.png" alt="Swami's 90th Birthday Logo" style="height:218px">
+                    <br/>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </a>
 
     <div class="container-fluid content">
@@ -62,7 +88,7 @@
                                                             src="styles/images/map_icon.jpg"/></a>
                                                 </div>
                                                 <div class="col-xs-9">
-                                                    <div class = "summary"></div>
+                                                    <div class="summary"></div>
                                                     <a href="#" class="address_link"><span class="address">167 Acalanes Dr APT 1 Sunnyvale CA 94086</span></a>
 
                                                     <p>
@@ -84,7 +110,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-9" style="vertical-align: middle">
-                                                    <h4><span class="day">Today</span>, <span class="time">&nbsp;</span></h4>
+                                                    <h4><span class="day">Today</span>, <span class="time">&nbsp;</span>
+                                                    </h4>
                                                 </div>
                                             </div>
                                         </div>
