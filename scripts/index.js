@@ -35,6 +35,7 @@
         };
 
         var currentAndFutureEvents = [], pastEvents = [];
+        var now = new Date ();
         var today = new Date();
         today.setHours(0);
         today.setMinutes(0);
@@ -48,6 +49,9 @@
                 event.end = new Date(event.end);
                 if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary)) {
                     if (event.start.getTime() >= today.getTime()) {
+                        if (event.end.getTime() < now.getTime()) {
+                            pastEvents.push(event);
+                        }
                         currentAndFutureEvents.push(event);
                     } else {
                         pastEvents.push(event);
@@ -99,7 +103,7 @@
                             var src = $div.find("img").attr("src");
                             $div.remove();
                             $div = $('<div class="item"><h6 style="text-align: center"></h6><a href = "#" target = "blank"><img src="" alt="" style="height:218px"></a><br/></div>');
-                            $div.find("h6").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
+                            $div.find("h6").text(months[event.start.getMonth()] + "/" + event.start.getDate () + " - " + (/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - ")));
                             $div.find("img").attr("src", src);
                             $div.find("a").attr("href", src);
                             if (first) {

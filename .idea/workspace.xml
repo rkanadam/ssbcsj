@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/blogger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/index.css" afterPath="$PROJECT_DIR$/styles/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -128,11 +125,11 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5434381" vertical-offset="1206" max-vertical-offset="1845">
-              <caret line="100" column="158" selection-start-line="100" selection-start-column="158" selection-end-line="100" selection-end-column="158" />
+            <state vertical-scroll-proportion="0.88724583" vertical-offset="1095" max-vertical-offset="1905">
+              <caret line="105" column="237" selection-start-line="105" selection-start-column="237" selection-end-line="105" selection-end-column="237" />
               <folding>
-                <marker date="1440623990000" expanded="true" signature="5283:5301" placeholder="..." />
-                <marker date="1440623990000" expanded="true" signature="5365:5377" placeholder="..." />
+                <marker date="1440657099000" expanded="true" signature="5459:5477" placeholder="..." />
+                <marker date="1440657099000" expanded="true" signature="5541:5553" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -462,7 +459,8 @@
     <MESSAGE value="Publishing locations to the home page" />
     <MESSAGE value="Updating bhajan signup" />
     <MESSAGE value="Fixing bhajan timings on the site" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing bhajan timings on the site" />
+    <MESSAGE value="Adding support for photos to be displayed on the website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding support for photos to be displayed on the website" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -875,11 +873,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5434381" vertical-offset="1206" max-vertical-offset="1845">
-          <caret line="100" column="158" selection-start-line="100" selection-start-column="158" selection-end-line="100" selection-end-column="158" />
+        <state vertical-scroll-proportion="0.88724583" vertical-offset="1095" max-vertical-offset="1905">
+          <caret line="105" column="237" selection-start-line="105" selection-start-column="237" selection-end-line="105" selection-end-column="237" />
           <folding>
-            <marker date="1440623990000" expanded="true" signature="5283:5301" placeholder="..." />
-            <marker date="1440623990000" expanded="true" signature="5365:5377" placeholder="..." />
+            <marker date="1440657099000" expanded="true" signature="5459:5477" placeholder="..." />
+            <marker date="1440657099000" expanded="true" signature="5541:5553" placeholder="..." />
           </folding>
         </state>
       </provider>
