@@ -32,7 +32,7 @@ $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 if ($method === "get") {
     $service = new Google_Service_Blogger($client);
-    $posts = $service->posts->listPosts("6307492909634712244", array("maxResults" => 10, "fetchBodies" => true))->getItems();
+    $posts = $service->posts->listPosts("6307492909634712244", array("maxResults" => 90, "fetchBodies" => true))->getItems();
     echo json_encode($posts);
 }
 ?>

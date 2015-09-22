@@ -10,6 +10,9 @@
                 var event = events[i];
                 var start = new Date(event.start);
                 var day = start.getDay();
+                if (!(start.getHours() === 17 || start.getHours() === 20)) {
+                    continue;
+                }
                 if (daysToEvents[day]) {
                     daysToEvents[day].push(event);
                     daysToDates[day].push(new Date(event.start).getTime());

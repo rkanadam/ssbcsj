@@ -93,7 +93,7 @@
 
             $.get("server/blogger.php", function (blogs) {
                 var first = true;
-                for (var i = 0, len = Math.min(9, pastEvents.length); i < len; ++i) {
+                for (var i = 0, len = Math.min(90, pastEvents.length); i < len; ++i) {
                     var event = pastEvents[i];
                     for (var j = 0, jlen = blogs.length; j < jlen; ++j) {
                         var pub = new Date(blogs[j].published);
