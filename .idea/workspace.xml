@@ -69,8 +69,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65952647" vertical-offset="1560" max-vertical-offset="2550">
-              <caret line="143" column="31" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.4735062" vertical-offset="1560" max-vertical-offset="2550">
+              <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -444,7 +444,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Searching mom and childs name" />
     <MESSAGE value="Adding additional validation error messages and adding allergies" />
     <MESSAGE value="Adding warning message for Sai Nursery" />
     <MESSAGE value="Removing debug info" />
@@ -469,7 +468,8 @@
     <MESSAGE value="Adding access braille signup" />
     <MESSAGE value="Adding invite" />
     <MESSAGE value="Fixing image support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing image support" />
+    <MESSAGE value="Removing signup for home bhajans" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing signup for home bhajans" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -846,8 +846,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65952647" vertical-offset="1560" max-vertical-offset="2550">
-          <caret line="143" column="31" selection-start-line="143" selection-start-column="31" selection-end-line="143" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.4735062" vertical-offset="1560" max-vertical-offset="2550">
+          <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
           <folding />
         </state>
       </provider>
