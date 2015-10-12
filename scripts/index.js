@@ -86,6 +86,9 @@
                     $event.find(".address_link").attr("target", "_blank");
                     $event.find(".time").text(getUserFriendlyTime(event.start, event.end));
                     $event.show();
+                    if (i !== 0) {
+                        $event.find(".parking_link").hide ();
+                    }
                 } else {
                     break;
                 }
