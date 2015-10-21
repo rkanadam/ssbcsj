@@ -75,7 +75,7 @@ if ($method === "get") {
     $row = $_REQUEST["when"];
     $url = $feed->getPostUrl();
     if (!empty($row)) {
-        $properties = ["email", "name", "phone", "center", "comments"];
+        $properties = ["email", "name", "phone", "center"];
         foreach ($properties as $property) {
             if (empty ($_REQUEST[$property])) {
                 echo json_encode(false);
