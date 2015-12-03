@@ -66,7 +66,7 @@
             pastEvents.sort(function (e1, e2) {
                 return e2.start.getTime() - e1.start.getTime();
             });
-
+/*
             for (var i = 0; i < 9; ++i) {
                 if (currentAndFutureEvents.length > i) {
                     var event = currentAndFutureEvents[i];
@@ -93,7 +93,7 @@
                     break;
                 }
             }
-
+*/
             $.get("server/blogger.php", function (blogs) {
                 var first = true;
                 for (var i = 0, len = Math.min(90, pastEvents.length); i < len; ++i) {
