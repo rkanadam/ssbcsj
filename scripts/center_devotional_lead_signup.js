@@ -40,7 +40,7 @@
                             availableSlots[row.description] = [];
                             availableSlots[row.description].description = row.description;
                         }
-                        availableSlots[row.description].push(row.row);
+                        availableSlots[row.description].push(row["#"]);
                     }
                 });
 
@@ -75,6 +75,7 @@
                 d.setTime(sheet.sheet.timestamp);
                 return ["<option value = \"", index, "\">", d.toDateString(), "</option>"];
             });
+            dates.splice(0, 0, ["<option value = \"\">Select a date</option>"]);
 
             $("#when select").html(dates.join(""));
             $("#when select").selectpicker();
@@ -83,17 +84,27 @@
                 if (!isNaN(index)) {
                     var sheet = sheets[index];
 
-                    var slotsHtml = $.map(sheet.availableSlots, function (slot) {
+                    var slots = $.map(sheet.availableSlots, function (slot) {
                         return ["<option value = \"", slot[0], "\">", slot.description, " (", slot.length, " Remaining)</option>"];
-                    }).join('');
-                    $("#slot select").html(slotsHtml);
+                    });
+                    slots.splice(0, 0, ["<option value = \"\">Select an item</option>"]);
+
+                    $("#slot select").html(slots.join(""));
                     $("#slot select").selectpicker();
                     $("#slot select").selectpicker('refresh');
-                    $("#slot select").trigger ('change');
+                    $("#slot select").trigger('change');
+                    $("#slot").show();
+                } else {
+                    $("#slot, #contact").hide();
                 }
             }).trigger("change");
+            $("#when").show();
 
-
+            $("#slot select").change(function () {
+                if ($(this).val()) {
+                    $("#contact").show();
+                }
+            });
         });
     });
 })(jQuery);
