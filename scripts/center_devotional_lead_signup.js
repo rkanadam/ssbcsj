@@ -10,22 +10,48 @@
         });
 
         $.getJSON("server/center_devotional_lead_signup.php").then(function (bhajans) {
-            var firstLines = [];
-            for (var i = 1, len = bhajans.length; i < len; ++i) {
-                var firstLine = bhajans[i][0].split("\n")[0]
-                firstLines.push($.trim(firstLine).toLowerCase());
-            }
-            firstLines.sort();
-            var c = completely($("#bhajanPicker").get(0));
-            c.options = firstLines;
-            var oc = c.onChange;
-            c.onChange = function (text) {
-                if (text.toLowerCase() != text) {
-                    c.hint.value = text.toLowerCase();
-                    c.input.value = text.toLowerCase();
-                }
-                oc();
-            };
+
+            bhajans.sort(function (b1, b2) {
+                return b1[0].toLocaleLowerCase() - b2[0].toLocaleLowerCase();
+            });
+
+            bhajans = $.map(bhajans, function (b) {
+                var bhajan = {};
+                bhajan.firstLine = $.trim(b[0].split("\n")[0]);
+                bhajan.lyrics = b[0];
+                bhajan.meaning = b[1];
+                return bhajan;
+            });
+
+            var bhajanHound = new Bloodhound({
+                datumTokenizer: Bloodhound.tokenizers.obj.whitespace('firstLine'),
+                queryTokenizer: Bloodhound.tokenizers.whitespace,
+                local: bhajans
+            });
+
+
+            bhajanHound.initialize();
+            $('#bhajanPicker').typeahead({
+                    hint: true,
+                    highlight: true,
+                    minLength: 1,
+                },
+                {
+                    name: 'bhajanHound',
+                    displayKey: 'firstLine',
+                    limit: 15,
+                    source: bhajanHound
+                }).on('typeahead:selected', function (e, bhajan) {
+                    $("#lyrics")
+                        .find("textarea")
+                        .val(bhajan.lyrics)
+                        .end()
+                        .show();
+                    $("#scale").show ();
+                });
+            $("#bhajanPicker").parent(".twitter-typeahead").css("display", "block");
+
+
             return $.getJSON("server/center_devotional_lead_signup.php?action=list");
         }).then(function (sheets) {
             sheets = $.map(sheets, function (sheet) {
@@ -101,7 +127,12 @@
             $("#when").show();
 
             $("#slot select").change(function () {
-                if ($(this).val()) {
+                var val = $(this).val();
+                if (val) {
+                    var description = $(this).find("[value=" + val + "]").text();
+                    if (/bhajan/i.exec(description) || /song/i.exec(description)) {
+                        $("#bhajan").show();
+                    }
                     $("#contact").show();
                 }
             });
