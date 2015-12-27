@@ -49,8 +49,6 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
         <div class="container content" style="margin-top: -25px">
             <div class="row">
                 <div class="col-sm-6 text-left">
-                    <h3>Devotional Song</h3>
-                    <h4>(Bhajan)</h4>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">

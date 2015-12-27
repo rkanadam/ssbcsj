@@ -34,7 +34,7 @@
                 $('#bhajanPicker').typeahead({
                         hint: true,
                         highlight: true,
-                        minLength: 1,
+                        minLength: 1
                     },
                     {
                         name: 'bhajanHound',
@@ -42,12 +42,10 @@
                         limit: 15,
                         source: bhajanHound
                     }).on('typeahead:selected', function (e, bhajan) {
-                        $("#lyrics")
-                            .find("textarea")
+                        $("#lyrics textarea")
                             .val(bhajan.lyrics)
-                            .end()
-                            .show();
-                        $("#scale").show();
+                        $("#meaning textarea")
+                            .val(bhajan.meaning);
                     });
                 $("#bhajanPicker").parent(".twitter-typeahead").css("display", "block");
             })
