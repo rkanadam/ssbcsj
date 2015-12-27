@@ -48,8 +48,6 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
     <div class="content">
         <div class="container content" style="margin-top: -25px">
             <div class="row">
-                <div class="col-sm-6 text-left">
-                </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <div class="input-group top20">
@@ -62,7 +60,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             </div>
             <div class="row" id="lyrics">
                 <div class="col-sm-6 text-left">
-                    <h3>Lyrics</h3>
+                    <h5>Lyrics</h5>
                 </div>
                 <div class="col-sm-6 text-left">
                     <textarea class="form-control" name="lyrics"></textarea>
@@ -70,7 +68,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             </div>
             <div class="row" id="meaning">
                 <div class="col-sm-6 text-left">
-                    <h3>Meaning</h3>
+                    <h5>Meaning</h5>
                 </div>
                 <div class="col-sm-6 text-left">
                     <textarea class="form-control" name="meaning"></textarea>
@@ -78,7 +76,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             </div>
             <div class="row">
                 <div class="col-sm-6 text-left">
-                    <h3>Scale</h3>
+                    <h5>Scale</h5>
                 </div>
                 <div class="col-sm-6 top20">
                     <input type="text" name="scale" class="form-control">
