@@ -1,14 +1,5 @@
 <?php
-// respond to preflights
-if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-    // return only the headers and not the content
-    // only allow CORS if we're doing a GET - i.e. no saving for now.
-    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']) && $_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD'] == 'GET') {
-        header('Access-Control-Allow-Origin: *');
-        header('Access-Control-Allow-Headers: X-Requested-With');
-    }
-    exit;
-}
+ob_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -117,3 +108,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 </div>
 </body>
 </html>
+<?php
+$content = ob_get_contents();
+ob_end_clean();
+$callback = $_REQUEST["callback"];
+echo "$callback(" .  json_encode($content).")";
+?>
