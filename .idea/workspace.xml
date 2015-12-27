@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/slide_maker.js" afterPath="$PROJECT_DIR$/scripts/slide_maker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide_maker.html" afterPath="$PROJECT_DIR$/slide_maker.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
@@ -74,7 +74,7 @@
       <file leaf-file-name="slide_maker.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide_maker.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9211909" vertical-offset="29" max-vertical-offset="1710">
+            <state vertical-scroll-proportion="0.8949212" vertical-offset="44" max-vertical-offset="1695">
               <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
         <option value="$PROJECT_DIR$/slide_maker_test.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker_init.js" />
-        <option value="$PROJECT_DIR$/slide_maker.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
+        <option value="$PROJECT_DIR$/slide_maker.html" />
       </list>
     </option>
   </component>
@@ -860,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slide_maker.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9211909" vertical-offset="29" max-vertical-offset="1710">
+        <state vertical-scroll-proportion="0.8949212" vertical-offset="44" max-vertical-offset="1695">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
