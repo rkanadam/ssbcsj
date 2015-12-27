@@ -10,6 +10,8 @@
         });
 
         window.onApiLoad = function () {
+            debugger;
+            console.log ("I was called!");
 
             google.script.run
                 .withSuccessHandler(function (bhajans) {
