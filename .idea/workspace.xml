@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/slide_maker.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide_maker.php" afterPath="$PROJECT_DIR$/slide_maker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -74,15 +75,25 @@
       <file leaf-file-name="slide_maker.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide_maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8949212" vertical-offset="659" max-vertical-offset="1860">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.24635036" vertical-offset="255" max-vertical-offset="1860">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
               <folding>
-                <element signature="e#2115#2140#0#HTML" expanded="true" />
-                <element signature="e#4130#4168#0#HTML" expanded="true" />
-                <element signature="e#4179#4288#0#HTML" expanded="true" />
-                <element signature="e#4360#4460#0#HTML" expanded="true" />
-                <element signature="e#4514#4533#0#HTML" expanded="true" />
+                <element signature="e#2097#2122#0#HTML" expanded="true" />
+                <element signature="e#4112#4150#0#HTML" expanded="true" />
+                <element signature="e#4161#4270#0#HTML" expanded="true" />
+                <element signature="e#4342#4442#0#HTML" expanded="true" />
+                <element signature="e#4496#4515#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="slide_maker.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/slide_maker.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1155">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,6 +190,7 @@
         <option value="$PROJECT_DIR$/slide_maker_test.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker_init.js" />
         <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
+        <option value="$PROJECT_DIR$/styles/slide_maker.css" />
         <option value="$PROJECT_DIR$/slide_maker.php" />
       </list>
     </option>
@@ -239,6 +251,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssbcsj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssbcsj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -277,11 +303,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/files" />
-      <recent name="$PROJECT_DIR$/styles/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files" />
@@ -470,13 +496,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ListEntry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.815486" vertical-offset="98" max-vertical-offset="1470">
-          <caret line="94" column="72" selection-start-line="94" selection-start-column="53" selection-end-line="94" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ListFeed.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34343433" vertical-offset="1086" max-vertical-offset="1680">
@@ -863,16 +882,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/slide_maker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1155">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/slide_maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8949212" vertical-offset="659" max-vertical-offset="1860">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.24635036" vertical-offset="255" max-vertical-offset="1860">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
           <folding>
-            <element signature="e#2115#2140#0#HTML" expanded="true" />
-            <element signature="e#4130#4168#0#HTML" expanded="true" />
-            <element signature="e#4179#4288#0#HTML" expanded="true" />
-            <element signature="e#4360#4460#0#HTML" expanded="true" />
-            <element signature="e#4514#4533#0#HTML" expanded="true" />
+            <element signature="e#2097#2122#0#HTML" expanded="true" />
+            <element signature="e#4112#4150#0#HTML" expanded="true" />
+            <element signature="e#4161#4270#0#HTML" expanded="true" />
+            <element signature="e#4342#4442#0#HTML" expanded="true" />
+            <element signature="e#4496#4515#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

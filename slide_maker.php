@@ -24,7 +24,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
 
     <link rel="stylesheet" href="<?= $base ?>styles/bootstrap-select.min.css">
 
-    <link rel="stylesheet" href="styles/center_devotional_lead_signup.css">
+    <link rel="stylesheet" href="styles/slide_maker.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
