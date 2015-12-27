@@ -9,7 +9,7 @@
             $("#indicator").hide();
         });
 
-        window.onApiLoad(function () {
+        window.onApiLoad = function () {
 
             google.script.run
                 .withSuccessHandler(function (bhajans) {
@@ -61,6 +61,6 @@
                     sheet = window.parse_bhajans(sheet);
                 }).withUserObject(this)
                 .getCurrentSheetData();
-        });
+        };
     });
 })(jQuery);
