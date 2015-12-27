@@ -58,6 +58,6 @@
             .withSuccessHandler(function (sheet) {
                 sheet = window.parse_bhajans(sheet);
             }).withUserObject(this)
-            .getCurrentSheetData();
+            .getCurrentSheet();
     });
 })(jQuery);
