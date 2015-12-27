@@ -44,12 +44,14 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
     <script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
 </head>
 <body id="bhajan_signup">
+<br/>
 <form id="bhajanSignupForm">
     <div class="content">
         <div class="container content" style="margin-top: -25px">
             <div class="row">
                 <div class="col-sm-6 text-left">
-                    <h3>Devotional Song (Bhajan)</h3>
+                    <h3>Devotional Song</h3>
+                    <h4>(Bhajan)</h4>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
