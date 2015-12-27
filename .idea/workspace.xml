@@ -90,11 +90,9 @@
       <file leaf-file-name="slide_maker.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32072368" vertical-offset="0" max-vertical-offset="608">
-              <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-              <folding>
-                <element signature="e#295#2490#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.80263156" vertical-offset="517" max-vertical-offset="1125">
+              <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -873,11 +871,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32072368" vertical-offset="0" max-vertical-offset="608">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
-          <folding>
-            <element signature="e#295#2490#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.80263156" vertical-offset="517" max-vertical-offset="1125">
+          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

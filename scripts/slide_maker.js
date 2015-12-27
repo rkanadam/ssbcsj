@@ -65,6 +65,6 @@
                 .getCurrentSheetData();
         };
         console.log (window.onApiLoad);
-        console.log ("Well I was loaded");
+        console.log ("Well I was loaded", google);
     });
 })(jQuery);
