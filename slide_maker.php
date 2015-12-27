@@ -1,9 +1,17 @@
 <?php
 ob_start();
+$callback = $_REQUEST["callback"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+        if (!empty($callback)) {
+?>
+            <base src = "https://region7saicenters.org/csj/sai90">
+<?php
+        }
+    ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -111,6 +119,9 @@ ob_start();
 <?php
 $content = ob_get_contents();
 ob_end_clean();
-$callback = $_REQUEST["callback"];
-echo "$callback(" .  json_encode($content).")";
+if (!empty($callback)) {
+    echo "$callback(" .  json_encode($content).")";
+} else {
+    echo $content;
+}
 ?>
