@@ -1,17 +1,12 @@
 <?php
 ob_start();
 $callback = $_REQUEST["callback"];
+$base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php
-        if (!empty($callback)) {
-?>
-            <base src = "https://region7saicenters.org/csj/sai90">
-<?php
-        }
-    ?>
+    <base href = "<?= $base ?>">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +22,7 @@ $callback = $_REQUEST["callback"];
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="styles/bootstrap-select.min.css">
+    <link rel="stylesheet" href="<?= $base ?>styles/bootstrap-select.min.css">
 
     <link rel="stylesheet" href="styles/center_devotional_lead_signup.css">
 
