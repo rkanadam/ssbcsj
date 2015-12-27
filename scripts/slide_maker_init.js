@@ -6,7 +6,7 @@
             url: "slide_maker.php",
             jsonp: "callback",
             dataType: "jsonp",
-            success: function (response) {
+            success: function (html) {
                 document.open("text/html");
                 document.write(html);
                 document.close();
