@@ -74,14 +74,14 @@
       <file leaf-file-name="slide_maker.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide_maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45255473" vertical-offset="1162" max-vertical-offset="1800">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.20620438" vertical-offset="1162" max-vertical-offset="1830">
+              <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
               <folding>
                 <element signature="e#2097#2122#0#HTML" expanded="true" />
-                <element signature="e#4011#4049#0#HTML" expanded="true" />
-                <element signature="e#4060#4169#0#HTML" expanded="true" />
-                <element signature="e#4241#4341#0#HTML" expanded="true" />
-                <element signature="e#4395#4414#0#HTML" expanded="true" />
+                <element signature="e#4060#4098#0#HTML" expanded="true" />
+                <element signature="e#4109#4218#0#HTML" expanded="true" />
+                <element signature="e#4290#4390#0#HTML" expanded="true" />
+                <element signature="e#4444#4463#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -891,14 +891,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slide_maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45255473" vertical-offset="1162" max-vertical-offset="1800">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.20620438" vertical-offset="1162" max-vertical-offset="1830">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding>
             <element signature="e#2097#2122#0#HTML" expanded="true" />
-            <element signature="e#4011#4049#0#HTML" expanded="true" />
-            <element signature="e#4060#4169#0#HTML" expanded="true" />
-            <element signature="e#4241#4341#0#HTML" expanded="true" />
-            <element signature="e#4395#4414#0#HTML" expanded="true" />
+            <element signature="e#4060#4098#0#HTML" expanded="true" />
+            <element signature="e#4109#4218#0#HTML" expanded="true" />
+            <element signature="e#4290#4390#0#HTML" expanded="true" />
+            <element signature="e#4444#4463#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
