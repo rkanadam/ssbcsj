@@ -9,7 +9,7 @@
             $("#indicator").hide();
         });
 
-        google.script.run
+        window.parent.google.script.run
             .withSuccessHandler(function (bhajans) {
                 bhajans.sort(function (b1, b2) {
                     return b1[0].toLocaleLowerCase() - b2[0].toLocaleLowerCase();
