@@ -41,7 +41,6 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
     <script src="scripts/bootstrap-select.min.js"></script>
     <script src="scripts/bhajan_parser.js"></script>
     <script src="scripts/slide_maker.js"></script>
-    <script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
 </head>
 <body id="bhajan_signup">
 <br/>
