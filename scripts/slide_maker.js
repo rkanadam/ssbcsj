@@ -64,5 +64,7 @@
                 }).withUserObject(this)
                 .getCurrentSheetData();
         };
+        console.log (window.onApiLoad);
+        console.log ("Well I was loaded");
     });
 })(jQuery);

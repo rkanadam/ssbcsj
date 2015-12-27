@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide_maker.php" afterPath="$PROJECT_DIR$/slide_maker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/slide_maker.js" afterPath="$PROJECT_DIR$/scripts/slide_maker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide_maker.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="slide_maker.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide_maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28896672" vertical-offset="630" max-vertical-offset="1935">
+            <state vertical-scroll-proportion="-23.75" vertical-offset="225" max-vertical-offset="1935">
               <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               <folding>
                 <element signature="e#2194#2219#0#HTML" expanded="true" />
@@ -87,12 +87,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide_maker.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="slide_maker.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.32072368" vertical-offset="0" max-vertical-offset="608">
+              <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+              <folding>
+                <element signature="e#295#2490#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,11 +177,11 @@
         <option value="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" />
         <option value="$PROJECT_DIR$/center_devotional_lead_signup.html" />
         <option value="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
-        <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
         <option value="$PROJECT_DIR$/slide_maker.html" />
         <option value="$PROJECT_DIR$/slide_maker_test.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker_init.js" />
         <option value="$PROJECT_DIR$/slide_maker.php" />
+        <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
       </list>
     </option>
   </component>
@@ -847,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/slide_maker_init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -865,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slide_maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28896672" vertical-offset="630" max-vertical-offset="1935">
+        <state vertical-scroll-proportion="-23.75" vertical-offset="225" max-vertical-offset="1935">
           <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding>
             <element signature="e#2194#2219#0#HTML" expanded="true" />
@@ -873,6 +867,16 @@
             <element signature="e#4413#4522#0#HTML" expanded="true" />
             <element signature="e#4594#4694#0#HTML" expanded="true" />
             <element signature="e#4748#4767#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32072368" vertical-offset="0" max-vertical-offset="608">
+          <caret line="67" column="42" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+          <folding>
+            <element signature="e#295#2490#0" expanded="false" />
           </folding>
         </state>
       </provider>
