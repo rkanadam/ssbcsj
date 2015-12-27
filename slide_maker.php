@@ -78,7 +78,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                 <div class="col-sm-6 text-left">
                     <h5>Scale</h5>
                 </div>
-                <div class="col-sm-6 top20">
+                <div class="col-sm-6">
                     <input type="text" name="scale" class="form-control">
                 </div>
             </div>
