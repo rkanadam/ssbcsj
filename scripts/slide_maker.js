@@ -56,7 +56,9 @@
 
         google.script.run
             .withSuccessHandler(function (sheet) {
+                console.log (sheet);
                 sheet = window.parse_bhajans(sheet);
+                console.log ("After", sheet);
             }).withUserObject(this)
             .getCurrentSheet();
     });
