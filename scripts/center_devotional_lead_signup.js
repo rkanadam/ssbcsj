@@ -34,7 +34,7 @@
             $('#bhajanPicker').typeahead({
                     hint: true,
                     highlight: true,
-                    minLength: 1,
+                    minLength: 1
                 },
                 {
                     name: 'bhajanHound',
@@ -47,7 +47,7 @@
                         .val(bhajan.lyrics)
                         .end()
                         .show();
-                    $("#scale").show ();
+                    $("#scale").show();
                 });
             $("#bhajanPicker").parent(".twitter-typeahead").css("display", "block");
 
@@ -121,7 +121,7 @@
                     $("#slot select").trigger('change');
                     $("#slot").show();
                 } else {
-                    $("#slot, #contact").hide();
+                    $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
                 }
             }).trigger("change");
             $("#when").show();
@@ -133,9 +133,25 @@
                     if (/bhajan/i.exec(description) || /song/i.exec(description)) {
                         $("#bhajan").show();
                     }
-                    $("#contact").show();
+                    $("#signup, #contact, #comments").show();
+                } else {
+                    $("#signup, #contact, #scale, #bhajan, #comments").hide();
                 }
             });
+
+            $("#signupForm").submit(function (e) {
+                var $this = $(this);
+                e.preventDefault();
+                var object = $this.serializeArray();
+                var sheetIndexObject = _.where(object, {"name": "when"})[0];
+                sheetIndexObject.value = sheets[sheetIndexObject.value].title;
+
+                $.post("server/center_devotional_lead_signup.php", $.param(object), function (response) {
+                    debugger;
+                });
+            });
+
         });
+
     });
 })(jQuery);

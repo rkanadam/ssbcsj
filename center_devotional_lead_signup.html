@@ -35,12 +35,13 @@
     <![endif]-->
     <script src="scripts/typeahead.bundle.min.js"></script>
     <script src="scripts/bootstrap-select.min.js"></script>
+    <script src="scripts/validator.min.js"></script>
     <script src="scripts/center_devotional_lead_signup.js"></script>
     <script src="scripts/bhajan_parser.js"></script>
 </head>
 <body>
 <body id="bhajan_signup">
-<form id="bhajanSignupForm">
+<form id="signupForm" data-toggle="validator">
     <div class="content">
         <div class="container content" style="margin-top: -25px">
             <div class="row">
@@ -108,7 +109,7 @@
                 <div class="row" id="lyrics" style="display: none">
                     <div class="col-sm-6 text-left">
                         <h3>4. Devotional Song Lyrics</h3>
-                        <h4>(You can verify them for accuracy)</h4>
+                        <h4>(Optional. You can verify them for accuracy)</h4>
                     </div>
                     <div class="col-sm-6 text-left">
                         <textarea class="form-control" name="lyrics"></textarea>
@@ -119,6 +120,7 @@
                 <div class="row">
                     <div class="col-sm-6 text-left">
                         <h3>5. Do you know the scale in which you will sing ?</h3>
+                        <h4>(Optional)</h4>
                     </div>
                     <div class="col-sm-6 top20">
                         <input type="text" name="scale" class="form-control">
@@ -165,11 +167,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row" id="signup" style="display:none">>
+            <div class="row" id="signup" style="display:none">
                 <div class="col-sm-2">&nbsp;</div>
                 <div class="col-sm-8">
                     <p>
-
                     <div class="form-group text-center">
                         <input type="submit" class="btn btn-lg btn-primary" value="Signup!">
                     </div>

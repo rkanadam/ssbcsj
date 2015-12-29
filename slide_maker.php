@@ -49,9 +49,9 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
         <div class="content">
             <div class="container content">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 text-right">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                 Bhajan Picker <span class="caret"></span>
                             </button>

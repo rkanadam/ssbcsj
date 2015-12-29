@@ -67,16 +67,6 @@ if ($method === "get") {
         echo json_encode($sheets);
     }
 } else if ($method === "post") {
-    $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - 90 Day Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests")->getListFeed();
-
-    $value = array();
-    $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
-    $value["timestamp"] = date("n/j/Y H:i:s");
-    foreach ($propertiesToCopy as $property) {
-        $value[$property] = trim($_REQUEST[$property]);
-    }
-    $registrationFeed->insert($value);
     echo json_encode(true);
 }
 
