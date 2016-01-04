@@ -66,7 +66,7 @@
                             availableSlots[row.description] = [];
                             availableSlots[row.description].description = row.description;
                         }
-                        availableSlots[row.description].push(row["#"]);
+                        availableSlots[row.description].push(row.row);
                     }
                 });
 
@@ -81,10 +81,6 @@
                     sheet.isSlotAvailable = true;
                     sheet.availableSlots = availableSlots;
                 }
-                var availableSlotDescriptions = _.keys(availableSlots);
-                availableSlotDescriptions.sort(function (a, b) {
-                    return a.toLowerCase().localeCompare(b.toLowerCase());
-                });
             });
 
             sheets = $.map(sheets, function (sheet) {
@@ -120,6 +116,7 @@
                     $("#slot select").selectpicker('refresh');
                     $("#slot select").trigger('change');
                     $("#slot").show();
+                    $("#when #description").text (sheet.description);
                 } else {
                     $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
                 }
@@ -141,12 +138,22 @@
 
             $("#signupForm").submit(function (e) {
                 var $this = $(this);
-                e.preventDefault();
-                var object = $this.serializeArray();
-                var sheetIndexObject = _.where(object, {"name": "when"})[0];
-                sheetIndexObject.value = sheets[sheetIndexObject.value].title;
 
-                $.post("server/center_devotional_lead_signup.php", $.param(object), function (response) {
+                e.preventDefault();
+                var sheet = sheets[parseInt($("#when select").val(), 10)]
+
+                var postParams = [];
+                postParams.push({name: "sheetTitle", value: sheet.title});
+                postParams.push({name: "row", value: $("#slot select").val()});
+                postParams.push({name: "name", value: $("input[name='name']").val()});
+                postParams.push({name: "devotionalsong", value: $("input[name='bhajan']").val()});
+                postParams.push({name: "scale", value: $("input[name='scale']").val()});
+                postParams.push({name: "lyrics", value: $("textarea[name='lyrics']").val()});
+                postParams.push({name: "email", value: $("input[name='email']").val()});
+                postParams.push({name: "phonenumber", value: $("input[name='phone']").val()});
+                postParams.push({name: "notes", value: $("textarea[name='comments']").val()});
+
+                $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
                     debugger;
                 });
             });

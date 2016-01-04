@@ -67,6 +67,40 @@ if ($method === "get") {
         echo json_encode($sheets);
     }
 } else if ($method === "post") {
+    $sheetTitle = $_REQUEST["sheetTitle"];
+    if (empty($sheetTitle)) {
+        echo json_encode(false);
+        exit (0);
+    }
+
+    $sheet = $spreadsheet->getWorksheets()->getByTitle($sheetTitle);
+    if (!$sheet) {
+        echo json_encode(false);
+        exit (0);
+    }
+
+    $row = $_REQUEST["row"];
+    $row = intval($row, 10);
+    if (empty($row)) {
+        echo json_encode(false);
+        exit (0);
+    }
+    $entries = $registrationFeed->getEntries();
+    if ($row < 0 || $row >= sizeof($entries)) {
+        echo json_encode(false);
+        exit (0);
+    }
+
+    $entry = $entries[$row - 1];
+
+    $values = array ();
+    $propertiesToCopy = array("name", "devotionalsong", "scale", "lyrics", "email", "phonenumber", "notes");
+    $values["timestamp"] = date("n/j/Y H:i:s");
+    foreach ($propertiesToCopy as $property) {
+        $values[$property] = trim($_REQUEST[$property]);
+    }
+
+    $entry->update ($values);
     echo json_encode(true);
 }
 

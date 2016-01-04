@@ -30,6 +30,7 @@
                             value[columnName] = data[column];
                         }
                     });
+                    value.row = row;
                     values.push(value);
                 } else if (data[columns[0]] === "#") {
                     //This must be the header row
@@ -37,12 +38,12 @@
                     _.each(columns, function (column) {
                         var header = data[column];
                         if (header) {
-                            header = header.replace(/\.?([A-Z]+)/g, function (x, y) {
-                                return "_" + y.toLowerCase()
-                            }).replace(/^_/, "")
+                            header = $.trim(header);
+                            header = header.toLowerCase().replace(/\s+/g, "");
                             headers[header] = column;
                         }
                     });
+                    headers.row = row;
                     columnToHeaderName = _.invert(headers);
                     headersFound = true;
                 } else {
