@@ -145,13 +145,15 @@
                 var postParams = [];
                 postParams.push({name: "sheetTitle", value: sheet.title});
                 postParams.push({name: "row", value: $("#slot select").val()});
-                postParams.push({name: "name", value: $("input[name='name']").val()});
-                postParams.push({name: "devotionalsong", value: $("input[name='bhajan']").val()});
-                postParams.push({name: "scale", value: $("input[name='scale']").val()});
-                postParams.push({name: "lyrics", value: $("textarea[name='lyrics']").val()});
-                postParams.push({name: "email", value: $("input[name='email']").val()});
-                postParams.push({name: "phonenumber", value: $("input[name='phone']").val()});
-                postParams.push({name: "notes", value: $("textarea[name='comments']").val()});
+                postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});
+                postParams.push({name: "col" + sheet.headers["devotionalsong"], value: $("input[name='bhajan']").val()});
+                postParams.push({name: "col" + sheet.headers["scale"], value: $("input[name='scale']").val()});
+                postParams.push({name: "col" + sheet.headers["lyrics"], value: $("textarea[name='lyrics']").val()});
+                postParams.push({name: "col" + sheet.headers["email"], value: $("input[name='email']").val()});
+                postParams.push({name: "col" + sheet.headers["phonenumber"], value: $("input[name='phone']").val()});
+                postParams.push({name: "col" + sheet.headers["notes"], value: $("textarea[name='comments']").val()});
+                postParams.push({name: "col" + sheet.headers["timestamp"], value: moment().tz('America/Los_Angeles').format('MMMM Do YYYY, h:mm:ss a')});
+                postParams.push({name: "colCount", value: Math.max.apply (this, _.keys(sheet.columnToHeaderName))});
 
                 $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
                     debugger;

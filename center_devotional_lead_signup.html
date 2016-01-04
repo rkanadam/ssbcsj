@@ -36,6 +36,8 @@
     <script src="scripts/typeahead.bundle.min.js"></script>
     <script src="scripts/bootstrap-select.min.js"></script>
     <script src="scripts/validator.min.js"></script>
+    <script src="scripts/moment-with-locales.min.js"></script>
+    <script src="scripts/moment-timezone-with-data.min.js"></script>
     <script src="scripts/center_devotional_lead_signup.js"></script>
     <script src="scripts/bhajan_parser.js"></script>
 </head>
@@ -70,7 +72,7 @@
                 <div class="row">
                     <div class="col-sm-6 text-left">
                         <h3>1. When do you want to lead?</h3>
-                        <span class = "label label-info" id = "description"></span>
+                        <span class="label label-info" id="description"></span>
                     </div>
                     <div class="col-sm-6 text-left selectContainer top20">
                         <select class="form-control" name="when" required="required">
@@ -101,7 +103,7 @@
                         <div class="form-group">
                             <div class="input-group top20">
                                 <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
-                                <input type="text" id="bhajanPicker" name = "bhajan" class="form-control typeahead"
+                                <input type="text" id="bhajanPicker" name="bhajan" class="form-control typeahead"
                                        placeholder="Type a few words to find a devotional song">
                             </div>
                         </div>
@@ -172,6 +174,7 @@
                 <div class="col-sm-2">&nbsp;</div>
                 <div class="col-sm-8">
                     <p>
+
                     <div class="form-group text-center">
                         <input type="submit" class="btn btn-lg btn-primary" value="Signup!">
                     </div>

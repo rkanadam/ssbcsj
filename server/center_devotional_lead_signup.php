@@ -20,7 +20,7 @@ if ($method === "get") {
         $date = date_parse($date);
         $date = date('m/d/Y', mktime($date_array['hour'], $date_array['minute'], $date_array['second'], $date_array['month'], $date_array['day'], $date_array['year']));
         foreach ($spreadsheet->getWorksheets() as $worksheet) {
-            echo $worksheet->getTitle ();
+            echo $worksheet->getTitle();
             if (stristr($worksheet->getTitle(), $date) !== false) {
                 //Found the sheet for the week, now send its contents back
                 $cellFeed = $worksheet->getCellFeed();
@@ -56,7 +56,7 @@ if ($method === "get") {
                             }
                         }
                     }
-                    $sheet["timestamp"] = $date->getTimestamp () * 1000;
+                    $sheet["timestamp"] = $date->getTimestamp() * 1000;
                     $sheet["data"] = $data;
                     $sheet["rowCount"] = $numRows;
                     $sheet["colCount"] = $numCols;
@@ -80,30 +80,44 @@ if ($method === "get") {
     }
 
     $row = $_REQUEST["row"];
-    $row = intval($row, 10);
     if (empty($row)) {
         echo json_encode(false);
         exit (0);
     }
-    $entries = $registrationFeed->getEntries();
-    if ($row < 0 || $row >= sizeof($entries)) {
+    $row = intval($row, 10);
+    $cellFeed = $sheet->getCellFeed();
+    if ($row <= 0) {
         echo json_encode(false);
         exit (0);
     }
 
-    $entry = $entries[$row - 1];
+    $updateBatch = new \Google\Spreadsheet\Batch\BatchRequest();
+    $insertBatch = new \Google\Spreadsheet\Batch\BatchRequest();
+    $hasAnUpdate = false;
+    $hasAnInsert = true;
 
-    $values = array ();
-    $propertiesToCopy = array("name", "devotionalsong", "scale", "lyrics", "email", "phonenumber", "notes");
-    $values["timestamp"] = date("n/j/Y H:i:s");
-    foreach ($propertiesToCopy as $property) {
-        $values[$property] = trim($_REQUEST[$property]);
+    $maxColNum = intval($_REQUEST["colCount"], 10);
+    for ($col = 1; $col <= $maxColNum; ++$col) {
+        if (array_key_exists("col$col", $_REQUEST)) {
+            $cell = $cellFeed->getCell($row, $col);
+            if ($cell) {
+                $cell->setContent($_REQUEST["col$col"]);
+                $updateBatch->addEntry($cell);
+                $hasAnUpdate = true;
+            } else {
+                $cell = $cellFeed->createInsertionCell($row, $col, $_REQUEST["col$col"]);
+                $insertBatch->addEntry($cell);
+                $hasAnInsert = true;
+            }
+        }
     }
-
-    $entry->update ($values);
+    if ($hasAnUpdate) {
+        $cellFeed->updateBatch($updateBatch);
+    }
+    if ($hasAnInsert) {
+        $cellFeed->insertBatch($insertBatch);
+    }
     echo json_encode(true);
 }
-
-
 
 ?>
