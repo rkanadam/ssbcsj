@@ -116,7 +116,7 @@
                     $("#slot select").selectpicker('refresh');
                     $("#slot select").trigger('change');
                     $("#slot").show();
-                    $("#when #description").text (sheet.description);
+                    $("#when #description").text(sheet.description);
                 } else {
                     $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
                 }
@@ -140,11 +140,19 @@
                 var $this = $(this);
 
                 e.preventDefault();
-                var sheet = sheets[parseInt($("#when select").val(), 10)]
+                var sheet = sheets[parseInt($("#when select").val(), 10)];
+                var slot  = parseInt ($("#slot select").val(), 10);
+                slot = _.find (sheet.availableSlots, function (slots) {
+                   return slots[0] === slot ? slots : null;
+                });
 
                 var postParams = [];
                 postParams.push({name: "sheetTitle", value: sheet.title});
                 postParams.push({name: "row", value: $("#slot select").val()});
+                postParams.push({name: "name", value: $("input[name='name']").val()});
+                postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text ()});
+                postParams.push({name: "email", value: $("input[name='email']").val()});
+                postParams.push({name: "date", value: sheet.date});
                 postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});
                 postParams.push({name: "col" + sheet.headers["devotionalsong"], value: $("input[name='bhajan']").val()});
                 postParams.push({name: "col" + sheet.headers["scale"], value: $("input[name='scale']").val()});
@@ -153,7 +161,7 @@
                 postParams.push({name: "col" + sheet.headers["phonenumber"], value: $("input[name='phone']").val()});
                 postParams.push({name: "col" + sheet.headers["notes"], value: $("textarea[name='comments']").val()});
                 postParams.push({name: "col" + sheet.headers["timestamp"], value: moment().tz('America/Los_Angeles').format('MMMM Do YYYY, h:mm:ss a')});
-                postParams.push({name: "colCount", value: Math.max.apply (this, _.keys(sheet.columnToHeaderName))});
+                postParams.push({name: "colCount", value: Math.max.apply(this, _.keys(sheet.columnToHeaderName))});
 
                 $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
                     debugger;

@@ -117,7 +117,48 @@ if ($method === "get") {
     if ($hasAnInsert) {
         $cellFeed->insertBatch($insertBatch);
     }
+
+    sendMail($_REQUEST["name"], $_REQUEST["description"], $_REQUEST["date"], $_REQUEST["email"]);
     echo json_encode(true);
 }
 
-?>
+function sendMail ($name, $description, $date, $to) {
+    $html = <<<EOD
+<div style = 'display:none' id = 'email-template'>
+    <div style = 'padding: 1em;font-family:Verdana'>
+        <div>Sairam! ${name}</div>
+        <div style = "padding: 2em">
+             <div>
+                 Thank you for signing up to lead ${description} at the Sathya Sai Baba Center of Central San Jose on <strong>${date}</strong>
+             </div>
+             <br/>
+             <div>
+                 Please treat this e-mail as a confirmation of your signup.
+             </div>
+        </div>
+        <br/>
+        <div>Sairam!<br/></div>
+    </div>
+</div>
+EOD;
+
+    $base = realpath(dirname($_SERVER["SCRIPT_FILENAME"]) . "/..") . "/";
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;
+    $mail->Username = "mailer.ssbcsj@gmail.com";
+    $mail->Password = trim(file_get_contents("${base}auth.appkey"));
+    $mail->setFrom('mailer.ssbcsj@gmail.com', 'Automated Mailer (SSBCSJ)');
+    $mail->addAddress($to, $name);
+    $mail->addCC("raghuram.kanadam@gmail.com");
+    $mail->Subject = "Confirmation for your signup to lead - $description";
+    $mail->msgHTML($html);
+    if (!$mail->send()) {
+        return false;
+    } else {
+        return true;
+    }
+}
