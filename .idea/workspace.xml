@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" afterPath="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/center_devotional_lead_signup.html" afterPath="$PROJECT_DIR$/center_devotional_lead_signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" afterPath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" />
+    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Adding support for sending in a confirmation e-mail">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/images/swami_listening.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
