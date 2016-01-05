@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/bhajan_parser.js" afterPath="$PROJECT_DIR$/scripts/bhajan_parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" afterPath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/center_devotional_lead_signup.php" afterPath="$PROJECT_DIR$/server/center_devotional_lead_signup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
