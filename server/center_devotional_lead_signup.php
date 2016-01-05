@@ -150,7 +150,7 @@ function sendMail ($name, $description, $date, $to) {
 EOD;
 
     $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
-    $data = array('to' => $to, 'subject' => 'Signup confirmation for leading $description on $date', "body" => $html);
+    $data = array('to' => $to, 'subject' => "Signup confirmation for leading $description on $date", "body" => $html);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",

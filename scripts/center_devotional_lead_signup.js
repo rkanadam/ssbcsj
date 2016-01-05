@@ -168,8 +168,13 @@
                 postParams.push({name: "colCount", value: Math.max.apply(this, _.keys(sheet.columnToHeaderName))});
 
                 $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
-                    debugger;
-                });
+                    if (response !== true) {
+                        alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
+                    } else {
+                        alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghu");
+                    }
+                    window.location.reload();
+                }, "json");
             });
 
         });

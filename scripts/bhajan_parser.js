@@ -43,8 +43,8 @@
                             headers[header] = column;
                         }
                     });
-                    headers.row = row;
                     columnToHeaderName = _.invert(headers);
+                    headers.row = row;
                     headersFound = true;
                 } else {
                     _.each(columns, function (column) {
