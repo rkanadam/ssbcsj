@@ -142,23 +142,15 @@ function sendMail ($name, $description, $date, $to) {
 </div>
 EOD;
 
-    $base = realpath(dirname($_SERVER["SCRIPT_FILENAME"]) . "/..") . "/";
-    $mail = new PHPMailer;
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->Port = 587;
-    $mail->SMTPSecure = 'tls';
-    $mail->SMTPAuth = true;
-    $mail->Username = "mailer.ssbcsj@gmail.com";
-    $mail->Password = trim(file_get_contents("${base}auth.appkey"));
-    $mail->setFrom('mailer.ssbcsj@gmail.com', 'Automated Mailer (SSBCSJ)');
-    $mail->addAddress($to, $name);
-    $mail->addCC("raghuram.kanadam@gmail.com");
-    $mail->Subject = "Confirmation for your signup to lead - $description";
-    $mail->msgHTML($html);
-    if (!$mail->send()) {
-        return false;
-    } else {
-        return true;
-    }
+    $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
+    $data = array('to' => $to, 'subject' => 'Test Confirmation', "body" => $html);
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data),
+        ),
+    );
+    $context  = stream_context_create($options);
+    file_get_contents($url, false, $context);
 }
