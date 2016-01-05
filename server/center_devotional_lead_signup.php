@@ -123,27 +123,34 @@ if ($method === "get") {
 }
 
 function sendMail ($name, $description, $date, $to) {
+    $description = trim($description);
+    if (preg_match("/^a/i", $description) > 0) {
+        $description = "The $description";
+    } else {
+        $description = "A $description";
+    }
+    $description = strtolower($description);
+
     $html = <<<EOD
 <div style = 'display:none' id = 'email-template'>
     <div style = 'padding: 1em;font-family:Verdana'>
         <div>Sairam! ${name}</div>
         <div style = "padding: 2em">
              <div>
-                 Thank you for signing up to lead ${description} at the Sathya Sai Baba Center of Central San Jose on <strong>${date}</strong>
+                 Thank you for signing up to lead $description at the Sathya Sai Baba Center of Central San Jose on <strong>${date}</strong>
              </div>
              <br/>
              <div>
                  Please treat this e-mail as a confirmation of your signup.
              </div>
         </div>
-        <br/>
         <div>Sairam!<br/></div>
     </div>
 </div>
 EOD;
 
     $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
-    $data = array('to' => $to, 'subject' => 'Signup Confirmation', "body" => $html);
+    $data = array('to' => $to, 'subject' => 'Signup confirmation for leading $description on $date', "body" => $html);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
