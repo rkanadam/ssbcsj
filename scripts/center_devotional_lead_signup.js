@@ -116,7 +116,11 @@
                     $("#slot select").selectpicker('refresh');
                     $("#slot select").trigger('change');
                     $("#slot").show();
-                    $("#when #description").text(sheet.description);
+                    if (sheet.description) {
+                        $("#description").show ().find ("p").text(sheet.description);
+                    } else {
+                        $("#description").hide ();
+                    }
                 } else {
                     $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
                 }

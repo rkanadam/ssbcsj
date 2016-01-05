@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Abel|Lato|Great+Vibes);
+@import url(https://fonts.googleapis.com/css?family=Abel|Lato|Great+Vibes|Droid+Sans);
 
 .top20 {
     margin-top: 20px;
@@ -64,4 +64,33 @@
     height: 150px;
 }
 
+body {
+    padding-top: 25px;
+    font-family: 'Droid Sans';
+}
 
+
+
+@media only screen and (min-width: 692px) {
+    .title .img {
+        background: url("images/swami.png") 100% top no-repeat;
+        background-size: contain;
+        height:  100px;
+    }
+
+    .title h1 {
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 692px) {
+    .title .img {
+        background: url("images/swami.png") 50% top no-repeat;
+        background-size: contain;
+        height:  100px;
+    }
+    .title h1 {
+        text-align: center;
+    }
+}
