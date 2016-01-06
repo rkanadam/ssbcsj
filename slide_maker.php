@@ -43,74 +43,87 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
         <script src="scripts/slide_maker.js"></script>
     </head>
     <body id="bhajan_signup">
-    <br/>
-
-    <form id="bhajanSignupForm">
-        <div class="content">
-            <div class="container content">
-                <div class="row">
-                    <div class="col-sm-6 text-right">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                Bhajan Picker <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Slide Maker</a></li>
-                                <li><a href="#">E-Mail Reminder</a></li>
-                                <li><a href="#">SMS Reminder</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <div class="input-group top20">
-                                <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span></div>
-                                <input type="text" id="bhajanPicker" class="form-control typeahead"
-                                       placeholder="Type a few words to find a devotional song">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" id="lyrics">
-                    <div class="col-sm-6 text-left">
-                        <h5>Lyrics</h5>
-                    </div>
-                    <div class="col-sm-6 text-left">
-                        <textarea class="form-control" name="lyrics"></textarea>
-                    </div>
-                </div>
-                <div class="row" id="meaning">
-                    <div class="col-sm-6 text-left">
-                        <h5>Meaning</h5>
-                    </div>
-                    <div class="col-sm-6 text-left">
-                        <textarea class="form-control" name="meaning"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 text-left">
-                        <h5>Scale</h5>
-                    </div>
-                    <div class="col-sm-6">
-                        <input type="text" name="scale" class="form-control">
-                    </div>
-                </div>
-                <div class="row" id="insert">
-                    <div class="col-sm-6">
-                        <p>
-
-                        <div class="form-group text-center">
-                            <input type="submit" class="btn btn-lg btn-primary" value="Insert">
-                        </div>
-                        </p>
+    <div class="content">
+        <div class="container content">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <div class="btn-group" id="buttons">
+                        <button type="button" class="btn btn-primary dropdown-toggle btn-xs"
+                                data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            <span class = "text">Bhajan Picker</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#bhajanFiller">Bhajan Picker</a></li>
+                            <li><a href="#slideMaker">Slide Maker</a></li>
+                            <li><a href="#email">E-Mail Reminder</a></li>
+                            <li><a href="#reminder">SMS Reminder</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+            <div class="row">
+                <div class="col-sm-12" id = "bhajanFiller" style="display: none">
+                    <form id="bhajanSignupForm">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group top20">
+                                        <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span>
+                                        </div>
+                                        <input type="text" id="bhajanPicker" class="form-control typeahead"
+                                               placeholder="Type a few words to find a devotional song">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="lyrics">
+                            <div class="col-sm-6 text-left">
+                                <h5>Lyrics</h5>
+                            </div>
+                            <div class="col-sm-6 text-left">
+                                <textarea class="form-control" name="lyrics"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" id="meaning">
+                            <div class="col-sm-6 text-left">
+                                <h5>Meaning</h5>
+                            </div>
+                            <div class="col-sm-6 text-left">
+                                <textarea class="form-control" name="meaning"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-left">
+                                <h5>Scale</h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" name="scale" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row" id="insert">
+                            <div class="col-sm-6">
+                                <p>
+
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-lg btn-primary" value="Insert">
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id = "slideMaker" style="display: none">
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                        </div>
+                   </div>
+                </div>
+            </div>
+    </div>
     <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
         <div
             style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">

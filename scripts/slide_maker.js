@@ -52,14 +52,27 @@
                 })
                 .withUserObject(this)
                 .getDevotionalSongs();
-
-            google.script.run
-                .withSuccessHandler(function (sheet) {
-                    console.log(sheet);
-                    sheet = window.parse_bhajans(sheet);
-                    console.log("After", sheet);
-                }).withUserObject(this)
-                .getCurrentSheet();
         }
+
+        $("#buttons").on("click", "a", function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var href = $this.attr("href");
+            $this.parents(".btn-group")
+                .find("a").each(function () {
+                    var id = $(this).attr("href");
+                    $(id).hide();
+                }).end().find("button .text").text($this.text());
+            $(href).show();
+            if (href === "#slideMaker") {
+                google.script.run
+                    .withSuccessHandler(function (sheet) {
+                        console.log(sheet);
+                        sheet = window.parse_bhajans(sheet);
+                        console.log("After", sheet);
+                    }).withUserObject(this)
+                    .getCurrentSheet();
+            }
+        });
     });
 })(jQuery);
