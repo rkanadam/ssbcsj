@@ -127,7 +127,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                         <dt>Thought for the Week</dt>
                                         <dd id="thoughtForTheWeek"><span>Thought for the Week</span></dd>
                                         <dt>Missing Bhajans</dt>
-                                        <dd id="missingBhajans"><ul></ul></dd>
+                                        <dd id="missingBhajans"><ul style="padding-left: 15px"></ul></dd>
                                     </dl>
                                 </div>
                                 <div class="row">
