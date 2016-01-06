@@ -48,7 +48,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             <div class="row">
                 <div class="col-sm-6 text-left">
                     <div class="btn-group" id="buttons">
-                        <button type="button" class="btn btn-primary dropdown-toggle btn-xs"
+                        <button type="button" class="btn btn-default dropdown-toggle"
                                 data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                             <span class="text">Bhajan Picker</span> <span class="caret"></span>
@@ -119,19 +119,24 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                 <div class="col-sm-12">
                                     <dl class="dl-horizontal">
                                         <dt>Bhajans</dt>
-                                        <dd id="bhajans">?</dd>
+                                        <dd id="bhajans"><span>?</span></dd>
                                         <dt>Unisons</dt>
-                                        <dl id="unisons">?</dl>
+                                        <dd id="unisons"><span>?</span></dd>
                                         <dt>Divine Code of Conduct</dt>
-                                        <dl id="divineCodeOfConduct">Divine Code of Conduct</dl>
+                                        <dd id="divineCodeOfConduct"><span>Divine Code of Conduct</span></dd>
                                         <dt>Thought for the Week</dt>
-                                        <dl id="thoughtForTheWeek">Thought for the Week</dl>
+                                        <dd id="thoughtForTheWeek"><span>Thought for the Week</span></dd>
                                     </dl>
                                 </div>
                                 <div class="row" id="generate">
                                     <div class="col-sm-6">
                                         <div class="form-group text-center">
-                                            <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                                            <input type="button" class="btn btn-lg btn-primary" value="Prepare Slides">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group text-center">
+                                            <input type="button" class="btn btn-lg btn-primary" value="Download Slides">
                                         </div>
                                     </div>
                                 </div>
