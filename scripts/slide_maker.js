@@ -95,21 +95,22 @@
                         debugger;
 
                         $("#missingBhajans ul").html($.map(sheet.values, function (bhajan) {
-                            var missing = "";
-                            if (!bhajan.devotionalsong) {
-                                missing += ", Missing Devotional Song"
+                            if (bhajan.description.match(/unison/i) || bhajan.description.match(/bhajan/i)) {
+                                var missing = "";
+                                if (!bhajan.devotionalsong) {
+                                    missing += ", Missing Devotional Song"
+                                }
+                                if (!bhajan.scale) {
+                                    missing += ", Missing Scale"
+                                }
+                                if (!bhajan.lyrics) {
+                                    missing += ", Missing Lyrics"
+                                }
+                                if (missing) {
+                                    return ["<li>", "#", bhajan["#"], ". ", bhajan.description, "[", missing.substring(2), "]", "</li>"];
+                                }
                             }
-                            if (!bhajan.scale) {
-                                missing += ", Missing Scale"
-                            }
-                            if (!bhajan.lyrics) {
-                                missing += ", Missing Lyrics"
-                            }
-                            if (missing) {
-                                return ["<li>", "#", bhajan["#"], ". ", bhajan.description, "[", missing, "]", "</li>"];
-                            } else {
-                                return undefined;
-                            }
+                            return undefined;
                         }).join(""));
 
                         $("#bhajans").text(bhajans.length);
