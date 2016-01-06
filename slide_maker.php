@@ -51,7 +51,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                         <button type="button" class="btn btn-primary dropdown-toggle btn-xs"
                                 data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                            <span class = "text">Bhajan Picker</span> <span class="caret"></span>
+                            <span class="text">Bhajan Picker</span> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
                             <li><a href="#bhajanFiller">Bhajan Picker</a></li>
@@ -63,7 +63,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12" id = "bhajanFiller" style="display: none">
+                <div class="col-sm-12" id="bhajanFiller" style="display: none">
                     <form id="bhajanSignupForm">
                         <div class="row">
                             <div class="col-sm-6">
@@ -112,60 +112,42 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12" id = "slideMaker" style="display: none">
+                <div class="col-sm-12" id="slideMaker" style="display: none">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <label>Bhajans</label>
+                        <div class="col-sm-12">
+                            <dl class="dl-horizontal">
+                                <dt>Bhajans</dt>
+                                <dd id="bhajans">?</dd>
+                                <dt>Unisons</dt>
+                                <dl id="unisons">?</dl>
+                                <dt>Divine Code of Conduct</dt>
+                                <dl id="divineCodeOfConduct">Divine Code of Conduct</dl>
+                                <dt>Thought for the Week</dt>
+                                <dl id="thoughtForTheWeek">Thought for the Week</dl>
+                            </dl>
                         </div>
-                        <div class="col-sm-6">
-                            <div id="bhajans">?</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label>Unisons</label>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="unisons">?</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label>Divine Code of Conduct</label>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="divineCodeOfConduct">Divine Code of Conduct</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label>Thought for the Week</label>
-                        </div>
-                        <div class="col-sm-6">
-                            <div id="thoughtForTheWeek">Thought for the Week</div>
-                        </div>
-                    </div>
-                    <div class="row" id="generate">
-                        <div class="col-sm-6">
-                            <div class="form-group text-center">
-                                <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                        <div class="row" id="generate">
+                            <div class="col-sm-6">
+                                <div class="form-group text-center">
+                                    <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
-    <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
-        <div
-            style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
         </div>
-        <div class="progress progress-striped active"
-             style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
-            <div class="progress-bar progress-bar-info" style="width: 100%">
-                <h4>Contacting the server for information ...</h4>
+        <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
+            <div
+                style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
+            </div>
+            <div class="progress progress-striped active"
+                 style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
+                <div class="progress-bar progress-bar-info" style="width: 100%">
+                    <h4>Contacting the server for information ...</h4>
+                </div>
             </div>
         </div>
-    </div>
     </body>
     </html>
 <?php
