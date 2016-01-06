@@ -113,23 +113,27 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             </div>
             <div class="row">
                 <div class="col-sm-12" id="slideMaker" style="display: none">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <dl class="dl-horizontal">
-                                <dt>Bhajans</dt>
-                                <dd id="bhajans">?</dd>
-                                <dt>Unisons</dt>
-                                <dl id="unisons">?</dl>
-                                <dt>Divine Code of Conduct</dt>
-                                <dl id="divineCodeOfConduct">Divine Code of Conduct</dl>
-                                <dt>Thought for the Week</dt>
-                                <dl id="thoughtForTheWeek">Thought for the Week</dl>
-                            </dl>
-                        </div>
-                        <div class="row" id="generate">
-                            <div class="col-sm-6">
-                                <div class="form-group text-center">
-                                    <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <dl class="dl-horizontal">
+                                        <dt>Bhajans</dt>
+                                        <dd id="bhajans">?</dd>
+                                        <dt>Unisons</dt>
+                                        <dl id="unisons">?</dl>
+                                        <dt>Divine Code of Conduct</dt>
+                                        <dl id="divineCodeOfConduct">Divine Code of Conduct</dl>
+                                        <dt>Thought for the Week</dt>
+                                        <dl id="thoughtForTheWeek">Thought for the Week</dl>
+                                    </dl>
+                                </div>
+                                <div class="row" id="generate">
+                                    <div class="col-sm-6">
+                                        <div class="form-group text-center">
+                                            <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
