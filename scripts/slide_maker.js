@@ -107,7 +107,7 @@
                                     missing += ", Missing Lyrics"
                                 }
                                 if (missing) {
-                                    return ["<li>", "#", bhajan["#"], ". ", bhajan.description, "[", missing.substring(2), "]", "</li>"];
+                                    return ["<li>", "#", bhajan["#"], ". ", bhajan.description, " [", missing.substring(2), "]", "</li>"];
                                 }
                             }
                             return undefined;
