@@ -70,6 +70,29 @@
                         console.log(sheet);
                         sheet = window.parse_bhajans(sheet);
                         console.log("After", sheet);
+                        var thoughtForTheWeek = _.find(sheet.values, function (value) {
+                            return value.name.match(/thought\s+for\s+the\s+week/i);
+                        });
+                        if (thoughtForTheWeek) {
+                            thoughtForTheWeek = thoughtForTheWeek.devotionalsong;
+                        }
+                        $("#thoughtForTheWeek").text(thoughtForTheWeek);
+                        var divineCodeOfConduct = _.find(sheet.values, function (value) {
+                            return value.description.match(/divine\s+code\s+of\s+conduct/i);
+                        });
+                        if (divineCodeOfConduct) {
+                            divineCodeOfConduct = divineCodeOfConduct.devotionalsong;
+                        }
+                        $("#divineCodeOfConduct").text(divineCodeOfConduct);
+                        var unisons = _.filter(sheet.values, function (value) {
+                            return value.description.match(/unison/i);
+                        });
+                        $("#unisons").text(unisons.length);
+                        var bhajans = _.filter(sheet.values, function (value) {
+                            return value.description.match(/unison/i) === null && value.description.match(/bhajan/i);
+                        });
+                        $("#bhajans").text(bhajans.length);
+
                     }).withUserObject(this)
                     .getCurrentSheet();
             }

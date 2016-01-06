@@ -103,12 +103,9 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                         </div>
                         <div class="row" id="insert">
                             <div class="col-sm-6">
-                                <p>
-
                                 <div class="form-group text-center">
                                     <input type="submit" class="btn btn-lg btn-primary" value="Insert">
                                 </div>
-                                </p>
                             </div>
                         </div>
                     </form>
@@ -118,9 +115,43 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                 <div class="col-sm-12" id = "slideMaker" style="display: none">
                     <div class="row">
                         <div class="col-sm-6">
-
+                            <label>Bhajans</label>
                         </div>
-                   </div>
+                        <div class="col-sm-6">
+                            <div id="bhajans">?</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Unisons</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="unisons">?</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Divine Code of Conduct</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="divineCodeOfConduct">Divine Code of Conduct</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Thought for the Week</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="thoughtForTheWeek">Thought for the Week</div>
+                        </div>
+                    </div>
+                    <div class="row" id="generate">
+                        <div class="col-sm-6">
+                            <div class="form-group text-center">
+                                <input type="submit" class="btn btn-lg btn-primary" value="Generate">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
     </div>
