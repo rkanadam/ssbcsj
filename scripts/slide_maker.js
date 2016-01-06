@@ -92,6 +92,27 @@
                             return value.description.match(/unison/i) === null && value.description.match(/bhajan/i);
                         });
                         $("#bhajans").text(bhajans.length);
+                        debugger;
+
+                        $("#missingBhajans ul").html($.map(sheet.values, function (bhajan) {
+                            var missing = "";
+                            if (!bhajan.devotionalsong) {
+                                missing += ", Missing Devotional Song"
+                            }
+                            if (!bhajan.scale) {
+                                missing += ", Missing Scale"
+                            }
+                            if (!bhajan.lyrics) {
+                                missing += ", Missing Lyrics"
+                            }
+                            if (missing) {
+                                return ["<li>", "#", bhajan["#"], ". ", bhajan.description, "[", missing, "]", "</li>"];
+                            } else {
+                                return undefined;
+                            }
+                        }).join(""));
+
+                        $("#bhajans").text(bhajans.length);
 
                     }).withUserObject(this)
                     .getCurrentSheet();

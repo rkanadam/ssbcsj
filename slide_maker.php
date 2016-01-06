@@ -126,17 +126,19 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                         <dd id="divineCodeOfConduct"><span>Divine Code of Conduct</span></dd>
                                         <dt>Thought for the Week</dt>
                                         <dd id="thoughtForTheWeek"><span>Thought for the Week</span></dd>
+                                        <dt>Missing Bhajans</dt>
+                                        <dd id="missingBhajans"><ul></ul></dd>
                                     </dl>
                                 </div>
-                                <div class="row" id="generate">
+                                <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group text-center">
-                                            <input type="button" class="btn btn-lg btn-primary" value="Prepare Slides">
+                                            <input type="button" class="btn btn-lg btn-primary" value="Prepare Slides" id = "prepare">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group text-center">
-                                            <input type="button" class="btn btn-lg btn-primary" value="Download Slides">
+                                            <input type="button" class="btn btn-lg btn-primary" value="Download Slides" id = "download">
                                         </div>
                                     </div>
                                 </div>
