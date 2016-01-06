@@ -71,7 +71,7 @@
                         sheet = window.parse_bhajans(sheet);
                         console.log("After", sheet);
                         var thoughtForTheWeek = _.find(sheet.values, function (value) {
-                            return value.name.match(/thought\s+for\s+the\s+week/i);
+                            return value.description.match(/thought\s+for\s+the\s+week/i);
                         });
                         if (thoughtForTheWeek) {
                             thoughtForTheWeek = thoughtForTheWeek.devotionalsong;
