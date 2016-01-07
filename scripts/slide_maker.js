@@ -65,6 +65,7 @@
                 }).end().find("button .text").text($this.text());
             $(href).show();
             if (href === "#slideMaker") {
+                $("#indicator").show ();
                 google.script.run
                     .withSuccessHandler(function (sheet) {
                         console.log(sheet);
@@ -116,15 +117,25 @@
 
                         $("#bhajans").text(bhajans.length);
                         if (!missingBhajansHTML) {
+                            var slideBhajans = _.map (bhajans.concat (unisons), function (bhajan) {
+                                return {
+                                    "scale": bhajan.scale,
+                                    "lyrics": bhajan.lyrics,
+                                    "meaning": bhajan.meaning
+                                };
+                            });
                             $("#slideGeneratorForm [name='bhajans']").val(JSON.stringify({
                                 "divineCodeOfConduct": divineCodeOfConduct,
                                 "thoughtForTheWeek": thoughtForTheWeek,
-                                "bhajans": bhajans
+                                "bhajans": slideBhajans
                             }));
                             $("#downloadSlides").off("click").on("click", function () {
                                 $("#slideGeneratorForm").submit();
                             });
+                        } else {
+                            $("#downloadSlides").hide ();
                         }
+                        $("#indicator").hide ();
                     }).withUserObject(this)
                     .getCurrentSheet();
             }
