@@ -121,7 +121,7 @@
                                 "thoughtForTheWeek": thoughtForTheWeek,
                                 "bhajans": bhajans
                             }));
-                            $("#downloadSlides").un("click").on("click", function () {
+                            $("#downloadSlides").off("click").on("click", function () {
                                 $("#slideGeneratorForm").submit();
                             });
                         }
