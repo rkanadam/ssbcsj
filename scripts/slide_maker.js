@@ -92,9 +92,8 @@
                             return value.description.match(/unison/i) === null && value.description.match(/bhajan/i);
                         });
                         $("#bhajans").text(bhajans.length);
-                        debugger;
 
-                        $("#missingBhajans ul").html($.map(sheet.values, function (bhajan) {
+                        var missingBhajansHTML = $.map(sheet.values, function (bhajan) {
                             if (bhajan.description.match(/unison/i) || bhajan.description.match(/bhajan/i)) {
                                 var missing = "";
                                 if (!bhajan.devotionalsong) {
@@ -111,10 +110,21 @@
                                 }
                             }
                             return undefined;
-                        }).join(""));
+                        }).join("");
+
+                        $("#missingBhajans ul").html(missingBhajansHTML);
 
                         $("#bhajans").text(bhajans.length);
-
+                        if (!missingBhajansHTML) {
+                            $("#slideGeneratorForm [name='bhajans']").val(JSON.stringify({
+                                "divineCodeOfConduct": divineCodeOfConduct,
+                                "thoughtForTheWeek": thoughtForTheWeek,
+                                "bhajans": bhajans
+                            }));
+                            $("#downloadSlides").un("click").on("click", function () {
+                                $("#slideGeneratorForm").submit();
+                            });
+                        }
                     }).withUserObject(this)
                     .getCurrentSheet();
             }

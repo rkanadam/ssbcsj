@@ -10,7 +10,7 @@ use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
 
 
-$scopes = implode(' ', array("https://spreadsheets.google.com/feeds"));
+$scopes = implode(' ', array("https://spreadsheets.google.com/feeds", Google_Service_Drive::DRIVE_READONLY));
 
 $privateKey = file_get_contents("${base}auth.p12");
 
@@ -45,3 +45,5 @@ function endsWith($haystack, $needle) {
     // search forward starting from end minus needle length characters
     return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
 }
+
+$drive = new Google_Service_Drive($client);

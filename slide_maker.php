@@ -127,18 +127,23 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                         <dt>Thought for the Week</dt>
                                         <dd id="thoughtForTheWeek"><span>Thought for the Week</span></dd>
                                         <dt>Missing Bhajans</dt>
-                                        <dd id="missingBhajans"><ul style="padding-left: 15px"></ul></dd>
+                                        <dd id="missingBhajans">
+                                            <ul style="padding-left: 15px"></ul>
+                                        </dd>
                                     </dl>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="form-group text-center">
-                                            <input type="button" class="btn btn-lg btn-primary" value="Prepare Slides" id = "prepare">
-                                        </div>
+                                        <form id="slideGeneratorForm" method="post"
+                                              action="https://54.153.14.234:8443/bhajan/make" target="_blank">
+                                            Powerpoint</a></p>
+                                            <input type="hidden" name="bhajans" value="" id="bhajans">
+                                        </form>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group text-center">
-                                            <input type="button" class="btn btn-lg btn-primary" value="Download Slides" id = "download">
+                                            <input type="button" class="btn btn-lg btn-primary" value="Download Slides"
+                                                   id="downloadSlides">
                                         </div>
                                     </div>
                                 </div>
