@@ -138,7 +138,34 @@
                         $("#indicator").hide();
                     }).withUserObject(this)
                     .getCurrentSheet();
+            } else if (href === "#emailReminder") {
+                $("#sendEmail").off("click").on("click", function () {
+                    $("#indicator").show();
+                    google.script.run
+                        .withSuccessHandler(function (sheet) {
+                            console.log("Before parsing the sheet: ", sheet);
+                            sheet = window.parse_bhajans(sheet);
+                            console.log("After parsing the sheet: ", sheet);
+                            var bhajans = jQuery.map(sheet.values, function (value) {
+                                if (value && value.email && (value.lyrics || value.devotionalsong) && value.scale) {
+                                    var bhajan = $.extend({}, value);
+                                    bhajan.firstName = bhajan.name ? bhajan.name.split(" ", -1)[0] : "";
+                                    bhajan.date = sheet.date;
+                                    bhajan.time = sheet.time;
+                                    return bhajan;
+                                }
+                            });
+                            var email = _.template($("#email").summernote("code"));
+                            var subject = _.template($("#subject").summernote("code"));
+                            _.each(bhajans, function (bhajan) {
+                                console.log("Subject %s, \nEmail: %s\n", subject(bhajan), email(bhajan));
+                            });
+                            $("#indicator").hide();
+                        }).withUserObject(this)
+                        .getCurrentSheet();
+                });
             }
+
         });
     });
 

@@ -56,7 +56,9 @@
                 }
                 values.row = row;
             });
+            var time = title.split (" ", -1)[-1];
             return {
+                "time" : time,
                 "title": title,
                 "sheet": sheet,
                 "date": date,
