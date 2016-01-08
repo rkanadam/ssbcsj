@@ -148,23 +148,23 @@
             minHeight: null,             // set minimum height of editor
             maxHeight: null,             // set maximum height of editor
             focus: true,                  // set focus to editable area after initializing summernote,
-            placeholder: 'type { to see predefined values for the template',
+            placeholder: 'type { to see predefined placeholders',
             hint: {
                 words: [
                     {
-                        help: "Lyrics - Use this keyword to insert the bhajan lyrics",
+                        help: "Insert the bhajan lyrics",
                         value: '{lyrics}'
                     },
                     {
-                        help: "Meaning - Use this keyword to insert the meaning ",
+                        help: "Use this keyword to insert the meaning ",
                         value: '{meaning}'
                     },
                     {
-                        help: "Scale - Use this keyword to insert the scale of the bhajan from the sheet",
+                        help: "Scale - Insert the scale of the bhajan",
                         value: '{scale}'
                     },
                     {
-                        help: "Name - Use this keyword to insert the scale of the name of the bhajan singer",
+                        help: "Name - Insert the name of the singer",
                         value: '{name}'
                     }
                 ],

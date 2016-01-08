@@ -43,26 +43,26 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
         <script src="scripts/slide_maker.js"></script>
 
         <!-- include summernote css/js-->
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.css" rel="stylesheet">
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.js"></script>
+        <link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.7.1/summernote.js"></script>
     </head>
     <body id="bhajan_signup">
     <div class="content">
         <div class="container content">
-            <div class="row">
-                <div class="col-sm-6 text-left">
+            <div class="row choices bg-info">
+                <div class="col-sm-6 text-center">
                     <div class="btn-group" id="buttons">
                         <button type="button" class="btn btn-default dropdown-toggle"
                                 data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                            <span class="text">Bhajan Picker</span> <span class="caret"></span>
+                            <span class="text">What do you want to do ?</span> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href="#bhajanFiller">Bhajan Picker</a></li>
-                            <li><a href="#slideMaker">Slide Maker</a></li>
-                            <li><a href="#emailReminder">E-Mail Reminder</a></li>
-                            <li><a href="#smsReminder">SMS Reminder</a></li>
+                            <li><a href="#bhajanFiller">Search and fill in bhajans</a></li>
+                            <li><a href="#slideMaker">Download Bhajan Slides</a></li>
+                            <li><a href="#emailReminder">Send E-Mail Reminders</a></li>
+                            <li><a href="#smsReminder">Send SMS Reminders</a></li>
                         </ul>
                     </div>
                 </div>
@@ -160,29 +160,52 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                 <div class="col-sm-12" id="emailReminder" style="display: none">
                     <div class="row">
                         <div class="col-sm-6">
+                            <h5>CC</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="cc" class="form-group"
+                                   placeholder="comma separated e-mail addresses">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5>BCC</h5>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="bcc" class="form-group"
+                                   placeholder="comma separated e-mails addresses">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
                             <h5>E-Mail</h5>
                         </div>
                         <div class="col-sm-6">
-                            <div id="email">
-                                Go ahead&hellip;
+                            <div id="email"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group text-center">
+                                <input type="button" class="btn btn-lg btn-primary" value="Send E-Mails"
+                                       id="sendEmail">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
-        <div
-            style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
-        </div>
-        <div class="progress progress-striped active"
-             style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
-            <div class="progress-bar progress-bar-info" style="width: 100%">
-                <h4>Contacting the server for information ...</h4>
+        <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
+            <div
+                style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
+            </div>
+            <div class="progress progress-striped active"
+                 style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
+                <div class="progress-bar progress-bar-info" style="width: 100%">
+                    <h4>Contacting the server for information ...</h4>
+                </div>
             </div>
         </div>
-    </div>
     </body>
     </html>
 <?php
