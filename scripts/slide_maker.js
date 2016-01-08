@@ -146,12 +146,16 @@
                             console.log("Before parsing the sheet: ", sheet);
                             sheet = window.parse_bhajans(sheet);
                             console.log("After parsing the sheet: ", sheet);
+                            var cc = $("#cc").val();
+                            var bcc = $("#bcc").val()
                             var bhajans = jQuery.map(sheet.values, function (value) {
                                 if (value && value.email && (value.lyrics || value.devotionalsong) && value.scale) {
                                     var bhajan = $.extend({}, value);
                                     bhajan.firstName = bhajan.name ? bhajan.name.split(" ", -1)[0] : "";
                                     bhajan.date = sheet.date;
                                     bhajan.time = sheet.time || "5:00 PM";
+                                    bhajan.cc = cc;
+                                    bhajan.bcc = bcc;
                                     return bhajan;
                                 }
                             });
@@ -162,19 +166,19 @@
                             var subject = _.template($("#subject").summernote("code"));
                             _.each(bhajans, function (bhajan) {
                                 bhajan.subject = subject(bhajan);
-                                bhajan.emailBody = email(bhajan);
+                                bhajan.htmlBody = email(bhajan);
                             });
 
                             google.script.run
                                 .withSuccessHandler(function (status) {
                                     if (status) {
-                                        alert ("Sent the e-mails successfully");
+                                        alert("Sent the e-mails successfully");
                                     } else {
-                                        alert ("Uh-oh we had trouble sending e-mails. Ask Raghu.");
+                                        alert("Uh-oh we had trouble sending e-mails. Ask Raghu.");
                                     }
                                     $("#indicator").hide();
                                 }).withUserObject(this)
-                                .email(bhajans, $("#cc").val(), $("#bcc").val());
+                                .email(JSON.stringify(bhajans));
 
                         }).withUserObject(this)
                         .getCurrentSheet();

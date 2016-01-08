@@ -194,7 +194,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <div id="email">
                                 <div
                                     style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal;">
-                                    Sairam! {name}
+                                    Sairam {name},
                                 </div>
                                 <div
                                     style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal; padding: 2em;">
@@ -217,7 +217,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                     </div>
                                 </div>
                                 <p><span
-                                        style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal;">Thank you! for taking the time to respond back to us. Sairam!</span>
+                                        style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal;">Thank you! for taking the time to respond back to us. Sairam</span>
                                 </p>
                             </div>
                         </div>
