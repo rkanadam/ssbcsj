@@ -77,7 +77,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                         <div class="input-group-addon"><span class="glyphicon glyphicon-search"></span>
                                         </div>
                                         <input type="text" id="bhajanPicker" class="form-control typeahead"
-                                               placeholder="Type a few words to find a devotional song">
+                                               placeholder="Type a few words to find a bhajan">
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
             <div class="progress progress-striped active"
                  style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
                 <div class="progress-bar progress-bar-info" style="width: 100%">
-                    <h4>Contacting the server for information ...</h4>
+                    <h4>Loading ...</h4>
                 </div>
             </div>
         </div>
