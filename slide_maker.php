@@ -164,7 +164,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                         </div>
                         <div class="col-sm-6">
                             <input type="text" id = "cc" name="cc" class="form-group"
-                                   placeholder="comma separated e-mail addresses">
+                                   placeholder="comma separated e-mail addresses" value="raghuram.kanadam@gmail.com">
                         </div>
                     </div>
                     <div class="row">
