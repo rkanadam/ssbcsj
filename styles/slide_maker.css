@@ -70,4 +70,9 @@
     font-size: 75%;
 }
 
-
+#email {
+    height: 15em;
+    border: 1px solid #CCC;
+    overflow: scroll;
+    max-height: 300px
+}

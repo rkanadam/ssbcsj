@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/slide_maker.css" afterPath="$PROJECT_DIR$/styles/slide_maker.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/slide_maker.js" afterPath="$PROJECT_DIR$/scripts/slide_maker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide_maker.php" afterPath="$PROJECT_DIR$/slide_maker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
@@ -29,16 +31,17 @@
       <file leaf-file-name="slide_maker.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slide_maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.333334" vertical-offset="1726" max-vertical-offset="2715">
-              <caret line="154" column="26" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="26" />
+            <state vertical-scroll-proportion="-18.833334" vertical-offset="2128" max-vertical-offset="3015">
+              <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
               <folding>
-                <element signature="e#3215#3236#0#HTML" expanded="true" />
-                <element signature="e#5790#5811#0#HTML" expanded="true" />
-                <element signature="e#6885#6911#0#HTML" expanded="true" />
-                <element signature="e#8202#8240#0#HTML" expanded="true" />
-                <element signature="e#8275#8384#0#HTML" expanded="true" />
-                <element signature="e#8480#8580#0#HTML" expanded="true" />
-                <element signature="e#8642#8661#0#HTML" expanded="true" />
+                <element signature="e#3577#3598#0#HTML" expanded="true" />
+                <element signature="e#6152#6173#0#HTML" expanded="true" />
+                <element signature="e#7247#7273#0#HTML" expanded="true" />
+                <element signature="e#8585#8606#0#HTML" expanded="true" />
+                <element signature="e#9118#9156#0#HTML" expanded="true" />
+                <element signature="e#9183#9292#0#HTML" expanded="true" />
+                <element signature="e#9376#9476#0#HTML" expanded="true" />
+                <element signature="e#9534#9553#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,51 +50,29 @@
       <file leaf-file-name="slide_maker.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14379802" vertical-offset="1264" max-vertical-offset="2235">
-              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.37431395" vertical-offset="1909" max-vertical-offset="2835">
+              <caret line="150" column="74" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="center_devotional_lead_signup.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/center_devotional_lead_signup.php">
+      <file leaf-file-name="slide_maker.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/slide_maker.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="2535">
-              <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1245">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drive.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/drive.php">
+      <file leaf-file-name="center_devotional_lead_signup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/center_devotional_lead_signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
-              <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+            <state vertical-scroll-proportion="-14.708333" vertical-offset="937" max-vertical-offset="3285">
+              <caret line="86" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/util.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="810">
-              <caret line="12" column="106" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Drive.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Drive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.416667" vertical-offset="71120" max-vertical-offset="91920">
-              <caret line="4772" column="35" selection-start-line="4772" selection-start-column="18" selection-end-line="4772" selection-end-column="35" />
-              <folding>
-                <marker date="1412105639000" expanded="true" signature="60099:60258" placeholder="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +121,6 @@
         <option value="$PROJECT_DIR$/slide_maker.html" />
         <option value="$PROJECT_DIR$/slide_maker_test.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker_init.js" />
-        <option value="$PROJECT_DIR$/styles/slide_maker.css" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app.p12" />
         <option value="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
@@ -152,6 +132,7 @@
         <option value="$PROJECT_DIR$/server/center_devotional_lead_signup.php" />
         <option value="$PROJECT_DIR$/server/util.php" />
         <option value="$PROJECT_DIR$/server/drive.php" />
+        <option value="$PROJECT_DIR$/styles/slide_maker.css" />
         <option value="$PROJECT_DIR$/slide_maker.php" />
         <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
       </list>
@@ -258,7 +239,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -412,7 +393,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23269436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23269436" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -549,6 +530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -615,14 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
           <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/slide_maker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1185">
-          <caret line="68" column="14" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,27 +789,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/center_devotional_lead_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3180778" vertical-offset="517" max-vertical-offset="3285">
-          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#7;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#8;n#div#0;n#div#0;n#form#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="810">
+        <state vertical-scroll-proportion="0.1860203" vertical-offset="0" max-vertical-offset="887">
           <caret line="12" column="106" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
           <folding />
         </state>
@@ -843,17 +799,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Drive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.416667" vertical-offset="71120" max-vertical-offset="91920">
+        <state vertical-scroll-proportion="0.28184894" vertical-offset="71120" max-vertical-offset="91920">
           <caret line="4772" column="35" selection-start-line="4772" selection-start-column="18" selection-end-line="4772" selection-end-column="35" />
           <folding>
-            <marker date="1412105639000" expanded="true" signature="60099:60258" placeholder="{...}" />
+            <marker date="1412105639000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/drive.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="285">
+        <state vertical-scroll-proportion="0.1860203" vertical-offset="0" max-vertical-offset="887">
           <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding />
         </state>
@@ -861,32 +817,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/center_devotional_lead_signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="2535">
+        <state vertical-scroll-proportion="0.050732806" vertical-offset="0" max-vertical-offset="2535">
           <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/center_devotional_lead_signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.708333" vertical-offset="937" max-vertical-offset="3285">
+          <caret line="86" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/slide_maker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1245">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/slide_maker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.333334" vertical-offset="1726" max-vertical-offset="2715">
-          <caret line="154" column="26" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="26" />
+        <state vertical-scroll-proportion="-18.833334" vertical-offset="2128" max-vertical-offset="3015">
+          <caret line="172" column="14" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
           <folding>
-            <element signature="e#3215#3236#0#HTML" expanded="true" />
-            <element signature="e#5790#5811#0#HTML" expanded="true" />
-            <element signature="e#6885#6911#0#HTML" expanded="true" />
-            <element signature="e#8202#8240#0#HTML" expanded="true" />
-            <element signature="e#8275#8384#0#HTML" expanded="true" />
-            <element signature="e#8480#8580#0#HTML" expanded="true" />
-            <element signature="e#8642#8661#0#HTML" expanded="true" />
+            <element signature="e#3577#3598#0#HTML" expanded="true" />
+            <element signature="e#6152#6173#0#HTML" expanded="true" />
+            <element signature="e#7247#7273#0#HTML" expanded="true" />
+            <element signature="e#8585#8606#0#HTML" expanded="true" />
+            <element signature="e#9118#9156#0#HTML" expanded="true" />
+            <element signature="e#9183#9292#0#HTML" expanded="true" />
+            <element signature="e#9376#9476#0#HTML" expanded="true" />
+            <element signature="e#9534#9553#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14379802" vertical-offset="1264" max-vertical-offset="2235">
-          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.37431395" vertical-offset="1909" max-vertical-offset="2835">
+          <caret line="150" column="74" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
           <folding />
         </state>
       </provider>

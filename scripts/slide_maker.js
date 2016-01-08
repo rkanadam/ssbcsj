@@ -65,7 +65,7 @@
                 }).end().find("button .text").text($this.text());
             $(href).show();
             if (href === "#slideMaker") {
-                $("#indicator").show ();
+                $("#indicator").show();
                 google.script.run
                     .withSuccessHandler(function (sheet) {
                         console.log(sheet);
@@ -117,7 +117,7 @@
 
                         $("#bhajans").text(bhajans.length);
                         if (!missingBhajansHTML) {
-                            var slideBhajans = _.map (bhajans.concat (unisons), function (bhajan) {
+                            var slideBhajans = _.map(bhajans.concat(unisons), function (bhajan) {
                                 return {
                                     "scale": bhajan.scale,
                                     "lyrics": bhajan.lyrics,
@@ -133,11 +133,51 @@
                                 $("#slideGeneratorForm").submit();
                             });
                         } else {
-                            $("#downloadSlides").hide ();
+                            $("#downloadSlides").hide();
                         }
-                        $("#indicator").hide ();
+                        $("#indicator").hide();
                     }).withUserObject(this)
                     .getCurrentSheet();
+            }
+        });
+    });
+
+    $(function () {
+        $('#email').summernote({
+            height: 300,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true,                  // set focus to editable area after initializing summernote,
+            placeholder: 'type { to see predefined values for the template',
+            hint: {
+                words: [
+                    {
+                        help: "Lyrics - Use this keyword to insert the bhajan lyrics",
+                        value: '{lyrics}'
+                    },
+                    {
+                        help: "Meaning - Use this keyword to insert the meaning ",
+                        value: '{meaning}'
+                    },
+                    {
+                        help: "Scale - Use this keyword to insert the scale of the bhajan from the sheet",
+                        value: '{scale}'
+                    },
+                    {
+                        help: "Name - Use this keyword to insert the scale of the name of the bhajan singer",
+                        value: '{name}'
+                    }
+                ],
+                match: /\{/,
+                search: function (keyword, callback) {
+                    callback(this.words);
+                },
+                template: function (item) {
+                    return item.value + " " + item.help;
+                },
+                content: function (item) {
+                    return item.value;
+                }
             }
         });
     });
