@@ -179,9 +179,38 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                     <div class="row">
                         <div class="col-sm-6">
                             <h5>E-Mail</h5>
+                            <h6>Type { to see placeholders values</h6>
                         </div>
                         <div class="col-sm-6">
-                            <div id="email"></div>
+                            <div id="email">
+                                <div
+                                    style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal;">
+                                    Sairam! {name}
+                                </div>
+                                <div
+                                    style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal; padding: 2em;">
+                                    <div>You are scheduled to lead a devotional song on&nbsp;<strong>{date}</strong>&nbsp;at&nbsp;<strong>{time}</strong>.
+                                    </div>
+                                    <br>
+
+                                    <div>Please do find the lyrics as will be projected on the slide listed
+                                        below.<br><strong
+                                            style="color: red; text-decoration: underline; font-size: medium;">Please
+                                            respond to this e-mail and let us know if these are incorrect</strong>.
+                                    </div>
+                                    <div><br></div>
+                                    <div><pre
+                                            style="white-space: pre-wrap; font-family: monospace; font-size: large; color: blue;">{lyrics}
+</pre>
+                                    </div>
+                                    <div><strong>Practiced Scale</strong>&nbsp;:&nbsp;
+                                        <pre style="white-space: pre-wrap; font-family: monospace; font-size: large;">{scale}</pre>
+                                    </div>
+                                </div>
+                                <p><span
+                                        style="color: rgb(34, 34, 34); font-family: Verdana; font-size: 12.8px; line-height: normal;">Thank you! for taking the time to respond back to us. Sairam!</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row">

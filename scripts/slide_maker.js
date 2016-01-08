@@ -156,7 +156,7 @@
                         value: '{lyrics}'
                     },
                     {
-                        help: "Use this keyword to insert the meaning ",
+                        help: "Insert the meaning ",
                         value: '{meaning}'
                     },
                     {
@@ -165,6 +165,14 @@
                     },
                     {
                         help: "Name - Insert the name of the singer",
+                        value: '{name}'
+                    },
+                    {
+                        help: "Date - Insert the date on which they will sing",
+                        value: '{name}'
+                    },
+                    {
+                        help: "Time - Insert the time when they will sing",
                         value: '{name}'
                     }
                 ],
