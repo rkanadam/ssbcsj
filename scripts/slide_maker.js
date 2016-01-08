@@ -163,7 +163,7 @@
                     value: '{name}'
                 },
                 {
-                    help: "Insert the date on which they will sing",
+                    help: "Insert the scheduled bhajan date",
                     value: '{date}'
                 },
                 {
