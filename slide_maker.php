@@ -163,7 +163,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <h5>CC</h5>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" name="cc" class="form-group"
+                            <input type="text" id = "cc" name="cc" class="form-group"
                                    placeholder="comma separated e-mail addresses">
                         </div>
                     </div>
@@ -172,7 +172,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <h5>BCC</h5>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" name="bcc" class="form-group"
+                            <input type="text" id = "bcc" name="bcc" class="form-group"
                                    placeholder="comma separated e-mails addresses">
                         </div>
                     </div>

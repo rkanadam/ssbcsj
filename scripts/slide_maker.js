@@ -161,9 +161,16 @@
                             var email = _.template($("#email").summernote("code"));
                             var subject = _.template($("#subject").summernote("code"));
                             _.each(bhajans, function (bhajan) {
-                                console.log("Subject %s, \nEmail: %s\n", subject(bhajan), email(bhajan));
+                                bhajan.subject = subject(bhajan);
+                                bhajan.emailBody = email(bhajan);
                             });
-                            $("#indicator").hide();
+
+                            google.script.run
+                                .withSuccessHandler(function (sheet) {
+                                    $("#indicator").hide();
+                                }).withUserObject(this)
+                                .email(bhajans, $("#cc").val(), $("#bcc").val());
+
                         }).withUserObject(this)
                         .getCurrentSheet();
                 });
@@ -228,9 +235,9 @@
 
         $('#subject').summernote({
             toolbar: false,
-            height: 25,
+            height: 50,
             minHeight: null,             // set minimum height of editor
-            maxHeight: 25,             // set maximum height of editor
+            maxHeight: 50,             // set maximum height of editor
             focus: true,                  // set focus to editable area after initializing summernote,
             placeholder: 'type { to see predefined placeholders',
             hint: hint
