@@ -166,7 +166,12 @@
                             });
 
                             google.script.run
-                                .withSuccessHandler(function (sheet) {
+                                .withSuccessHandler(function (status) {
+                                    if (status) {
+                                        alert ("Sent the e-mails successfully");
+                                    } else {
+                                        alert ("Uh-oh we had trouble sending e-mails. Ask Raghu.");
+                                    }
                                     $("#indicator").hide();
                                 }).withUserObject(this)
                                 .email(bhajans, $("#cc").val(), $("#bcc").val());
