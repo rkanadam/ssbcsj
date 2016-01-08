@@ -107,7 +107,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             </div>
                         </div>
                         <div class="row" id="insert">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 top20">
                                 <div class="form-group text-center">
                                     <input type="submit" class="btn btn-lg btn-primary" value="Insert">
                                 </div>
