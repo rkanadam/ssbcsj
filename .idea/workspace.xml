@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/bhajan_parser.js" afterPath="$PROJECT_DIR$/scripts/bhajan_parser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/slide_maker.js" afterPath="$PROJECT_DIR$/scripts/slide_maker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slide_maker.php" afterPath="$PROJECT_DIR$/slide_maker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ssbcsj.iws" />
@@ -27,38 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="slide_maker.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="slide_maker.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slide_maker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.541666" vertical-offset="2942" max-vertical-offset="3945">
-              <caret line="229" column="52" selection-start-line="229" selection-start-column="43" selection-end-line="229" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.15411559" vertical-offset="2627" max-vertical-offset="3930">
+              <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
               <folding>
                 <element signature="e#3645#3666#0#HTML" expanded="true" />
                 <element signature="e#6217#6238#0#HTML" expanded="true" />
                 <element signature="e#7312#7338#0#HTML" expanded="true" />
                 <element signature="e#8650#8671#0#HTML" expanded="true" />
-                <element signature="e#10343#10436#0#HTML" expanded="true" />
-                <element signature="e#10601#10708#0#HTML" expanded="true" />
-                <element signature="e#11160#11226#0#HTML" expanded="true" />
-                <element signature="e#11535#11620#0#HTML" expanded="true" />
-                <element signature="e#11812#11884#0#HTML" expanded="true" />
-                <element signature="e#12062#12155#0#HTML" expanded="true" />
-                <element signature="e#12867#12905#0#HTML" expanded="true" />
-                <element signature="e#12940#13049#0#HTML" expanded="true" />
-                <element signature="e#13145#13245#0#HTML" expanded="true" />
-                <element signature="e#13307#13326#0#HTML" expanded="true" />
+                <element signature="e#10363#10456#0#HTML" expanded="true" />
+                <element signature="e#10621#10728#0#HTML" expanded="true" />
+                <element signature="e#11180#11246#0#HTML" expanded="true" />
+                <element signature="e#11555#11640#0#HTML" expanded="true" />
+                <element signature="e#11832#11904#0#HTML" expanded="true" />
+                <element signature="e#12082#12175#0#HTML" expanded="true" />
+                <element signature="e#12887#12925#0#HTML" expanded="true" />
+                <element signature="e#12960#13069#0#HTML" expanded="true" />
+                <element signature="e#13165#13265#0#HTML" expanded="true" />
+                <element signature="e#13327#13346#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="slide_maker.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="slide_maker.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3277311" vertical-offset="2235" max-vertical-offset="3570">
-              <caret line="162" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2700" max-vertical-offset="3675">
+              <caret line="193" column="18" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="18" />
               <folding>
-                <marker date="1452227010000" expanded="true" signature="9453:9466" placeholder="..." />
+                <marker date="1452227355000" expanded="true" signature="9756:9769" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -149,9 +149,9 @@
         <option value="$PROJECT_DIR$/server/util.php" />
         <option value="$PROJECT_DIR$/server/drive.php" />
         <option value="$PROJECT_DIR$/styles/slide_maker.css" />
-        <option value="$PROJECT_DIR$/slide_maker.php" />
         <option value="$PROJECT_DIR$/scripts/bhajan_parser.js" />
         <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
+        <option value="$PROJECT_DIR$/slide_maker.php" />
       </list>
     </option>
   </component>
@@ -848,29 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slide_maker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.541666" vertical-offset="2942" max-vertical-offset="3945">
-          <caret line="229" column="52" selection-start-line="229" selection-start-column="43" selection-end-line="229" selection-end-column="52" />
-          <folding>
-            <element signature="e#3645#3666#0#HTML" expanded="true" />
-            <element signature="e#6217#6238#0#HTML" expanded="true" />
-            <element signature="e#7312#7338#0#HTML" expanded="true" />
-            <element signature="e#8650#8671#0#HTML" expanded="true" />
-            <element signature="e#10343#10436#0#HTML" expanded="true" />
-            <element signature="e#10601#10708#0#HTML" expanded="true" />
-            <element signature="e#11160#11226#0#HTML" expanded="true" />
-            <element signature="e#11535#11620#0#HTML" expanded="true" />
-            <element signature="e#11812#11884#0#HTML" expanded="true" />
-            <element signature="e#12062#12155#0#HTML" expanded="true" />
-            <element signature="e#12867#12905#0#HTML" expanded="true" />
-            <element signature="e#12940#13049#0#HTML" expanded="true" />
-            <element signature="e#13145#13245#0#HTML" expanded="true" />
-            <element signature="e#13307#13326#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/bhajan_parser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1185">
@@ -881,10 +858,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3277311" vertical-offset="2235" max-vertical-offset="3570">
-          <caret line="162" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2700" max-vertical-offset="3675">
+          <caret line="193" column="18" selection-start-line="193" selection-start-column="18" selection-end-line="193" selection-end-column="18" />
           <folding>
-            <marker date="1452227010000" expanded="true" signature="9453:9466" placeholder="..." />
+            <marker date="1452227355000" expanded="true" signature="9756:9769" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slide_maker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15411559" vertical-offset="2627" max-vertical-offset="3930">
+          <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
+          <folding>
+            <element signature="e#3645#3666#0#HTML" expanded="true" />
+            <element signature="e#6217#6238#0#HTML" expanded="true" />
+            <element signature="e#7312#7338#0#HTML" expanded="true" />
+            <element signature="e#8650#8671#0#HTML" expanded="true" />
+            <element signature="e#10363#10456#0#HTML" expanded="true" />
+            <element signature="e#10621#10728#0#HTML" expanded="true" />
+            <element signature="e#11180#11246#0#HTML" expanded="true" />
+            <element signature="e#11555#11640#0#HTML" expanded="true" />
+            <element signature="e#11832#11904#0#HTML" expanded="true" />
+            <element signature="e#12082#12175#0#HTML" expanded="true" />
+            <element signature="e#12887#12925#0#HTML" expanded="true" />
+            <element signature="e#12960#13069#0#HTML" expanded="true" />
+            <element signature="e#13165#13265#0#HTML" expanded="true" />
+            <element signature="e#13327#13346#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

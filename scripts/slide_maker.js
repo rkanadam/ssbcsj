@@ -151,10 +151,13 @@
                                     var bhajan = $.extend({}, value);
                                     bhajan.firstName = bhajan.name ? bhajan.name.split(" ", -1)[0] : "";
                                     bhajan.date = sheet.date;
-                                    bhajan.time = sheet.time;
+                                    bhajan.time = sheet.time || "5:00 PM";
                                     return bhajan;
                                 }
                             });
+                            _.templateSettings = {
+                                interpolate: /\{([^}].+?)\}/g
+                            };
                             var email = _.template($("#email").summernote("code"));
                             var subject = _.template($("#subject").summernote("code"));
                             _.each(bhajans, function (bhajan) {
@@ -196,6 +199,10 @@
                 {
                     help: "Insert the time of the bhajan slot",
                     value: '{time}'
+                },
+                {
+                    help: "Insert the description of the bhajan",
+                    value: '{description}'
                 }
             ],
             match: /\{/,
