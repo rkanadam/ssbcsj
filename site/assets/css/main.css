@@ -2119,9 +2119,11 @@ header h6 + p {
 }
 
 header.major h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
     color: #444;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 5px;
 }
 
 /* Form */
