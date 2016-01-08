@@ -143,50 +143,64 @@
     });
 
     $(function () {
+
+        var hint = {
+            words: [
+                {
+                    help: "Insert the bhajan lyrics",
+                    value: '{lyrics}'
+                },
+                {
+                    help: "Insert the meaning ",
+                    value: '{meaning}'
+                },
+                {
+                    help: "Insert the scale of the bhajan",
+                    value: '{scale}'
+                },
+                {
+                    help: "Insert the name of the singer",
+                    value: '{name}'
+                },
+                {
+                    help: "Insert the date on which they will sing",
+                    value: '{date}'
+                },
+                {
+                    help: "Insert the time of the bhajan slot",
+                    value: '{time}'
+                }
+            ],
+            match: /\{/,
+            search: function (keyword, callback) {
+                callback(this.words);
+            },
+            template: function (item) {
+                return ["<div style='font-size:90%'>", item.value, " ", item.help, "</div>"].join("");
+            },
+            content: function (item) {
+                return item.value;
+            }
+        };
+
         $('#email').summernote({
             height: 300,                 // set editor height
             minHeight: null,             // set minimum height of editor
             maxHeight: null,             // set maximum height of editor
             focus: true,                  // set focus to editable area after initializing summernote,
             placeholder: 'type { to see predefined placeholders',
-            hint: {
-                words: [
-                    {
-                        help: "Insert the bhajan lyrics",
-                        value: '{lyrics}'
-                    },
-                    {
-                        help: "Insert the meaning ",
-                        value: '{meaning}'
-                    },
-                    {
-                        help: "Scale - Insert the scale of the bhajan",
-                        value: '{scale}'
-                    },
-                    {
-                        help: "Name - Insert the name of the singer",
-                        value: '{name}'
-                    },
-                    {
-                        help: "Date - Insert the date on which they will sing",
-                        value: '{name}'
-                    },
-                    {
-                        help: "Time - Insert the time when they will sing",
-                        value: '{name}'
-                    }
-                ],
-                match: /\{/,
-                search: function (keyword, callback) {
-                    callback(this.words);
-                },
-                template: function (item) {
-                    return item.value + " " + item.help;
-                },
-                content: function (item) {
-                    return item.value;
-                }
-            }
+            hint: hint
         });
+
+        $('#subject').summernote({
+            toolbar: false,
+            height: 25,
+            minHeight: null,             // set minimum height of editor
+            maxHeight: 25,             // set maximum height of editor
+            focus: true,                  // set focus to editable area after initializing summernote,
+            placeholder: 'type { to see predefined placeholders',
+            hint: hint
+        });
+
     });
 })(jQuery);

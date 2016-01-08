@@ -178,6 +178,16 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
+                            <h5>Subject</h5>
+                            <h6>Type { to see placeholders values</h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <div id="subject">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
                             <h5>E-Mail</h5>
                             <h6>Type { to see placeholders values</h6>
                         </div>
