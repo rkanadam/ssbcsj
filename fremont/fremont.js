@@ -94,7 +94,7 @@
                 $event.find(".address").text(event.location);
                 $event.find("date").text(event.start.getDate());
                 $event.find(".month").text(months[event.start.getMonth()]);
-                $event.find(".summary").text(/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - "));
+                $event.find(".summary").text(event.summary);
                 $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
                 $event.find(".address_link").attr("target", "_blank");
                 $event.find(".time").text(getUserFriendlyTime(event.start, event.end));
@@ -122,7 +122,7 @@
                     if (response !== true) {
                         alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
                     } else {
-                        alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghu");
+                        alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Mouli / Siva");
                     }
                     window.location.reload();
                 }, "json");
