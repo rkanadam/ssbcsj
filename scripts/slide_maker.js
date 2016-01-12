@@ -163,7 +163,7 @@
                             }));
                             $("#downloadSlides").off("click").on("click", function () {
                                 $("#slideGeneratorForm").submit();
-                            });
+                            }).show ();
                         } else {
                             $("#downloadSlides").hide();
                         }

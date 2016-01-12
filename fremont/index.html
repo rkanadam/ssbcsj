@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Fremont Center Bhajan Signup</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/css/bootstrap-select.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.research.pdx.edu/typeahead.js/0.10.5/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.9.3/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.9.0/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.0/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-8">
+                <h1 style="border-bottom: 1px solid #CCC">Fremont Center Home Bhajans</h1>
+            </div>
+            <div class="col-sm-2">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-4">
+                <div id="event0" style="display: block">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4><span class="day">Today</span>'s Bhajan</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row" style="border-bottom: 1px solid #EEE">
+                                        <div class="col-xs-3">
+                                            <a href="#" class="address_link"> <img
+                                                    src="styles/images/map_icon.jpg"/></a>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <div class="summary"></div>
+                                            <p>
+                                                <a href="parking.html"
+                                                   class="btn btn-danger btn-xs parking_link"
+                                                   aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-bed"
+                                                          aria-hidden="true"></span>
+                                                    <span>Parking Instructions</span>
+                                                </a>
+                                            </p>
+                                            <a href="#" class="address_link"><span class="address">167 Acalanes Dr APT 1 Sunnyvale CA 94086</span></a>
+
+                                            <p>
+                                                <a href="#" class="btn btn-primary btn-xs address_link"
+                                                   aria-label="Left Align">
+                                                    <span class="glyphicon glyphicon-map-marker"
+                                                          aria-hidden="true"></span>
+                                                    <span>Click to Navigate</span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="padding-top: 10px">
+                                        <div class="col-xs-3">
+                                            <div class="calendar_icon">
+                                                <p class="date">
+                                                    <date>7</date>
+                                                    <span class="month">Sep</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9" style="vertical-align: middle">
+                                            <h4><span class="day">Today</span>, <span class="time">&nbsp;</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h4>Signup to host a bhajan</h4>
+                    </div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="when">Pick a date</label>
+                                <select id="when" name="when" class="form-control"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                       required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Full street address"
+                                       name="address"
+                                       required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Full street address"
+                                       name="phone"
+                                       required="required">
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Comments</label>
+                                <textarea class="form-control" id="comments"
+                                          placeholder="Comments / Additional Instructions ? Parking, Gate Code, anything else you want folks to know"
+                                          name="comments"
+                                          required="required"
+                                          rows="5"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-lg btn-primary">Signup!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
