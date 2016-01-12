@@ -54,24 +54,6 @@
                 .getDevotionalSongs();
         }
 
-        $("#insert button").on("click", function () {
-            var values = [];
-            values.push({col: sheet.headers["devotionalsong"], value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
-            values.push({col: sheet.headers["lyrics"], value: $("[name='lyrics']").val()});
-            values.push({col: sheet.headers["scale"], value: $("[name='scale']").val()});
-            values.push({col: sheet.headers["meaning"], value: $("[name='meaning']").val()});
-            if (window.google) {
-                google.script.run
-                    .withSuccessHandler(function (response) {
-                        if (!response) {
-                            alert("Uh-oh, could not insert")
-                        }
-                    })
-                    .withUserObject(this)
-                    .insert(values);
-            }
-        });
-
         $("#buttons").on("click", "a", function (e) {
             e.preventDefault();
             var $this = $(this);
@@ -82,7 +64,39 @@
                     $(id).hide();
                 }).end().find("button .text").text($this.text());
             $(href).show();
-            if (href === "#slideMaker") {
+            if (href === "#bhajanFiller") {
+                $("#indicator").show();
+                
+                google.script.run
+                    .withSuccessHandler(function (sheet) {
+                        console.log(sheet);
+                        sheet = window.parse_bhajans(sheet);
+                        console.log("After", sheet);
+
+                        $("#insert button").off("click").on("click", function () {
+                            var values = [];
+                            values.push({col: sheet.headers["devotionalsong"], value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
+                            values.push({col: sheet.headers["lyrics"], value: $("[name='lyrics']").val()});
+                            values.push({col: sheet.headers["scale"], value: $("[name='scale']").val()});
+                            values.push({col: sheet.headers["meaning"], value: $("[name='meaning']").val()});
+                            if (window.google) {
+                                google.script.run
+                                    .withSuccessHandler(function (response) {
+                                        if (!response) {
+                                            alert("Uh-oh, could not insert")
+                                        }
+                                    })
+                                    .withUserObject(this)
+                                    .insert(values);
+                            }
+                        });
+
+                        $("#indicator").hide();
+                    }).withUserObject(this)
+                    .getCurrentSheet();
+
+
+            } else if (href === "#slideMaker") {
                 $("#indicator").show();
                 google.script.run
                     .withSuccessHandler(function (sheet) {
