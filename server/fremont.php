@@ -52,7 +52,7 @@ if ($method === "get") {
     foreach ($defaultFolks as $defaultFolk) {
         $attendee = new Google_Service_Calendar_EventAttendee ();
         $attendee->setEmail($defaultFolk);
-        //$attendees[] = $attendee;
+        $attendees[] = $attendee;
     }
     $attendee = new Google_Service_Calendar_EventAttendee ();
     $attendee->setEmail($email);
