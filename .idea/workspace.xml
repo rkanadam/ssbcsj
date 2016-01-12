@@ -9,8 +9,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" afterPath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" afterPath="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" afterPath="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bhajan/index.html" afterPath="$PROJECT_DIR$/bhajan/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/index.html" afterPath="$PROJECT_DIR$/site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" afterPath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/main.js" afterPath="$PROJECT_DIR$/site/assets/js/main.js" />
@@ -79,11 +79,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="center_devotional_lead_signup.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="center_devotional_lead_signup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/center_devotional_lead_signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5824053" vertical-offset="2192" max-vertical-offset="3105">
-              <caret line="181" column="88" selection-start-line="181" selection-start-column="88" selection-end-line="181" selection-end-column="88" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="3060">
+              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center_devotional_lead_signup.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/center_devotional_lead_signup.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24259056" vertical-offset="1249" max-vertical-offset="2730">
+              <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -149,10 +159,10 @@
         <option value="$PROJECT_DIR$/site/assets/css/main.css" />
         <option value="$PROJECT_DIR$/site/index.html" />
         <option value="$PROJECT_DIR$/scripts/slide_maker.js" />
-        <option value="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bhajan/index.html" />
         <option value="$PROJECT_DIR$/scripts/center_devotional_lead_signup.js" />
+        <option value="$PROJECT_DIR$/styles/center_devotional_lead_signup.css" />
       </list>
     </option>
   </component>
@@ -811,14 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/center_devotional_lead_signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24259056" vertical-offset="1249" max-vertical-offset="2670">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.166667" vertical-offset="551" max-vertical-offset="1965">
@@ -857,8 +859,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/center_devotional_lead_signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5824053" vertical-offset="2192" max-vertical-offset="3105">
-          <caret line="181" column="88" selection-start-line="181" selection-start-column="88" selection-end-line="181" selection-end-column="88" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1650" max-vertical-offset="3060">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/center_devotional_lead_signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24259056" vertical-offset="1249" max-vertical-offset="2730">
+          <caret line="98" column="1" selection-start-line="98" selection-start-column="1" selection-end-line="98" selection-end-column="1" />
           <folding />
         </state>
       </provider>

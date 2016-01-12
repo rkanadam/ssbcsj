@@ -47,17 +47,14 @@
                         .val(bhajan.lyrics)
                         .end()
                         .show();
-
-                    var height = $("#lyrics")
-                        .find("textarea").prop('scrollHeight');
-
-                    $("#lyrics")
-                        .find("textarea")
-                        .height(height);
-
                     $("#lyrics")
                         .find("[name=meaning]")
                         .val(bhajan.meaning);
+
+                    var $area = $("#lyrics")
+                        .find("textarea");
+                    $area.height(10);
+                    $area.height($area.prop('scrollHeight'));
 
 
                     $("#scale").show();
@@ -150,7 +147,7 @@
                 if (val) {
                     var description = $(this).find("[value=" + val + "]").text();
                     if (/bhajan/i.exec(description) || /song/i.exec(description)) {
-                        $("#bhajan").show();
+                        $("#bhajan, #scale, #lyrics").show();
                     }
                     $("#signup, #contact, #comments").show();
                 } else {

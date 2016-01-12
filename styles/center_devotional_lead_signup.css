@@ -94,6 +94,10 @@ body {
     }
 }
 
+#when .twitter-typeahead {
+    width: 100%;
+}
+
 #when .typeahead,
 #when .tt-query,
 #when .tt-hint {
