@@ -10,7 +10,6 @@
         });
 
         $.getJSON("server/center_devotional_lead_signup.php").then(function (bhajans) {
-
             bhajans.sort(function (b1, b2) {
                 return b1[0].toLocaleLowerCase() - b2[0].toLocaleLowerCase();
             });
@@ -92,39 +91,44 @@
             });
 
 
-            var dates = $.map(sheets, function (sheet, index) {
-                var d = new Date();
-                d.setTime(sheet.sheet.timestamp);
-                return ["<option value = \"", index, "\">", d.toDateString(), "</option>"];
-            });
-            dates.splice(0, 0, ["<option value = \"\">Select a date</option>"]);
-
-            $("#when select").html(dates.join(""));
-            $("#when select").selectpicker();
-            $("#when select").change(function () {
-                var index = parseInt($(this).val(), 10);
-                if (!isNaN(index)) {
-                    var sheet = sheets[index];
-
-                    var slots = $.map(sheet.availableSlots, function (slot) {
-                        return ["<option value = \"", slot[0], "\">", slot.description, " (", slot.length, " Remaining)</option>"];
-                    });
-                    slots.splice(0, 0, ["<option value = \"\">Select an item</option>"]);
-
-                    $("#slot select").html(slots.join(""));
-                    $("#slot select").selectpicker();
-                    $("#slot select").selectpicker('refresh');
-                    $("#slot select").trigger('change');
-                    $("#slot").show();
-                    if (sheet.description) {
-                        $("#description").show ().find ("p").text(sheet.description);
-                    } else {
-                        $("#description").hide ();
+            $('#when .typeahead').typeahead({
+                    minLength: 0,
+                    highlight: true
+                },
+                {
+                    "name": 'availableDates',
+                    "display": function (sheet) {
+                        return moment(sheet.sheet.timestamp).tz('America/Los_Angeles').format('MMMM Do');
+                    },
+                    source: function (q, sync, async) {
+                        sync(sheets);
+                    },
+                    templates: {
+                        suggestion: _.template("<div><p><strong><%= moment(sheet.timestamp).tz('America/Los_Angeles').format('MMMM Do YY') %></strong></p><% if (description) { %><div class='description'><%= description %></div><% } %></div>")
                     }
-                } else {
-                    $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
-                }
-            }).trigger("change");
+                }).on("typeahead:select", function (e, sheet) {
+                    if (sheet) {
+                        var slots = $.map(sheet.availableSlots, function (slot) {
+                            return ["<option value = \"", slot[0], "\">", slot.description, " (", slot.length, " Remaining)</option>"];
+                        });
+                        slots.splice(0, 0, ["<option value = \"\">Select an item</option>"]);
+
+                        $("#slot select").html(slots.join(""));
+                        $("#slot select").selectpicker();
+                        $("#slot select").selectpicker('refresh');
+                        $("#slot select").trigger('change');
+                        $("#slot").show();
+                        if (sheet.description) {
+                            $("#description").show().find("p").text(sheet.description);
+                        } else {
+                            $("#description").hide();
+                        }
+                    } else {
+                        $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
+                    }
+                }).on("click", function (e) {
+                    $(this).typeahead('open');
+                });
             $("#when").show();
 
             $("#slot select").change(function () {
@@ -145,16 +149,16 @@
 
                 e.preventDefault();
                 var sheet = sheets[parseInt($("#when select").val(), 10)];
-                var slot  = parseInt ($("#slot select").val(), 10);
-                slot = _.find (sheet.availableSlots, function (slots) {
-                   return slots[0] === slot ? slots : null;
+                var slot = parseInt($("#slot select").val(), 10);
+                slot = _.find(sheet.availableSlots, function (slots) {
+                    return slots[0] === slot ? slots : null;
                 });
 
                 var postParams = [];
                 postParams.push({name: "sheetTitle", value: sheet.title});
                 postParams.push({name: "row", value: $("#slot select").val()});
                 postParams.push({name: "name", value: $("input[name='name']").val()});
-                postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text ()});
+                postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text()});
                 postParams.push({name: "email", value: $("input[name='email']").val()});
                 postParams.push({name: "date", value: sheet.date});
                 postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});
