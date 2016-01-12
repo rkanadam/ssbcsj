@@ -53,10 +53,10 @@
       <file leaf-file-name="slide_maker.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/slide_maker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34577388" vertical-offset="825" max-vertical-offset="4410">
+            <state vertical-scroll-proportion="0.34577388" vertical-offset="825" max-vertical-offset="4395">
               <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
               <folding>
-                <marker date="1452564794000" expanded="false" signature="12245:12258" placeholder="..." />
+                <marker date="1452564897000" expanded="false" signature="12207:12220" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -429,12 +429,12 @@
     <MESSAGE value="Updating devotional signup" />
     <MESSAGE value="Adding support for sending in a confirmation e-mail" />
     <MESSAGE value="Updating home page" />
-    <MESSAGE value="Updating slide maker" />
     <MESSAGE value="Adding initial site for CSJ" />
     <MESSAGE value="Updating our site!" />
     <MESSAGE value="Updating bhajan signup" />
     <MESSAGE value="Fixing bhajan URL on the home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing bhajan URL on the home page" />
+    <MESSAGE value="Updating slide maker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating slide maker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -828,7 +828,7 @@
         <state vertical-scroll-proportion="0.34577388" vertical-offset="825" max-vertical-offset="4410">
           <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
           <folding>
-            <marker date="1452564794000" expanded="false" signature="12245:12258" placeholder="..." />
+            <marker date="1452564897000" expanded="false" signature="12207:12220" placeholder="..." />
           </folding>
         </state>
       </provider>

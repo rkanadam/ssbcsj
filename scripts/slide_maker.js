@@ -74,7 +74,6 @@
                         console.log("After", sheet);
 
                         $("#insert [type='button']").off("click").on("click", function () {
-                            debugger;
                             var values = [];
                             values.push({col: sheet.headers["devotionalsong"] + 1, value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
                             values.push({col: sheet.headers["lyrics"] + 1, value: $("[name='lyrics']").val()});
