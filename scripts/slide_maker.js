@@ -66,19 +66,20 @@
             $(href).show();
             if (href === "#bhajanFiller") {
                 $("#indicator").show();
-                
+
                 google.script.run
                     .withSuccessHandler(function (sheet) {
                         console.log(sheet);
                         sheet = window.parse_bhajans(sheet);
                         console.log("After", sheet);
 
-                        $("#insert button").off("click").on("click", function () {
+                        $("#insert [type='button']").off("click").on("click", function () {
+                            debugger;
                             var values = [];
-                            values.push({col: sheet.headers["devotionalsong"], value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
-                            values.push({col: sheet.headers["lyrics"], value: $("[name='lyrics']").val()});
-                            values.push({col: sheet.headers["scale"], value: $("[name='scale']").val()});
-                            values.push({col: sheet.headers["meaning"], value: $("[name='meaning']").val()});
+                            values.push({col: sheet.headers["devotionalsong"] + 1, value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
+                            values.push({col: sheet.headers["lyrics"] + 1, value: $("[name='lyrics']").val()});
+                            values.push({col: sheet.headers["scale"] + 1, value: $("[name='scale']").val()});
+                            values.push({col: sheet.headers["meaning"] + 1, value: $("[name='meaning']").val()});
                             if (window.google) {
                                 google.script.run
                                     .withSuccessHandler(function (response) {
