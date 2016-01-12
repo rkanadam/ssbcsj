@@ -62,7 +62,6 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <li><a href="#bhajanFiller">Search and fill in bhajans</a></li>
                             <li><a href="#slideMaker">Download Bhajan Slides</a></li>
                             <li><a href="#emailReminder">Send E-Mail Reminders</a></li>
-                            <li><a href="#smsReminder">Send SMS Reminders</a></li>
                         </ul>
                     </div>
                 </div>
@@ -109,7 +108,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                         <div class="row" id="insert">
                             <div class="col-sm-6 top20">
                                 <div class="form-group text-center">
-                                    <input type="submit" class="btn btn-lg btn-primary" value="Insert">
+                                    <input type="button" class="btn btn-lg btn-primary" value="Insert">
                                 </div>
                             </div>
                         </div>
@@ -163,7 +162,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <h5>CC</h5>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" id = "cc" name="cc" class="form-group"
+                            <input type="text" id="cc" name="cc" class="form-group"
                                    placeholder="comma separated e-mail addresses" value="raghuram.kanadam@gmail.com">
                         </div>
                     </div>
@@ -172,7 +171,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <h5>BCC</h5>
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" id = "bcc" name="bcc" class="form-group"
+                            <input type="text" id="bcc" name="bcc" class="form-group"
                                    placeholder="comma separated e-mails addresses">
                         </div>
                     </div>

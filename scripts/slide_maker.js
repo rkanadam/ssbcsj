@@ -12,7 +12,6 @@
         if (window.google) {
             google.script.run
                 .withSuccessHandler(function (bhajans) {
-                    debugger;
                     bhajans.sort(function (b1, b2) {
                         return b1[0].toLocaleLowerCase() - b2[0].toLocaleLowerCase();
                     });
@@ -54,6 +53,24 @@
                 .withUserObject(this)
                 .getDevotionalSongs();
         }
+
+        $("#insert button").on("click", function () {
+            var values = [];
+            values.push({col: sheet.headers["devotionalsong"], value: $("[name='lyrics']").val().split(/\n/, -1)[0]});
+            values.push({col: sheet.headers["lyrics"], value: $("[name='lyrics']").val()});
+            values.push({col: sheet.headers["scale"], value: $("[name='scale']").val()});
+            values.push({col: sheet.headers["meaning"], value: $("[name='meaning']").val()});
+            if (window.google) {
+                google.script.run
+                    .withSuccessHandler(function (response) {
+                        if (!response) {
+                            alert("Uh-oh, could not insert")
+                        }
+                    })
+                    .withUserObject(this)
+                    .insert(values);
+            }
+        });
 
         $("#buttons").on("click", "a", function (e) {
             e.preventDefault();
