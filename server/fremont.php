@@ -29,19 +29,22 @@ if ($method === "get") {
     $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
     $spreadsheet = $spreadsheetFeed->getByTitle('Fremont Bhajan Signup');
     $signupFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests")->getListFeed();
+
+    $id = $_REQUEST["when"];
+    $name = $_REQUEST["name"];
+    $address = $_REQUEST["address"];
+    $email = $_REQUEST["email"];
+    $event = $calendarService->events->get($calendarId, $id);
+
     $value = array();
-    $propertiesToCopy = array("date", "name", "email", "phone", "address", "comments");
+    $propertiesToCopy = array("name", "email", "phone", "address", "comments");
+    $value["date"] = date("n/j/Y H:i:s", $event->getStart()->dateTime);
     $value["timestamp"] = date("n/j/Y H:i:s");
     foreach ($propertiesToCopy as $property) {
         $value[$property] = trim($_REQUEST[$property]);
     }
     $signupFeed->insert($value);
 
-    $id = $_REQUEST["id"];
-    $name = $_REQUEST["name"];
-    $address = $_REQUEST["address"];
-    $email = $_REQUEST["email"];
-    $event = $calendarService->events->get($calendarId, $id);
     $event->setSummary("Residence of $name");
     $event->setLocation($address);
     $attendees = array();
@@ -53,8 +56,8 @@ if ($method === "get") {
     }
     $attendee = new Google_Service_Calendar_EventAttendee ();
     $attendee->setEmail($email);
-
     $event->setAttendees($attendees);
     $calendarService->events->update($calendarId, $id, $event);
+
     echo json_encode(true);
 }
