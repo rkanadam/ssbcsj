@@ -40,12 +40,26 @@
                     displayKey: 'firstLine',
                     limit: 15,
                     source: bhajanHound
-                }).on('typeahead:selected', function (e, bhajan) {
+                }).on('typeahead:select', function (e, bhajan) {
+
                     $("#lyrics")
                         .find("textarea")
                         .val(bhajan.lyrics)
                         .end()
                         .show();
+
+                    var height = $("#lyrics")
+                        .find("textarea").prop('scrollHeight');
+
+                    $("#lyrics")
+                        .find("textarea")
+                        .height(height);
+
+                    $("#lyrics")
+                        .find("[name=meaning]")
+                        .val(bhajan.meaning);
+
+
                     $("#scale").show();
                 });
             $("#bhajanPicker").parent(".twitter-typeahead").css("display", "block");
@@ -165,6 +179,7 @@
                 postParams.push({name: "col" + sheet.headers["devotionalsong"], value: $("input[name='bhajan']").val()});
                 postParams.push({name: "col" + sheet.headers["scale"], value: $("input[name='scale']").val()});
                 postParams.push({name: "col" + sheet.headers["lyrics"], value: $("textarea[name='lyrics']").val()});
+                postParams.push({name: "col" + sheet.headers["meaning"], value: $("input[name='meaning']").val()});
                 postParams.push({name: "col" + sheet.headers["email"], value: $("input[name='email']").val()});
                 postParams.push({name: "col" + sheet.headers["phonenumber"], value: $("input[name='phone']").val()});
                 postParams.push({name: "col" + sheet.headers["notes"], value: $("textarea[name='comments']").val()});
