@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Date Generator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="shortcut icon" href="styles/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="styles/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <style>
+        time.icon {
+            font-size: 1em; /* change icon size */
+            display: block;
+            position: relative;
+            width: 7em;
+            height: 7em;
+            background-color: #fff;
+            border-radius: 0.6em;
+            border: 1px solid #bdbdbd;
+            border-top: none;
+            overflow: hidden;
+        }
+
+        time.icon * {
+            display: block;
+            width: 100%;
+            font-size: 1em;
+            font-style: normal;
+            text-align: center;
+        }
+
+        time.icon strong {
+            position: absolute;
+            top: 0;
+            padding: 0.4em 0;
+            color: #fff;
+            /*background-color: #fd9f1b;*/
+            background: -webkit-linear-gradient(top, #d10000 0%, #7a0909 100%);
+            border-bottom: 3px solid #a13838;
+            box-shadow: 0 2px 0 #7a0909;
+        }
+
+        time.icon em {
+            position: absolute;
+            bottom: 0.3em;
+            color: #7a0909;
+        }
+
+        time.icon span {
+            font-size: 2.8em;
+            letter-spacing: -0.05em;
+            padding-top: 0.8em;
+            color: #2f2f2f;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <br>
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-sm-1"><label>Date</label></div>
+            <div class="col-sm-2"><input type="date" class="form-control" placeholder="date" id="date"></div>
+            <div class="col-sm-2">
+                <div class="timeanddate">
+                    <time datetime="2014-09-20" class="icon">
+                        <em class="day">Saturday</em>
+                        <strong class="month">September</strong>
+                        <span class="date">20</span>
+                    </time>
+
+                </div>
+            </div>
+            <div class="col-sm-2" id="canvas">&nbsp;</div>
+            <div class="col-sm-1">&nbsp;</div>
+        </div>
+    </div>
+    <script type="application/javascript">
+        $(function () {
+
+            function generate() {
+                html2canvas($(".timeanddate").get(0), {
+                    onrendered: function (canvas) {
+                        $("#canvas").empty().append(canvas);
+                    }
+                });
+            };
+
+            $("#generate").click(generate);
+
+            $("#date").change(function () {
+                var val = $(this).val();
+                var parts = val.split(/-/);
+                var d = new Date(parts[0], parseInt(parts[1], 10) - 1, parseInt(parts[2], 10), 0, 0, 0);
+
+                var month = new Array();
+                month[0] = "January";
+                month[1] = "February";
+                month[2] = "March";
+                month[3] = "April";
+                month[4] = "May";
+                month[5] = "June";
+                month[6] = "July";
+                month[7] = "August";
+                month[8] = "September";
+                month[9] = "October";
+                month[10] = "November";
+                month[11] = "December";
+
+                var weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+
+                $(".timeanddate .date").text(d.getDate());
+                $(".timeanddate .month").text(month[d.getMonth()]);
+                $(".timeanddate .day").text(weekday[d.getDay()]);
+
+                generate();
+            });
+        });
+    </script>
+</div>
+</body>
+</html>
