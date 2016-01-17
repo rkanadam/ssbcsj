@@ -134,6 +134,43 @@
                         } else {
                             $("#description").hide();
                         }
+
+                        $("#signupForm").off ("submit").on("submit", function (e) {
+                            var $this = $(this);
+                            e.preventDefault();
+                            var slot = parseInt($("#slot select").val(), 10);
+                            slot = _.find(sheet.availableSlots, function (slots) {
+                                return slots[0] === slot ? slots : null;
+                            });
+
+                            var postParams = [];
+                            postParams.push({name: "sheetTitle", value: sheet.title});
+                            postParams.push({name: "row", value: $("#slot select").val()});
+                            postParams.push({name: "name", value: $("input[name='name']").val()});
+                            postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text()});
+                            postParams.push({name: "email", value: $("input[name='email']").val()});
+                            postParams.push({name: "date", value: sheet.date});
+                            postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});
+                            postParams.push({name: "col" + sheet.headers["devotionalsong"], value: $("input[name='bhajan']").val()});
+                            postParams.push({name: "col" + sheet.headers["scale"], value: $("input[name='scale']").val()});
+                            postParams.push({name: "col" + sheet.headers["lyrics"], value: $("textarea[name='lyrics']").val()});
+                            postParams.push({name: "col" + sheet.headers["meaning"], value: $("input[name='meaning']").val()});
+                            postParams.push({name: "col" + sheet.headers["email"], value: $("input[name='email']").val()});
+                            postParams.push({name: "col" + sheet.headers["phonenumber"], value: $("input[name='phone']").val()});
+                            postParams.push({name: "col" + sheet.headers["notes"], value: $("textarea[name='comments']").val()});
+                            postParams.push({name: "col" + sheet.headers["timestamp"], value: moment().tz('America/Los_Angeles').format('MMMM Do YYYY, h:mm:ss a')});
+                            postParams.push({name: "colCount", value: Math.max.apply(this, _.keys(sheet.columnToHeaderName))});
+
+                            $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
+                                if (response !== true) {
+                                    alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
+                                } else {
+                                    alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghu");
+                                }
+                                window.location.reload();
+                            }, "json");
+                        });
+
                     } else {
                         $("#slot, #contact, #signup, #scale, #bhajan #comments").hide();
                     }
@@ -154,45 +191,6 @@
                     $("#signup, #contact, #scale, #bhajan, #comments").hide();
                 }
             });
-
-            $("#signupForm").submit(function (e) {
-                var $this = $(this);
-
-                e.preventDefault();
-                var sheet = sheets[parseInt($("#when select").val(), 10)];
-                var slot = parseInt($("#slot select").val(), 10);
-                slot = _.find(sheet.availableSlots, function (slots) {
-                    return slots[0] === slot ? slots : null;
-                });
-
-                var postParams = [];
-                postParams.push({name: "sheetTitle", value: sheet.title});
-                postParams.push({name: "row", value: $("#slot select").val()});
-                postParams.push({name: "name", value: $("input[name='name']").val()});
-                postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text()});
-                postParams.push({name: "email", value: $("input[name='email']").val()});
-                postParams.push({name: "date", value: sheet.date});
-                postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});
-                postParams.push({name: "col" + sheet.headers["devotionalsong"], value: $("input[name='bhajan']").val()});
-                postParams.push({name: "col" + sheet.headers["scale"], value: $("input[name='scale']").val()});
-                postParams.push({name: "col" + sheet.headers["lyrics"], value: $("textarea[name='lyrics']").val()});
-                postParams.push({name: "col" + sheet.headers["meaning"], value: $("input[name='meaning']").val()});
-                postParams.push({name: "col" + sheet.headers["email"], value: $("input[name='email']").val()});
-                postParams.push({name: "col" + sheet.headers["phonenumber"], value: $("input[name='phone']").val()});
-                postParams.push({name: "col" + sheet.headers["notes"], value: $("textarea[name='comments']").val()});
-                postParams.push({name: "col" + sheet.headers["timestamp"], value: moment().tz('America/Los_Angeles').format('MMMM Do YYYY, h:mm:ss a')});
-                postParams.push({name: "colCount", value: Math.max.apply(this, _.keys(sheet.columnToHeaderName))});
-
-                $.post("server/center_devotional_lead_signup.php", postParams, function (response) {
-                    if (response !== true) {
-                        alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
-                    } else {
-                        alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghu");
-                    }
-                    window.location.reload();
-                }, "json");
-            });
-
         });
 
     });
