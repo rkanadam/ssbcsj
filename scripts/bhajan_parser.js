@@ -56,9 +56,10 @@
                 }
                 values.row = row;
             });
-            var time = title.split (" ", -1)[-1];
+            var parts = title.split(" ", -1);
+            var time = parts && parts.length > 1 ? parts.pop() : null;
             return {
-                "time" : time,
+                "time": time,
                 "title": title,
                 "sheet": sheet,
                 "date": date,
