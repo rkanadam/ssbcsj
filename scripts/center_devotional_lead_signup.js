@@ -126,7 +126,7 @@
                         sync(sheets);
                     },
                     templates: {
-                        suggestion: _.template("<div><p><strong><%= moment(sheet.timestamp).tz('America/Los_Angeles').format('MMMM Do YY') + ' ' + (time||'') %></strong></p><% if (description) { %><div class='description'><%= description %></div><% } %></div>")
+                        suggestion: _.template("<div><p><strong><%= moment(sheet.timestamp).tz('America/Los_Angeles').format('MMMM Do') + ' ' + (time||'') %></strong></p><% if (description) { %><div class='description'><%= description %></div><% } %></div>")
                     }
                 }).on("typeahead:select", function (e, sheet) {
                     if (sheet) {
