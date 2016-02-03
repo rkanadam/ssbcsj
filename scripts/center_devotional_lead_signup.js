@@ -98,7 +98,17 @@
             });
 
             sheets.sort(function (s1, s2) {
-                return s1.sheet.timestamp - s2.sheet.timestamp;
+                var times = s1.sheet.timestamp - s2.sheet.timestamp;
+                if (times === 0) {
+                    if (s1.time && s2.time) {
+                        var t1 = moment(s1.time, "hh:mmA").toDate ();
+                        var t2 = moment(s2.time, "hh:mmA").toDate ();
+                        return t1.getTime () - t2.getTime();
+                    }
+                    return s1.title.localeCompare(s2.title);
+                } else {
+                    return times;
+                }
             });
 
 
