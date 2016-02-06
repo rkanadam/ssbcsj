@@ -150,6 +150,13 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                     <form id="slideGeneratorForm" method="post"
                                           action="https://54.153.14.234:8443/bhajan/make" target="_blank">
                                         <input type="hidden" name="bhajans" value="" id="bhajans">
+                                        <div class="form-group text-center">
+                                            <label for="slideTemplate">Slide Template</label>
+                                            <select name = "template" class="form-control" id = "slideTemplate">
+                                                <option value="CSJ" selected>CSJ</option>
+                                                <option value="Peninsula">Peninsula Sai Center</option>
+                                            </select>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="col-sm-6">

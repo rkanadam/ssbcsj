@@ -156,12 +156,13 @@
                                     "meaning": bhajan.meaning
                                 };
                             });
-                            $("#slideGeneratorForm [name='bhajans']").val(JSON.stringify({
-                                "divineCodeOfConduct": divineCodeOfConduct,
-                                "thoughtForTheWeek": thoughtForTheWeek,
-                                "bhajans": slideBhajans
-                            }));
                             $("#downloadSlides").off("click").on("click", function () {
+                                $("#slideGeneratorForm [name='bhajans']").val(JSON.stringify({
+                                    "divineCodeOfConduct": divineCodeOfConduct,
+                                    "thoughtForTheWeek": thoughtForTheWeek,
+                                    "bhajans": slideBhajans,
+                                    "template": $("#slideGeneratorForm [name='template']").val ()
+                                }));
                                 $("#slideGeneratorForm").submit();
                             }).show ();
                         } else {
