@@ -155,6 +155,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                             <select name = "template" class="form-control" id = "slideTemplate">
                                                 <option value="CSJ" selected>CSJ</option>
                                                 <option value="Peninsula">Peninsula Sai Center</option>
+                                                <option value="Shivaratri2016">Shivaratri 2016</option>
                                             </select>
                                         </div>
                                     </form>
