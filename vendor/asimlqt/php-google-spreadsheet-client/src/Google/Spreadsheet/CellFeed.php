@@ -54,6 +54,16 @@ class CellFeed
     }
 
     /**
+     * Get the raw XML
+     * 
+     * @return int
+     */
+    public function getXml()
+    {
+        return $this->xml;
+    }
+    
+    /**
      * Get the feed entries
      * 
      * @return array \Google\Spreadsheet\CellEntry
@@ -75,7 +85,25 @@ class CellFeed
     }
 
     /**
-     * 
+     * Returns the feed entries as a two-dimensional array, indexed by row/column
+     * number.  Array may be sparse, if returned cell data is sparse.
+     *
+     * @return array
+     */
+    public function toArray()
+    {
+        $entries = $this->getEntries();
+
+        $result = array();
+        foreach ($entries as $entry) {
+            $result[$entry->getRow()][$entry->getColumn()] = $entry->getContent();
+        }
+
+        return $result;
+    }
+
+    /**
+     *
      * @param type $row
      * @param type $col
      * 
@@ -146,9 +174,13 @@ class CellFeed
     public function insertBatch(BatchRequest $batchRequest)
     {
         $xml = $batchRequest->createRequestXml($this);
+
         $response = ServiceRequestFactory::getInstance()
-            ->setHeaders(array("If-Match" => "*"))
+            ->addHeader("If-Match", "*")
             ->post($this->getBatchUrl(), $xml);
+            
+        ServiceRequestFactory::getInstance()->removeHeader("If-Match");
+
         return new BatchResponse(new SimpleXMLElement($response));
     }
     
