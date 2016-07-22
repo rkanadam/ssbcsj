@@ -111,7 +111,7 @@
                         }
                         $("#thoughtForTheWeek").text(thoughtForTheWeek);
                         var divineCodeOfConduct = _.find(sheet.values, function (value) {
-                            return value.description.match(/divine\s+code\s+of\s+conduct/i);
+                            return value.description.match(/divine\s+code\s+of\s+conduct/i) || value.description.match(/divine\s+guiding\s+principle/i);
                         });
                         if (divineCodeOfConduct) {
                             divineCodeOfConduct = divineCodeOfConduct.devotionalsong;
