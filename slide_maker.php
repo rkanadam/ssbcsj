@@ -148,7 +148,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                             <div class="row">
                                 <div class="col-sm-6">
                                     <form id="slideGeneratorForm" method="post"
-                                          action="https://52.90.42.27:1926/bhajan/make" target="_blank">
+                                          action="https://52.90.42.27:1926/make" target="_blank">
                                         <input type="hidden" name="bhajans" value="" id="bhajans">
                                         <div class="form-group text-center">
                                             <label for="slideTemplate">Slide Template</label>
