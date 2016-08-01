@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>SSBCSJ - SSE Registration</title>
+    <title>SSBCSJ - SSE Registration - 2016-2017</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -46,7 +46,7 @@
 <div class="row">
     <div class="col-sm-2">&nbsp;</div>
     <div class="col-sm-8">
-        <h1>SSE Registration for the year 2015</h1>
+        <h1>SSE Registration for the year 2016-17</h1>
     </div>
 </div>
 <!-- Example row of columns -->
@@ -104,6 +104,16 @@
     </div>
 </div>
 <form id="registrationForm" style="display:none;">
+<fieldset>
+<legend>School grade to SSE Group Mapping:</legend>
+<ul>
+    <li>Pre-K &amp; KG go to Sai Nursery</li>
+    <li>Grades 1,2 &amp; 3 attend Group1</li>
+    <li>Grades 4,5 &amp; 6 attend Group2</li>
+    <li>Grades 7,8,9 &amp; 10 attend Group3</li>
+    <li>Grades 11 &amp; 12 attend Group4</li>
+</ul>
+</fieldset>
 <fieldset>
     <legend>Information of Parents</legend>
     <div class="row">
@@ -391,9 +401,23 @@
 </div>
 </fieldset>
 <fieldset>
-    <legend>Any Additional Comments ?</legend>
+    <legend>Comments and Communication</legend>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-3">
+            <span>Do you receive center communication ?</span>
+        </div>
+        <div class="col-sm-1">
+            <span>Yes&nbsp;</span>
+            <span><input type="radio" name="centercommunication" value="yes" required="true" checked="checked"></span>
+        </div>
+        <div class="col-sm-1">
+            <span>No&nbsp;</span>
+            <span><input type= "radio" name = "centercommunication" value="no" required="true"></span>
+        </div>
+        <div class="col-sm-2">
+            <span>Any additional comments ?</span>
+        </div>
+        <div class="col-sm-5">
             <textarea class="form-control"
                       name="comments"></textarea>
         </div>

@@ -12,7 +12,7 @@
                     alert("Looks like we were not able to complete the search. Please let the web master know");
                     return false;
                 } else if (responses.length === 0) {
-                    alert ("We found no children matching this search string. Please try again or you might want to try a new registration.");
+                    alert("We found no children matching this search string. Please try again or you might want to try a new registration.");
                     return;
                 }
                 var html = [];
@@ -37,7 +37,7 @@
             $("#registrationForm").find(":input").each(function () {
                 $(this).val("");
             }).end().show();
-            $("select.form-control").trigger ("change");
+            $("select.form-control").trigger("change");
         });
 
         $("#searchResults").on("click", "table tr td", function (e) {
@@ -52,7 +52,7 @@
                         }
 
                         var propertiesToCopy = ["fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
-                            "mothersfirstname", "motherslastname", "mothersemail", "mothersphone", "comments"
+                            "mothersfirstname", "motherslastname", "mothersemail", "mothersphone", "comments", "centercommunication"
                         ];
 
                         var $form = $("#registrationForm");
@@ -70,10 +70,12 @@
                             });
                         }
 
-                        $("select.form-control").trigger ("change");
+                        $("select.form-control").trigger("change");
 
 
                         $("#searchResults").hide();
+                        $form.find("[name=centercommunication]").first().val ("yes")
+                        $form.find("[name=centercommunication]").last().val ("no")
                         $form.show();
                     }, "json");
                 }
@@ -111,12 +113,12 @@
         $("select.form-control").change(function () {
             var $this = $(this);
             if (/nursery/i.exec($this.val())) {
-                $this.next (".warning").show ();
+                $this.next(".warning").show();
             } else {
-                $this.next (".warning").hide ();
+                $this.next(".warning").hide();
             }
         });
 
-        $("select.form-control").trigger ("change");
+        $("select.form-control").trigger("change");
     })
 })(jQuery);
