@@ -2,6 +2,340 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/center_devotional_tutoring_signup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tutoring/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Batch/BatchRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Batch/BatchResponse.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/CellEntry.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/CellFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/DefaultServiceRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ListEntry.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ListFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ServiceRequestFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/ServiceRequestInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Spreadsheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/SpreadsheetFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/SpreadsheetService.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/UnauthorizedException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Util.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/Worksheet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/WorksheetFeed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/ListEntryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/ListFeedTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/ServiceRequestFactoryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/SpreadsheetFeedTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/SpreadsheetServiceTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/SpreadsheetTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/TestBase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/TestServiceRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/UtilTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/WorksheetFeedTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/WorksheetTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/xml/list-feed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/xml/spreadsheet-feed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/xml/spreadsheet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/xml/worksheet-feed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/Google/Spreadsheet/xml/worksheet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/tests/cellfeed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/include_paths.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/appengineauth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/batch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/fileupload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/idtoken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/key.p12" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/multi-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/service-account.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/simple-query.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/simplefileupload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/styles/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/templates/base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/examples/user-example.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/AppIdentity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/AssertionCredentials.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/LoginTicket.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/OAuth2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Auth/Simple.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/Apc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/File.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/Memcache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Cache/Null.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Client.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Collection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Http/Batch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Http/CacheParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Http/MediaFileUpload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Http/REST.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Http/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/IO/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/IO/Curl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/IO/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/IO/Stream.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/IO/cacerts.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AdExchangeBuyer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AdExchangeSeller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AdSense.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AdSenseHost.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Analytics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AndroidPublisher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/AppState.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Appsactivity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Audit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Autoscaler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Bigquery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Blogger.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Books.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Calendar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/CivicInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/CloudMonitoring.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Compute.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Coordinate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Customsearch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Datastore.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Dfareporting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Directory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Dns.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/DoubleClickBidManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Doubleclicksearch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Drive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Exception.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Freebase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Fusiontables.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Games.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/GamesManagement.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Genomics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Gmail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/GroupsMigration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Groupssettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/IdentityToolkit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Licensing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Manager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/MapsEngine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Mirror.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Oauth2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Orkut.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Pagespeedonline.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Plus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/PlusDomains.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Prediction.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Pubsub.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/QPXExpress.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Replicapool.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Reports.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Reseller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Resource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Resourceviews.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/SQLAdmin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/ShoppingContent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/SiteVerification.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Spectrum.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Storage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Taskqueue.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Tasks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Translate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Urlshortener.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Webfonts.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Webmasters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/YouTube.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/YouTubeAnalytics.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Signer/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Signer/P12.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Utils.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Utils/URITemplate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Verifier/Abstract.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/src/Google/Verifier/Pem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/style/ruleset.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/AllTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/BaseTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/OAuthHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/adsense/AdSenseTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiBatchRequestTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiCacheParserTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiClientTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiMediaFileUploadTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiModelTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ApiOAuth2Test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/AuthTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/CacheTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/GeneralTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/IoTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/RequestTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/RestTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/ServiceTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/URITemplateTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/cacert.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/cacert.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/cert.p12" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/privkey.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/test.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/general/testdata/test_public_key.pem" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/pagespeed/AllPageSpeedTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/pagespeed/PageSpeedTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/plus/PlusTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/tasks/AllTasksTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/tasks/TasksTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/urlshortener/AllUrlShortenerTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/urlshortener/UrlShortenerTests.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/google/apiclient/tests/youtube/YouTubeTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/.scrutinizer.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/PHPMailerAutoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmaileroauth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmaileroauthgoogle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.pop3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.smtp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/Callback_function_notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/DomainKeys_notes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/Note_for_SMTP_debugging.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/extending.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/faq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/generatedocs.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/docs/pop3_article.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/code_generator.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/contents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/contentsutf8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/exceptions.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/gmail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/gmail_xoauth.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/images/phpmailer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/images/phpmailer_mini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/mail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/mailing_list.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/pop_before_smtp.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/XRegExp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shAutoloader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/scripts/shLegacy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/send_file_upload.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/sendmail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/signed-mail.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp_check.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/smtp_no_auth.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/ssl_options.phps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shCoreRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeAppleScript.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeMDUltra.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/shThemeVisualStudio.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/examples/styles/wrapping.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/EasyPeasyICS.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/htmlfilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/extras/ntlm_sasl_client.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/get_oauth_token.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-am.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-az.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-be.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-bg.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-br.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ca.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-cz.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-de.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-dk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-el.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-eo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-es.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-et.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fa.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-fr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-gl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-he.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-hu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-id.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-it.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ja.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ka.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ko.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-lv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-nl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-no.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-pt.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ro.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-ru.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-se.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-sr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-tr.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-uk.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-vi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/language/phpmailer.lang-zh_cn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/fakepopserver.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/fakesendmail.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/phpmailerLangTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/phpmailerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/runfakepopserver.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/test_callback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/test/testbootstrap-dist.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpmailer/phpmailer/travis.phpunit.xml.dist" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/LICENSE.txt" afterPath="$PROJECT_DIR$/site/LICENSE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/README.txt" afterPath="$PROJECT_DIR$/site/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_functions.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_functions.scss" />
@@ -9,7 +343,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" afterPath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/index.html" afterPath="$PROJECT_DIR$/site/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" afterPath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/main.js" afterPath="$PROJECT_DIR$/site/assets/js/main.js" />
@@ -38,41 +371,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.116161615" vertical-offset="1971" max-vertical-offset="3150">
-              <caret line="136" column="55" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sse_registration.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sse_registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.916667" vertical-offset="5888" max-vertical-offset="6870">
-              <caret line="410" column="109" selection-start-line="410" selection-start-column="109" selection-end-line="410" selection-end-column="109" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sse_registration.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1935">
-              <caret line="77" column="80" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="api.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/sse/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5833334" vertical-offset="2108" max-vertical-offset="2715">
-              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state vertical-scroll-proportion="-9.375" vertical-offset="60" max-vertical-offset="2715">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutoring/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.5" vertical-offset="165" max-vertical-offset="3210">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center_devotional_tutoring_signup.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1577" max-vertical-offset="3195">
+              <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center_devotional_lead_signup.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/center_devotional_lead_signup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="75" max-vertical-offset="2535">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="center_devotional_tutoring_signup.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/center_devotional_tutoring_signup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.728833" vertical-offset="1661" max-vertical-offset="2535">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/util.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="855">
+              <caret line="16" column="91" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -91,9 +444,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/habitat_signup.html" />
-        <option value="$PROJECT_DIR$/email.html" />
-        <option value="$PROJECT_DIR$/bhajan_signup.html" />
         <option value="$PROJECT_DIR$/access_braille_signup.html" />
         <option value="$PROJECT_DIR$/scripts/bhajan_signup.js" />
         <option value="$PROJECT_DIR$/vendor/asimlqt/php-google-spreadsheet-client/src/Google/Spreadsheet/CellEntry.php" />
@@ -142,6 +492,9 @@
         <option value="$PROJECT_DIR$/sse_registration.html" />
         <option value="$PROJECT_DIR$/scripts/sse_registration.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/tutoring/index.html" />
+        <option value="$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js" />
+        <option value="$PROJECT_DIR$/server/center_devotional_tutoring_signup.php" />
       </list>
     </option>
   </component>
@@ -150,10 +503,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
+    <option name="x" value="1280" />
     <option name="y" value="23" />
-    <option name="width" value="1230" />
-    <option name="height" value="777" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -181,6 +534,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -199,10 +554,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssbcsj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssbcsj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutoring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,7 +585,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sadhanaoflove-app" />
+    <property name="last_opened_file_path" value="$USER_HOME$/naga" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="89" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="91" />
@@ -239,11 +606,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/files" />
       <recent name="$PROJECT_DIR$/shivaratri" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/bhajan" />
-      <recent name="$PROJECT_DIR$/site/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/site/server" />
@@ -488,10 +855,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="23" width="1230" height="777" extended-state="6" />
+    <frame x="1280" y="23" width="1920" height="1057" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3915023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -500,16 +866,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33013844" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3922559" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3915023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23003195" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -517,7 +884,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3915023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3915023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -535,7 +902,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3922559" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -589,6 +956,22 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/sse/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2715">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/sse/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2715">
+          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1167" max-vertical-offset="1785">
@@ -673,13 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.011532125" vertical-offset="24908" max-vertical-offset="61170">
-          <caret line="1675" column="38" selection-start-line="1675" selection-start-column="21" selection-end-line="1675" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/fremont.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.12" vertical-offset="454" max-vertical-offset="1035">
@@ -705,13 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2430">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/google/apiclient/src/Google/Service/Blogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="24540" max-vertical-offset="53280">
-          <caret line="1636" column="6" selection-start-line="1636" selection-start-column="6" selection-end-line="1636" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -790,73 +1159,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/ShapeContainerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="885">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.583333" vertical-offset="14599" max-vertical-offset="16530">
           <caret line="995" column="7" selection-start-line="995" selection-start-column="7" selection-end-line="995" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/PhpPresentation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.416667" vertical-offset="3398" max-vertical-offset="5910">
-          <caret line="255" column="20" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Slide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="135" max-vertical-offset="7500">
-          <caret line="46" column="60" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/AbstractShape.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="6375">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Shape/RichText.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.208334" vertical-offset="4345" max-vertical-offset="10455">
-          <caret line="339" column="33" selection-start-line="339" selection-start-column="20" selection-end-line="339" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Shape/RichText/TextElementInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="675">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Shape/RichText/Run.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7916665" vertical-offset="320" max-vertical-offset="1065">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Reader/PowerPoint2007.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625" vertical-offset="4080" max-vertical-offset="8625">
-          <caret line="302" column="29" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phppresentation/src/PhpPresentation/Shape/RichText/Paragraph.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1666665" vertical-offset="3173" max-vertical-offset="4425">
-          <caret line="240" column="67" selection-start-line="240" selection-start-column="67" selection-end-line="240" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -871,7 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="611" max-vertical-offset="1950">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="219" max-vertical-offset="1215">
           <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,23 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8023064" vertical-offset="23" max-vertical-offset="630">
           <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/center_devotional_lead_signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2535">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="870">
-          <caret line="15" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2154" max-vertical-offset="4410">
           <caret line="167" column="32" selection-start-line="167" selection-start-column="32" selection-end-line="167" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,34 +1209,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/sse/api.php">
+    <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5833334" vertical-offset="2108" max-vertical-offset="2715">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.52799124" vertical-offset="674" max-vertical-offset="1935">
+          <caret line="77" column="80" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sse_registration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.916667" vertical-offset="5888" max-vertical-offset="6870">
+        <state vertical-scroll-proportion="0.29537767" vertical-offset="5888" max-vertical-offset="6870">
           <caret line="410" column="109" selection-start-line="410" selection-start-column="109" selection-end-line="410" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/sse_registration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1935">
-          <caret line="77" column="80" selection-start-line="77" selection-start-column="80" selection-end-line="77" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116161615" vertical-offset="1971" max-vertical-offset="3150">
+        <state vertical-scroll-proportion="0.077790305" vertical-offset="1971" max-vertical-offset="3150">
           <caret line="136" column="55" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/sse/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="60" max-vertical-offset="2715">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutoring/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5" vertical-offset="165" max-vertical-offset="3210">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1577" max-vertical-offset="3195">
+          <caret line="125" column="37" selection-start-line="125" selection-start-column="37" selection-end-line="125" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/center_devotional_lead_signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="75" max-vertical-offset="2535">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="855">
+          <caret line="16" column="91" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/center_devotional_tutoring_signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.728833" vertical-offset="1661" max-vertical-offset="2535">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
