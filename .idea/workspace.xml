@@ -9,10 +9,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_skel.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" afterPath="$PROJECT_DIR$/site/assets/sass/libs/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" afterPath="$PROJECT_DIR$/site/assets/js/ie/backgroundsize.min.htc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js" afterPath="$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/center_devotional_tutoring_signup.php" afterPath="$PROJECT_DIR$/server/center_devotional_tutoring_signup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/index.html" afterPath="$PROJECT_DIR$/site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tutoring/index.html" afterPath="$PROJECT_DIR$/tutoring/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" afterPath="$PROJECT_DIR$/site/assets/js/jquery.poptrox.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/main.js" afterPath="$PROJECT_DIR$/site/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/assets/js/skel.min.js" afterPath="$PROJECT_DIR$/site/assets/js/skel.min.js" />
@@ -63,7 +61,7 @@
       <file leaf-file-name="center_devotional_tutoring_signup.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/center_devotional_tutoring_signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2042" max-vertical-offset="3165">
+            <state vertical-scroll-proportion="0.0" vertical-offset="767" max-vertical-offset="3165">
               <caret line="152" column="54" selection-start-line="152" selection-start-column="54" selection-end-line="152" selection-end-column="54" />
               <folding />
             </state>
@@ -73,8 +71,8 @@
       <file leaf-file-name="center_devotional_tutoring_signup.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/center_devotional_tutoring_signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7231121" vertical-offset="1648" max-vertical-offset="2535">
-              <caret line="152" column="89" selection-start-line="152" selection-start-column="89" selection-end-line="152" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.44851258" vertical-offset="253" max-vertical-offset="2565">
+              <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -516,7 +514,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,7 +527,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39084134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39084134" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -547,7 +545,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4116081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -565,12 +563,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Updating slide maker" />
     <MESSAGE value="Adding support for fremont home bhajans" />
     <MESSAGE value="Cleaning up UI look and feel" />
     <MESSAGE value="Adding support for fremont center home bhajans" />
@@ -595,7 +593,8 @@
     <MESSAGE value="Fixing SSE registration" />
     <MESSAGE value="Adding support for tutoring signup" />
     <MESSAGE value="Adding missing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding missing files" />
+    <MESSAGE value="Adding support for center devotional tutoring signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding support for center devotional tutoring signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -917,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/center_devotional_tutoring_signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7231121" vertical-offset="1648" max-vertical-offset="2535">
-          <caret line="152" column="89" selection-start-line="152" selection-start-column="89" selection-end-line="152" selection-end-column="89" />
+        <state vertical-scroll-proportion="0.44851258" vertical-offset="253" max-vertical-offset="2565">
+          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
           <folding />
         </state>
       </provider>

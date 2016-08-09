@@ -40,7 +40,9 @@ if ($method === "get") {
             $matches = array();
             if (preg_match("/([0-9]{2}\/[0-9]{2}\/[0-9]{4})/", $title, $matches)) {
                 $date = DateTime::createFromFormat($format, $matches[1]);
-                if ($date->getTimestamp() > $today->getTimestamp()) {
+                $lastDayToSignup = DateTime::createFromFormat($format, $matches[1]);
+                $lastDayToSignup->sub(new DateInterval('P3D')); // 3 days before
+                if ($lastDayToSignup->getTimestamp() > $today->getTimestamp()) {
                     $sheet = array("title" => $title);
                     $numRows = $worksheet->getRowCount();
                     $numCols = $worksheet->getColCount();
