@@ -150,15 +150,13 @@
                             var $this = $(this);
                             e.preventDefault();
                             var slot = parseInt($("#slot select").val(), 10);
-                            slot = _.find(sheet.availableSlots, function (slots) {
-                                return slots[0] === slot ? slots : null;
-                            });
-
+                            slot = sheet.values[slot];
                             var postParams = [];
                             postParams.push({name: "sheetTitle", value: sheet.title});
                             postParams.push({name: "row", value: $("#slot select").val()});
                             postParams.push({name: "name", value: $("input[name='name']").val()});
                             postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text()});
+                            postParams.push({name: "tutor", value: slot.tutor});
                             postParams.push({name: "email", value: $("input[name='email']").val()});
                             postParams.push({name: "date", value: sheet.date});
                             postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});

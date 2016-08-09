@@ -47,7 +47,7 @@ if ($method === "get") {
                     $cellFeed = $worksheet->getCellFeed();
                     $data = array();
                     for ($i = 0; $i < $numRows; ++$i) {
-                        for ($j = 0; $j < $numCols; ++$j) {
+                        for ($j = 0; $j <= $numCols; ++$j) {
                             if ($cellFeed->getCell($i, $j)) {
                                 if (!array_key_exists($i, $data)) {
                                     $data[$i] = array();
@@ -118,7 +118,7 @@ if ($method === "get") {
         $cellFeed->insertBatch($insertBatch);
     }
 
-    sendMail($_REQUEST["name"], $_REQUEST["description"], $_REQUEST["date"], $_REQUEST["email"]);
+    sendMail($_REQUEST["name"], $_REQUEST["description"], $_REQUEST["date"], $_REQUEST["email"] . "," . $_REQUEST["tutor"]);
     echo json_encode(true);
 }
 
@@ -150,7 +150,7 @@ function sendMail ($name, $description, $date, $to) {
 EOD;
 
     $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
-    $data = array('to' => $to, 'subject' => "Signup confirmation for leading $description on $date", "body" => $html);
+    $data = array('to' => $to, 'subject' => "Signup confirmation for learning a $description on $date", "body" => $html);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
