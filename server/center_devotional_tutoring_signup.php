@@ -124,7 +124,8 @@ if ($method === "get") {
     echo json_encode(true);
 }
 
-function sendMail ($name, $description, $date, $to) {
+function sendMail($name, $description, $date, $to)
+{
     $description = trim($description);
     if (preg_match("/^a/i", $description) > 0) {
         $description = "The $description";
@@ -150,16 +151,5 @@ function sendMail ($name, $description, $date, $to) {
     </div>
 </div>
 EOD;
-
-    $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
-    $data = array('to' => $to, 'subject' => "Signup confirmation for learning a $description on $date", "body" => $html);
-    $options = array(
-        'http' => array(
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data),
-        ),
-    );
-    $context  = stream_context_create($options);
-    file_get_contents($url, false, $context);
+    email($to, "Signup confirmation for learning a $description on $date", $html);
 }

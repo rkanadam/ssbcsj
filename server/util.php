@@ -1,5 +1,6 @@
 <?php
-date_default_timezone_set("America/Los_Angeles");
+$timezone = "America/Los_Angeles";
+date_default_timezone_set($timezone);
 
 $base = realpath(dirname($_SERVER["SCRIPT_FILENAME"]) . "/..") . "/";
 
@@ -50,3 +51,17 @@ function endsWith($haystack, $needle)
 }
 
 $drive = new Google_Service_Drive($client);
+
+function email ($to, $subject, $contents) {
+    $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
+    $data = array('to' => $to, 'subject' => $subject, "body" => $contents);
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data),
+        ),
+    );
+    $context  = stream_context_create($options);
+    return file_get_contents($url, false, $context);
+}
