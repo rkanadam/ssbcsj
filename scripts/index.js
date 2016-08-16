@@ -41,7 +41,7 @@
         today.setMinutes(0);
         today.setSeconds(0);
         today.setMilliseconds(0);
-        $.get("server/bhajan_signup/api.php", function (events) {
+        $.get("server/birthday_bhajan_signup.php", function (events) {
             events = events || [];
             for (var i = 0, len = events.length; i < len; ++i) {
                 var event = events[i];
@@ -66,7 +66,6 @@
             pastEvents.sort(function (e1, e2) {
                 return e2.start.getTime() - e1.start.getTime();
             });
-/*
             for (var i = 0; i < 9; ++i) {
                 if (currentAndFutureEvents.length > i) {
                     var event = currentAndFutureEvents[i];
@@ -93,7 +92,6 @@
                     break;
                 }
             }
-*/
             $.get("server/blogger.php", function (blogs) {
                 var first = true;
                 for (var i = 0, len = Math.min(90, pastEvents.length); i < len; ++i) {

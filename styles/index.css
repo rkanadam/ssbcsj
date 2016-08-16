@@ -58,9 +58,9 @@ body {
 
 @media only screen and (min-width: 692px) {
     #logo {
-        background: url(images/scaled_logo.png) center no-repeat;
+        background: url(images/swami.png) center no-repeat;
         background-size: contain;
-        min-height: 25em
+        min-height: 5em
     }
 
     .form-control::-webkit-input-placeholder {
