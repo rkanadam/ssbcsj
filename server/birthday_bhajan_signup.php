@@ -120,13 +120,13 @@ function sendMail($name, $date, $to)
                     <li>3 OMs</li>
                     <li>3 Gayatris</li>
                     <li>108 Names of Sathya Sai <a target="_blank"
-                                                   href="../108.pdf">Link
+                                                   href="http://region7saicenters.org/csj/sai90/108.pdf">Link
                         to 108 names of Sai</a></li>
                     <li>9 Bhajans <a target="_blank"
                                      href="http://region7saicenters.org/csj/images/documents/ssbcsj_Center%20Bhajan%20book.pdf">Link
                         to Bhajan Book </a></li>
                     <li>Multi Faith Chants <a target="_blank"
-                                              href="../108.pdf">Link
+                                              href="http://region7saicenters.org/csj/sai90/108.pdf">Link
                         to Multi Faith Chants </a></li>
                     <li>1 chapter reading of Tapovanam <a target="_blank"
                                                           href="http://www.sathyasaiottawa.org/pdf/SSE_Resources/sai-tapovanam.pdf">Link
