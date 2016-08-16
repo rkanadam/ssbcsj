@@ -77,6 +77,9 @@
                         $event.html($("#event0").html());
                     }
                     $event.find(".day").text(getUserFriendlyDayName(event.start));
+                    if (event.summary && event.summary.toLowerCase ().indexOf ("residence of") !== -1) {
+                        $event.find(".residence").text (" - " + event.summary.substring(event.summary.toLowerCase ().indexOf ("residence of") + "residence of".length));
+                    }
                     $event.find(".address").text(event.location);
                     $event.find("date").text(event.start.getDate());
                     $event.find(".month").text(months[event.start.getMonth()]);
