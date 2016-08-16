@@ -114,7 +114,7 @@ function sendMail($name, $date, $to)
         <div>Sairam! ${name}</div>
         <div style = "padding: 2em">
              <div>
-                 Thank you for signing up to host Swami on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Raghu at raghuram.kanadam@gmail.com or 408-702-2043.
+                 Thank you for signing up to host Swami's bhajans on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Raghu at raghuram.kanadam@gmail.com or 408-702-2043.
                  Bhajans start at 8PM and the format is:
                  <ul>
                     <li>3 OMs</li>
