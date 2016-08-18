@@ -5,7 +5,7 @@
       <paths name="CSJ">
         <serverdata>
           <mappings>
-            <mapping deploy="/sai90" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/signups" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
