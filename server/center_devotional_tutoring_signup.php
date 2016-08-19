@@ -120,7 +120,7 @@ if ($method === "get") {
         $cellFeed->insertBatch($insertBatch);
     }
 
-    sendMail($_REQUEST["name"], $_REQUEST["description"], $_REQUEST["date"], $_REQUEST["email"] . "," . $_REQUEST["tutor"]);
+    sendMail($_REQUEST["name"], $_REQUEST["description"], $_REQUEST["date"], $_REQUEST["email"] . "," . $_REQUEST["tutor"] . ",nirmala.jraman@gmail.com,geevasu@gmail.com,lathamanyan@gmail.com");
     echo json_encode(true);
 }
 
