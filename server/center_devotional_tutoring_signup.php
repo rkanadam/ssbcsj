@@ -140,7 +140,7 @@ function sendMail($name, $description, $date, $to)
         <div>Sairam! ${name}</div>
         <div style = "padding: 2em">
              <div>
-                 Thank you for signing up to lead $description at the Sathya Sai Baba Center of Central San Jose on <strong>${date}</strong>
+                 Thank you for signing up to learn a $description at the Sathya Sai Baba Center of Central San Jose on <strong>${date}</strong>
              </div>
              <br/>
              <div>

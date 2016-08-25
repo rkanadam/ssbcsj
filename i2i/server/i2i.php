@@ -1,10 +1,16 @@
 <?php
 
-require_once "util.php";
+require_once "auth.php";
 
-$method = strtolower($_SERVER['REQUEST_METHOD']);
-$calendarId = 'rs5nhgqdv7hsiruqnralb4t0ak@group.calendar.google.com';
+$calendarId = '1aaum9q0ba146736315qmrk5ao@group.calendar.google.com';
 $calendarService = new Google_Service_Calendar($client);
+$method = strtolower($_SERVER['REQUEST_METHOD']);
+
+$eventName = $_REQUEST["event"];
+
+if (empty($eventName)) {
+    return;
+}
 
 if ($method === "get") {
     // Print the next 10 events on the user's calendar.
@@ -17,13 +23,13 @@ if ($method === "get") {
     $results = $calendarService->events->listEvents($calendarId, $optParams);
     $response = array();
     foreach ($results->getItems() as $event) {
-        $response[] = array("start" => $event->start->dateTime,
-            "end" => $event->end->dateTime,
-            "location" => $event->location,
-            "summary" => $event->summary,
-            "description" => $event->description);
+        if (strpos($event->summary, "#i2i") !== false && strpos ($event->summary, "#$eventName") !== false) {
+            $response[] = array("start" => $event->start->dateTime,
+                "end" => $event->end->dateTime,
+                "location" => $event->location,
+                "summary" => $event->summary,
+                "description" => $event->description);
+        }
     }
     echo json_encode($response);
-
-} else if ($method === "post") {
 }

@@ -109,7 +109,7 @@
                             var src = $div.find("img").attr("src");
                             $div.remove();
                             $div = $('<div class="item"><h6 style="text-align: center"></h6><a href = "#" target = "blank"><img src="" alt="" style="height:218px"></a><br/></div>');
-                            $div.find("h6").text(months[event.start.getMonth()] + "/" + event.start.getDate () + " - " + (/celebration in the center/i.exec(event.summary) ? event.summary : event.summary.split(/\-/).splice(2).join(" - ")));
+                            $div.find("h6").text(months[event.start.getMonth()] + "/" + event.start.getDate () + " - " + (/celebration [in|at] the center/i.exec(event.summary) ? event.summary : event.summary.substr(event.summary.indexOf ("Residence of"))));
                             $div.find("img").attr("src", src);
                             $div.find("a").attr("href", src);
                             if (first) {
