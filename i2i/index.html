@@ -7,19 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="i2i/styles/i2i.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Niconne|Pinyon+Script|Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Droid+Sans" rel="stylesheet">
+    <script src = "i2i/js/index.js" type="text/javascript"></script>
 </head>
 <body id="i2i">
-<div class = "header">
-    <div class = "wave" style="background: url('i2i/images/i2i.jpg') no-repeat;height: 200px;background-size: contain;background-position: center -20px"></div>
-    <h1 style="font-size: 60pt;font-family: 'Pinyon Script';text-align: center;color:navy;margin-top: -180px">i to I</h1>
-    <h1 style="font-size: 22pt;font-family: Cookie;text-align: center;color:#666;margin-top: 60px">A Speaker Series</h1>
-</div>
+<div class="content">
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-sm-12">
+                <img src = "i2i/styles/images/i2i.png" class="img-responsive" style="margin: 0 auto">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center title">
+                        <h2 class="header">Speaker Bio</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div id = "speakerBio"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center title">
+                        <h2 class="header">Schedule</h2>
+                    </div>
+                    <div class="panel-body">
+                        <div id = "schedule"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
     <div style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">

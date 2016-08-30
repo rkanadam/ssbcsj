@@ -1,15 +1,19 @@
-((function ($) {
+(function ($) {
+
+    $(function () {
+
+        $(document).ajaxStart(function () {
+            $("#indicator").show();
+        });
+        $(document).ajaxStop(function () {
+            $("#indicator").hide();
+        });
 
 
+        $.get("i2i/server/i2i.php", {"what": "schedule", "event": "sep25"}, function (events) {
 
+        });
 
-    $(document).ajaxStart(function () {
-        window.scrollTo(0, 0);
-        $("#indicator").show();
     });
-    $(document).ajaxStop(function () {
-        $("#indicator").hide();
-    });
 
-
-})(jQuery));
+})(jQuery);
