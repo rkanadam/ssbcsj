@@ -25,10 +25,14 @@ if ($what === "schedule") {
     $response = array();
     foreach ($results->getItems() as $event) {
         if (strpos($event->summary, "#i2i") !== false && strpos($event->summary, "#$eventName") !== false) {
+            $summary = $event->summary;
+            $summary = str_replace("#i2i", "", $summary);
+            $summary = str_replace("#$eventName", "", $summary);
+
             $response[] = array("start" => $event->start->dateTime,
                 "end" => $event->end->dateTime,
                 "location" => $event->location,
-                "summary" => $event->summary,
+                "summary" => $summary,
                 "description" => $event->description);
         }
     }

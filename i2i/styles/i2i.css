@@ -5,3 +5,7 @@ html, body, .container-fluid {
 .header {
     font-family: 'Great Vibes';
 }
+
+.header.panel-title {
+    font-family: 'Droid Sans';
+}
