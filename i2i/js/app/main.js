@@ -1,4 +1,4 @@
-define(["jquery", "underscore", "lib/db", "app/constants",  "moment", "bootstrap", "html5shiv", "respond"], function ($, _, AppDatabase, k, moment) {
+define(["jquery", "underscore", "lib/db", "app/constants", "moment", "bootstrap", "html5shiv", "respond"], function ($, _, AppDatabase, k, moment) {
     $(document).ajaxStart(function () {
         $("#indicator").show();
     });
@@ -35,25 +35,31 @@ define(["jquery", "underscore", "lib/db", "app/constants",  "moment", "bootstrap
             var firstEvent = events.length ? events[0] : null;
             var lastEvent = events.length ? events[events.length - 1] : null;
             if (firstEvent && lastEvent) {
-                var $aLocation = $panel.clone ();
+                var $aLocation = $panel.clone();
 
                 var centerName = db.get(location);
                 $aLocation.find(".panel-title").text(centerName || location);
 
-                var $table = $aLocation.find (".panel-body table");
-                var $tr = $table.find("tr").remove ();
-                _.each(events, function (event) {
-                    var start = moment (event.start);
-                    var end = moment (event.end);
+                $aLocation.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(location));
+                $aLocation.find(".address_link").attr("target", "_blank");
+                $aLocation.find(".address").text(location);
 
-                    var $event = $tr.clone ();
+
+                var $table = $aLocation.find(".panel-body table");
+                var $tr = $table.find("tr").remove();
+                _.each(events, function (event) {
+                    var start = moment(event.start);
+                    var end = moment(event.end);
+
+                    var $event = $tr.clone();
                     if (start.format("A") === end.format("A")) {
-                        $event.find ("th").text(start.format("hh:mm") + "-" + end.format("hh:mm A"));
+                        $event.find("th").text(start.format("hh:mm") + "-" + end.format("hh:mm A"));
                     } else {
-                        $event.find ("th").text(start.format("hh:mm A") + "-" + end.format("hh:mm A"));
+                        $event.find("th").text(start.format("hh:mm A") + "-" + end.format("hh:mm A"));
                     }
-                    $event.find ("td").text(event.summary);
+                    $event.find("td").text(event.summary);
                     $table.append($event)
+
                 });
                 $schedule.append($aLocation);
             }
