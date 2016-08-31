@@ -97,8 +97,8 @@ EOD;
 
     //Next insert it into the calendar
     $calendarService->events->insert($calendarId, $event);
-
-    echo json_encode(sendMail($name, $date, $email)); //json_encode(true);
+    sendMail($name, $date, $email);
+    echo json_encode(true);
 }
 
 function sendMail($name, $date, $to)
