@@ -156,6 +156,7 @@ $base = empty($callback) ? "" : "https://region7saicenters.org/csj/sai90/";
                                                 <option value="CSJ" selected>CSJ</option>
                                                 <option value="Peninsula">Peninsula Sai Center</option>
                                                 <option value="Shivaratri2016">Shivaratri 2016</option>
+                                                <option value="Regional Retreat 2016">Regional Retreat 2016</option>
                                             </select>
                                         </div>
                                     </form>

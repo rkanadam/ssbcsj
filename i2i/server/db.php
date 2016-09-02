@@ -1,6 +1,6 @@
 <?php
 
-require_once "auth.php";
+require_once "util.php";
 
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 $app = $_REQUEST["app"];
@@ -10,8 +10,13 @@ if (empty($app)) {
     return;
 }
 
-$spreadsheet = $spreadsheetFeed->getByTitle("App Database - $app");
-$db = $spreadsheet->getWorksheets()->getByTitle("DB");
+$i2iFolder = findDirectory("0B3fQzMzGKQsccFQzZUQza1RMZ1E");
+$appFolder = findDirectory($app, $i2iFolder, true);
+
+$sheet = findFile("$app.gsheet", $appFolder, true);
+$sheet = $sheets->spreadsheets_values->get($sheet->getId(), "DB!");
+
+$db = $sheet->getSheets()->getWorksheets()->getByTitle("DB");
 
 if ($method === "get") {
     $entries = $db->getListFeed()->getEntries();
@@ -27,4 +32,9 @@ if ($method === "get") {
     }
     echo "]";
     return;
+} else if ($method === "post") {
+    $values = json_decode($_REQUEST["values"]);
+    if (is_array($values)) {
+
+    }
 }
