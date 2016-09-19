@@ -150,13 +150,15 @@
                             var $this = $(this);
                             e.preventDefault();
                             var slot = parseInt($("#slot select").val(), 10);
-                            slot = sheet.values[slot];
+                            var valueIndex = sheet.availableSlots[0].indexOf (slot);
+                            var values = sheet.values[valueIndex];
+
                             var postParams = [];
                             postParams.push({name: "sheetTitle", value: sheet.title});
                             postParams.push({name: "row", value: $("#slot select").val()});
                             postParams.push({name: "name", value: $("input[name='name']").val()});
-                            postParams.push({name: "description", value: slot ? slot.description : $("#slot select option:selected").text()});
-                            postParams.push({name: "tutor", value: slot.tutor});
+                            postParams.push({name: "description", value: values ? values.description : $("#slot select option:selected").text()});
+                            postParams.push({name: "tutor", value: values.tutor});
                             postParams.push({name: "email", value: $("input[name='email']").val()});
                             postParams.push({name: "date", value: sheet.date});
                             postParams.push({name: "col" + sheet.headers["name"], value: $("input[name='name']").val()});

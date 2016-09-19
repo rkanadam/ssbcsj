@@ -41,7 +41,7 @@ if ($method === "get") {
             if (preg_match("/([0-9]{2}\/[0-9]{2}\/[0-9]{4})/", $title, $matches)) {
                 $date = DateTime::createFromFormat($format, $matches[1]);
                 $lastDayToSignup = DateTime::createFromFormat($format, $matches[1]);
-                $lastDayToSignup->sub(new DateInterval('P3D')); // 3 days before
+                $lastDayToSignup->sub(new DateInterval('P2D')); // 2 days before
                 if ($lastDayToSignup->getTimestamp() > $today->getTimestamp()) {
                     $sheet = array("title" => $title);
                     $numRows = $worksheet->getRowCount();
@@ -135,7 +135,7 @@ function sendMail($name, $description, $date, $to)
     $description = strtolower($description);
 
     $html = <<<EOD
-<div style = 'display:none' id = 'email-template'>
+<div style = 'display:block' id = 'email-template'>
     <div style = 'padding: 1em;font-family:Verdana'>
         <div>Sairam! ${name}</div>
         <div style = "padding: 2em">
