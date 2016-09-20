@@ -38,7 +38,7 @@ ServiceRequestFactory::setInstance($serviceRequest);
 
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-$spreadsheet = $spreadsheetFeed->getByTitle('2015_GAB_VOLUNTEER_SIGNUP');
+$spreadsheet = $spreadsheetFeed->getByTitle('2016_GAB_VOLUNTEER_SIGNUP');
 $worksheet = $spreadsheet->getWorksheets()->getByTitle("Sheet1");
 $feed = $worksheet->getCellFeed();
 
