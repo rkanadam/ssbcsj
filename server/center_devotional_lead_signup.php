@@ -2,9 +2,10 @@
 
 require_once "util.php";
 
-$spreadsheet = $spreadsheetFeed->getByTitle('Devotional Service - SSBCSJ');
+$spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Devotional Service');
 
 $method = strtolower($_SERVER['REQUEST_METHOD']);
+header("Access-Control-Allow-Origin: " . $_SERVER['HTTP_ORIGIN']);
 
 if ($method === "get") {
     $action = $_REQUEST["action"];
@@ -132,7 +133,7 @@ function sendMail ($name, $description, $date, $to) {
     $description = strtolower($description);
 
     $html = <<<EOD
-<div style = 'display:none' id = 'email-template'>
+<div style = 'display:block' id = 'email-template'>
     <div style = 'padding: 1em;font-family:Verdana'>
         <div>Sairam! ${name}</div>
         <div style = "padding: 2em">
