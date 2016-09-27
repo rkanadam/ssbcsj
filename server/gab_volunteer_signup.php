@@ -99,7 +99,7 @@ if ($method === "get") {
         }
         //Sending out an Email to the Volunteer who's signing up
         $email = $_REQUEST["email"];
-        $emailBody = "Sairam ".$_REQUEST["name"].", \n\n Thank you for volunteering for Global Akhanda Bhajan 2016. You are assigned for ".$_REQUEST["what"]." service."."\n\n Thank you, \n GAB 2016 Team";
+        $emailBody = "Sairam " . $_REQUEST["name"] . ", \n\n Thank you for volunteering for Global Akhanda Bhajan 2016. You are assigned for " . $_REQUEST["what"] . " service at " . $_REQUEST["time"] . ".\n\n Thank you, \n GAB 2016 Team";
         mail($email,"GAB 2016 Volunteering Confirmation",$emailBody);
         echo json_encode(true);
         return 0;

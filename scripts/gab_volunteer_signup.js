@@ -95,7 +95,9 @@
 
             e.preventDefault();
             var $this = $(this);
-            $.post("server/gab_volunteer_signup.php", $this.serialize(), function (response) {
+            var values = $this.serialize();
+            values += "&time=" + encodeURIComponent($("#when select option:selected").text ());
+            $.post("server/gab_volunteer_signup.php", values, function (response) {
                 if (response !== true) {
                     alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
                 } else {
