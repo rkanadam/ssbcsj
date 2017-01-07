@@ -1,7 +1,7 @@
 <?php
 ob_start();
 $callback = $_REQUEST["callback"];
-$base = empty($callback) ? "" : "https://52.90.42.27/ssbcsj/";
+$base = empty($callback) ? "" : "https://52.90.42.27:8010/ssbcsj/";
 ?>
     <!DOCTYPE html>
     <html lang="en">
