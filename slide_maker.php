@@ -148,7 +148,7 @@ $base = empty($callback) ? "" : "https://52.207.232.254:8010/ssbcsj/";
                             <div class="row">
                                 <div class="col-sm-6">
                                     <form id="slideGeneratorForm" method="post"
-                                          action="https://52.90.42.27:1926/make" target="_blank">
+                                          action="https://52.207.232.254:1926/make" target="_blank">
                                         <input type="hidden" name="bhajans" value="" id="bhajans">
                                         <div class="form-group text-center">
                                             <label for="slideTemplate">Slide Template</label>
