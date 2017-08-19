@@ -89,7 +89,33 @@
                     $event.find(".address_link").attr("href", "https://www.google.com/maps/dir/''/" + encodeURIComponent(event.location));
                     $event.find(".address_link").attr("target", "_blank");
                     $event.find(".time").text(getUserFriendlyTime(event.start, event.end));
+                    if (event.description) {
+                        var lines = $.trim (event.description).split ("\n");
+                        var html = [];
+                        for (var i = 0, len = lines.length; i < len; ++i) {
+                            if (lines[i].indexOf ("------") !== -1) {
+                                ++i;
+                                for (var j = i; j < lines.length; ++j) {
+                                    if (lines[j].indexOf ("------") !== -1) {
+                                        break;
+                                    }
+                                }
+                                for (;i < j; ++i) {
+                                    if ($.trim(lines[i])) {
+                                        html.push ($.trim(lines[i]));
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                        if (html.length) {
+                            $event.find(".parking").html ( html.join("<br/>") );
+
+                        }
+                    }
                     $event.show();
+
+
                     if (true || i !== 0) {
                         $event.find(".parking_link").hide ();
                     }
