@@ -36,25 +36,32 @@
                 $("#details:input").val("");
                 return;
             }
-            var dayOfTheWeek = parseInt(val);
 
-            var firstDate = new Date(2016, 7, 24, 20, 0, 0, 0); // This should be the first day the bhajan starts
-            var d = new Date(firstDate.toISOString());
-            d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
-            //We are trying to determine the very first day of the said week of the day when the bhajan will begin
-            //So let us say the bhajan starts on a Wednesday then the first monday will be after that date
-            if (d.getTime() < firstDate.getTime()) {
-                d.setDate(d.getDate() + 7);
-            }
+            var daysOfTheWeek = $.map(val.split(",", -1), function (v) {
+                return parseInt($.trim(v), 10);
+            });
 
-            var reservedDates = daysToDates[dayOfTheWeek] || [];
             var availableDates = [];
-            for (var i = 0; i < 13; ++i) {
-                if (reservedDates.indexOf(d.getTime()) === -1) {
-                    availableDates.push(d.getTime());
+            $.each(daysOfTheWeek, function (_, dayOfTheWeek) {
+                var firstDate = new Date(2017, 7, 22, 20, 0, 0, 0); // This should be the first day the bhajan starts
+                var lastDate = new Date(2017, 10, 22, 20, 0, 0, 0); // This should be the first day the bhajan starts
+                var d = new Date(firstDate.toISOString());
+                d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
+                //We are trying to determine the very first day of the said week of the day when the bhajan will begin
+                //So let us say the bhajan starts on a Wednesday then the first monday will be after that date
+                if (d.getTime() < firstDate.getTime()) {
+                    d.setDate(d.getDate() + 7);
                 }
-                d.setDate(d.getDate() + 7);
-            }
+
+                var reservedDates = daysToDates[dayOfTheWeek] || [];
+                for (var i = 0; i < 14; ++i) {
+                    if (reservedDates.indexOf(d.getTime()) === -1 && d.getTime() <= lastDate.getTime()) {
+                        availableDates.push(d.getTime());
+                    }
+                    d.setDate(d.getDate() + 7);
+                }
+            });
+            availableDates.sort ();
             var html = $(availableDates).map(function () {
                 var d = new Date();
                 d.setTime(this);

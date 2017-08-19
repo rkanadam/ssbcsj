@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="CSJ" uploadOnCheckin="8fd28085-ea77-4f30-a5f0-80386f5f070c">
+  <component name="PublishConfigData" serverName="CSJ" persistUploadOnCheckin="false">
     <serverData>
       <paths name="CSJ">
         <serverdata>
           <mappings>
             <mapping deploy="/signups" local="$PROJECT_DIR$" web="/csj/signups" />
-            <mapping deploy="/sai90/slide_maker.php" local="$PROJECT_DIR$/slide_maker.php" web="/csj/sai90/slide_maker.php" />
+            <mapping deploy="/sai90/slide_maker.php" local="$PROJECT_DIR$/slide_maker.php1" web="/csj/sai90/slide_maker.php" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="CSJ" />
   </component>
 </project>
-

@@ -10,7 +10,7 @@ if ($method === "get") {
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2016-08-20T07:00:00.000Z'
+        'timeMin' => '2017-08-22T07:00:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
@@ -26,7 +26,7 @@ if ($method === "get") {
 
 } else if ($method === "post") {
     $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2016")->getListFeed();
+    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2017")->getListFeed();
 
     $value = array();
     $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
@@ -57,14 +57,13 @@ if ($method === "get") {
     Multi Faith Chants
     1 chapter reading of Tapovanam
     Aarti
-
 EOD;
 
     if (!empty($comments)) {
-        $description .= "\nPhone: \n$phone\n\n";
+        $description .= "\n-----------------------------------\n$comments\n\n";
     }
     if (!empty($comments)) {
-        $description .= "\nComments: \n$comments\n\n";
+        $description .= "\n-----------------------------------\n$phone\n\n";
     }
 
     $event->setDescription($description);
@@ -119,16 +118,16 @@ function sendMail($name, $date, $to)
                 <li>3 OMs</li>
                 <li>3 Gayatris</li>
                 <li>108 Names of Sathya Sai <a target="_blank"
-                                               href="http://region7saicenters.org/csj/sai90/108.pdf">Link
+                                               href="http://region7saicenters.org/csj/signups/108.pdf">Link
                     to 108 names of Sai</a></li>
                 <li>9 Bhajans <a target="_blank"
                                  href="http://region7saicenters.org/csj/images/documents/ssbcsj_Center%20Bhajan%20book.pdf">Link
                     to Bhajan Book </a></li>
                 <li>Multi Faith Chants <a target="_blank"
-                                          href="http://region7saicenters.org/csj/sai90/108.pdf">Link
+                                          href="http://region7saicenters.org/csj/signups/108.pdf">Link
                     to Multi Faith Chants </a></li>
-                <li>1 chapter reading of Tapovanam <a target="_blank"
-                                                      href="http://www.sathyasaiottawa.org/pdf/SSE_Resources/sai-tapovanam.pdf">Link
+                <li>5 pages of Tapovanam <a target="_blank"
+                                                      href="http://region7saicenters.org/csj/signups/sai-tapovanam-with-page-numbers.pdf">Link
                     to online Tapovanam book</a></li>
                 <li>Aarti</li>
             </ul>
