@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Updating IP address">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sai-tapovanam-with-page-numbers.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.html" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/.gitignore" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/.scrutinizer.yml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/.travis.yml" afterPath="" />
@@ -41,13 +39,11 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/tests/bootstrap.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/tests/resources/files/Sample_01_Simple.pptx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/tests/resources/images/PHPPowerPointLogo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/birthday/index.html" afterPath="$PROJECT_DIR$/birthday/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" afterPath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/birthday_bhajan_signup.php" afterPath="$PROJECT_DIR$/server/birthday_bhajan_signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssbcsj.iml" afterPath="$PROJECT_DIR$/ssbcsj.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/util.php" afterPath="$PROJECT_DIR$/server/util.php" />
     </list>
     <ignored path="ssbcsj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,21 +68,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/birthday/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="82" column="152" lean-forward="false" selection-start-line="82" selection-start-column="152" selection-end-line="82" selection-end-column="152" />
+            <state relative-caret-position="322">
+              <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1523">
-              <caret line="135" column="80" lean-forward="false" selection-start-line="135" selection-start-column="80" selection-end-line="135" selection-end-column="80" />
-              <folding>
-                <marker date="1503112542000" expanded="true" signature="7295:8250" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +78,8 @@
       <file leaf-file-name="birthday_bhajan_signup.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/birthday_bhajan_signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="59" />
+            <state relative-caret-position="-96">
+              <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -104,25 +88,45 @@
       <file leaf-file-name="birthday_bhajan_signup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/birthday_bhajan_signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="129" column="136" lean-forward="false" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="136" />
+            <state relative-caret-position="90">
+              <caret line="124" column="14" lean-forward="true" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
               <folding>
-                <marker date="1503158874000" expanded="true" signature="3632:3664" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="3665:5250" ph="..." />
-                <marker date="1503158874000" expanded="false" signature="3716:3728" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="3729:5215" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="3744:5086" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4041:5070" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4129:4328" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4172:4323" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4349:4551" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4378:4546" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4572:4764" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4610:4759" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4785:5021" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="4825:5016" ph="..." />
-                <marker date="1503158874000" expanded="true" signature="5116:5204" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4131:4163" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4164:5749" ph="..." />
+                <marker date="1503173079000" expanded="false" signature="4215:4227" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4228:5714" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4243:5585" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4540:5569" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4628:4827" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4671:4822" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4848:5050" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="4877:5045" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="5071:5263" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="5109:5258" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="5284:5520" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="5324:5515" ph="..." />
+                <marker date="1503173079000" expanded="true" signature="5615:5703" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/util.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.phpmailer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="806" column="20" lean-forward="false" selection-start-line="806" selection-start-column="20" selection-end-line="806" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +137,8 @@
     <findStrings>
       <find>52.</find>
       <find>52</find>
+      <find>&quot;city&quot;</find>
+      <find>Fremont</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -149,7 +155,6 @@
         <option value="$PROJECT_DIR$/gpsrc/gps.js" />
         <option value="$PROJECT_DIR$/gpsrc/index.html" />
         <option value="$PROJECT_DIR$/server/sse/gps_winter_service.php" />
-        <option value="$PROJECT_DIR$/server/util.php" />
         <option value="$PROJECT_DIR$/server/gps_winter_service.php" />
         <option value="$PROJECT_DIR$/gpcs/index.html" />
         <option value="$PROJECT_DIR$/server/grand_parents_collection_service.php" />
@@ -158,8 +163,9 @@
         <option value="$PROJECT_DIR$/slide_maker.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" />
-        <option value="$PROJECT_DIR$/server/birthday_bhajan_signup.php" />
         <option value="$PROJECT_DIR$/birthday/index.html" />
+        <option value="$PROJECT_DIR$/server/util.php" />
+        <option value="$PROJECT_DIR$/server/birthday_bhajan_signup.php" />
       </list>
     </option>
   </component>
@@ -177,9 +183,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="46" />
+    <option name="x" value="48" />
     <option name="y" value="23" />
-    <option name="width" value="1234" />
+    <option name="width" value="1232" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -209,6 +215,11 @@
             <path>
               <item name="ssbcsj" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssbcsj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssbcsj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssbcsj" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -791,14 +802,15 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38543248" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262519" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25671142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25671142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -815,7 +827,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38543248" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -825,7 +836,7 @@
       <window_info id="Amazon EC2" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33013844" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -841,7 +852,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38543248" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38543248" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262519" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -852,6 +863,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -867,7 +888,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Adding evergreen area support" />
     <MESSAGE value="Updating birthday bhajan links" />
     <MESSAGE value="Adding fixes to show the schedule. Fixing logo." />
     <MESSAGE value="Updating e-mail format" />
@@ -892,10 +912,13 @@
     <MESSAGE value="Updating shivaratri sheet" />
     <MESSAGE value="Adding support for 25th Anniversary template" />
     <MESSAGE value="Updating IP address" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating IP address" />
+    <MESSAGE value="Updating birthday bhajan signup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating birthday bhajan signup." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -1003,53 +1026,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/birthday_bhajan_signup.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="59" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/birthday_bhajan_signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="129" column="136" lean-forward="false" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="136" />
+        <state relative-caret-position="217">
+          <caret line="167" column="62" lean-forward="false" selection-start-line="167" selection-start-column="62" selection-end-line="167" selection-end-column="62" />
           <folding>
-            <marker date="1503158874000" expanded="true" signature="3632:3664" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="3665:5250" ph="..." />
-            <marker date="1503158874000" expanded="false" signature="3716:3728" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="3729:5215" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="3744:5086" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4041:5070" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4129:4328" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4172:4323" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4349:4551" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4378:4546" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4572:4764" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4610:4759" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4785:5021" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="4825:5016" ph="..." />
-            <marker date="1503158874000" expanded="true" signature="5116:5204" ph="..." />
+            <marker date="1503112542000" expanded="true" signature="7295:8250" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/birthday/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="82" column="152" lean-forward="false" selection-start-line="82" selection-start-column="152" selection-end-line="82" selection-end-column="152" />
+        <state relative-caret-position="322">
+          <caret line="114" column="61" lean-forward="false" selection-start-line="114" selection-start-column="61" selection-end-line="114" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/class.phpmailer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1523">
-          <caret line="135" column="80" lean-forward="false" selection-start-line="135" selection-start-column="80" selection-end-line="135" selection-end-column="80" />
+        <state relative-caret-position="358">
+          <caret line="806" column="20" lean-forward="false" selection-start-line="806" selection-start-column="20" selection-end-line="806" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/birthday_bhajan_signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="124" column="14" lean-forward="true" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
           <folding>
-            <marker date="1503112542000" expanded="true" signature="7295:8250" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4131:4163" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4164:5749" ph="..." />
+            <marker date="1503173079000" expanded="false" signature="4215:4227" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4228:5714" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4243:5585" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4540:5569" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4628:4827" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4671:4822" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4848:5050" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="4877:5045" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="5071:5263" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="5109:5258" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="5284:5520" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="5324:5515" ph="..." />
+            <marker date="1503173079000" expanded="true" signature="5615:5703" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/birthday_bhajan_signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="52" column="25" lean-forward="false" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

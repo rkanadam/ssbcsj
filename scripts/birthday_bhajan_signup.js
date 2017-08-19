@@ -90,6 +90,7 @@
 
             e.preventDefault();
             var $this = $(this);
+            $("#city [name='cityName']").val ($("#city select option:selected").text ());
             $.post(apiLocation, $this.serialize(), function (response) {
                 if (response !== true) {
                     alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");

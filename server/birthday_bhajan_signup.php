@@ -34,6 +34,9 @@ if ($method === "get") {
     foreach ($propertiesToCopy as $property) {
         $value[$property] = trim($_REQUEST[$property]);
     }
+    if (!empty ($_REQUEST["cityName"])) {
+        $value["city"] = $_REQUEST["cityName"];
+    }
     $registrationFeed->insert($value);
 
     $event = new Google_Service_Calendar_Event ();
@@ -44,6 +47,7 @@ if ($method === "get") {
     $date = $_REQUEST["date"];
     $comments = $_REQUEST["comments"];
     $phone = $_REQUEST["phone"];
+    $city = $value["city"];
 
     $event->setSummary("SSBCSJ Birthday Bhajan - Residence of $name");
     $event->setLocation($address);
@@ -69,6 +73,13 @@ EOD;
     $event->setDescription($description);
 
     $defaultFolks = array("raghuram.kanadam@gmail.com");
+    if (stristr($city, "fremont") !== FALSE) {
+        array_push($defaultFolks, "hasmouli@yahoo.com");
+        array_push($defaultFolks, "siva.paturi@gmail.com");
+    } else if (stristr($city, "sunnyvale") !== FALSE) {
+        array_push($defaultFolks, "swamiemail108@gmail.com");
+        array_push($defaultFolks, "sathyanandb@gmail.com");
+    }
     foreach ($defaultFolks as $defaultFolk) {
         $attendee = new Google_Service_Calendar_EventAttendee ();
         $attendee->setEmail($defaultFolk);
@@ -96,11 +107,11 @@ EOD;
 
     //Next insert it into the calendar
     $calendarService->events->insert($calendarId, $event);
-    sendMail($name, $date, $email);
+    sendMail($name, $date, $email, $defaultFolks);
     echo json_encode(true);
 }
 
-function sendMail($name, $date, $to)
+function sendMail($name, $date, $to, $cc = null)
 {
     $date = new DateTime($date);
     $timezone = "America/Los_Angeles";
@@ -140,7 +151,7 @@ function sendMail($name, $date, $to)
     <div>Sairam!<br/></div>
 </div>
 EOD;
-    return email($to, "Signup confirmation for hosting Swami's bhajans on $date", $html);
+    return email($to, "Signup confirmation for hosting Swami's bhajans on $date", $html, $cc);
 }
 
 ?>

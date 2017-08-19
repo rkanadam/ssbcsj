@@ -52,16 +52,57 @@ function endsWith($haystack, $needle)
 
 $drive = new Google_Service_Drive($client);
 
-function email ($to, $subject, $contents) {
-    $url = 'https://script.google.com/macros/s/AKfycbw8zsf1KdEHiaMoydYYafJp6TY0LSI4hj26TrrYAAnQLukfQPU/exec';
-    $data = array('to' => $to, 'subject' => $subject, "body" => $contents);
-    $options = array(
-        'http' => array(
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data),
-        ),
-    );
-    $context  = stream_context_create($options);
-    return file_get_contents($url, false, $context);
+function email ($to, $subject, $contents, $cc = null, $bcc = null) {
+
+    $mail             = new PHPMailer();
+
+    $mail->IsSMTP(); // telling the class to use SMTP
+    $mail->SMTPAuth   = true;                  // enable SMTP authentication
+    $mail->SMTPSecure = "tls";
+    $mail->Host       = "smtp.gmail.com";      // SMTP server
+    $mail->Port       = 587;                   // SMTP port
+    $mail->Username   = "donotreply.ssbcsj@gmail.com";  // username
+    $mail->Password   = "AumSriSairam";            // password
+
+    $mail->SetFrom('raghuram.kanadam@gmail.com', 'Raghuram Kanadam');
+
+    $mail->Subject    = $subject;
+
+    $mail->MsgHTML($contents);
+
+    if (!empty($to)){
+        if (is_array($to)) {
+            foreach($to as $a) {
+                $mail->AddAddress($a);
+            }
+        } else {
+            $mail->AddAddress($to);
+        }
+    }
+
+    if (!empty($cc)){
+        if (is_array($cc)) {
+            foreach($cc as $a) {
+                $mail->AddCC($a);
+            }
+        } else {
+            $mail->AddCC($cc);
+        }
+    }
+    if (!empty($bcc)){
+        if (is_array($bcc)) {
+            foreach($bcc as $a) {
+                $mail->AddBCC($a);
+            }
+        } else {
+            $mail->AddBCC($bcc);
+        }
+    }
+
+
+    if(!$mail->Send()) {
+        return false;
+    } else {
+        return true;
+    }
 }
