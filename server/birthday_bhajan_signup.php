@@ -51,6 +51,20 @@ if ($method === "get") {
 
     $event->setSummary("SSBCSJ Birthday Bhajan - Residence of $name");
     $event->setLocation($address);
+
+    $start = new DateTime($date);
+    $start->setTimezone(new DateTimeZone($timezone));
+    $firstDay = new DateTime("2017-08-23T03:00:00.000Z");
+    $firstDay->setTimezone(new DateTimeZone($timezone));
+    $interval = $start->diff($firstDay);
+    $dayNumber = $interval->days + 1;
+    $endingPageNumber = ($dayNumber * 5) % 155;
+    $startingPageNumber = $endingPageNumber - 4;
+    if ($endingPageNumber === 0) {
+        //This is the ending of the book, give it 7 pages and close.
+        $startingPageNumber = 150;
+        $endingPageNumber = "End of the book";
+    }
     $description = <<<EOD
 
     Format:
@@ -59,7 +73,7 @@ if ($method === "get") {
     108 Names of Sathya Sai
     9 Bhajans
     Multi Faith Chants
-    1 chapter reading of Tapovanam
+    5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber)
     Aarti
 EOD;
 
@@ -90,8 +104,6 @@ EOD;
     $attendees[] = $attendee;
     $event->setAttendees($attendees);
 
-    $start = new DateTime($date);
-    $start->setTimezone(new DateTimeZone($timezone));
     $gstart = new Google_Service_Calendar_EventDateTime();
     $gstart->setDateTime($start->format(DateTime::ISO8601));
     $gstart->setTimeZone($timezone);
@@ -107,11 +119,11 @@ EOD;
 
     //Next insert it into the calendar
     $calendarService->events->insert($calendarId, $event);
-    sendMail($name, $date, $email, $defaultFolks);
+    sendMail($name, $date, $email, $defaultFolks, $startingPageNumber, $endingPageNumber);
     echo json_encode(true);
 }
 
-function sendMail($name, $date, $to, $cc = null)
+function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPageNumber)
 {
     $date = new DateTime($date);
     $timezone = "America/Los_Angeles";
@@ -137,7 +149,7 @@ function sendMail($name, $date, $to, $cc = null)
                 <li>Multi Faith Chants <a target="_blank"
                                           href="http://region7saicenters.org/csj/signups/108.pdf">Link
                     to Multi Faith Chants </a></li>
-                <li>5 pages of Tapovanam <a target="_blank"
+                <li>5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber) <a target="_blank"
                                                       href="http://region7saicenters.org/csj/signups/sai-tapovanam-with-page-numbers.pdf">Link
                     to online Tapovanam book</a></li>
                 <li>Aarti</li>
