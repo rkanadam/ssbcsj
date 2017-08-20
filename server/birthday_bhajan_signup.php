@@ -70,11 +70,12 @@ if ($method === "get") {
     Format:
     3 OMs
     3 Gayatris
-    108 Names of Sathya Sai
-    9 Bhajans
-    Multi Faith Chants
+    108 Names
     5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber)
-    Aarti
+    9 Bhajans
+    Multifaith chants
+    Aarati
+    Samastha Lokah
 EOD;
 
     if (!empty($comments)) {
