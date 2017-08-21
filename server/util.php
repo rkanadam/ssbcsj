@@ -54,55 +54,28 @@ $drive = new Google_Service_Drive($client);
 
 function email ($to, $subject, $contents, $cc = null, $bcc = null) {
 
-    $mail             = new PHPMailer();
-
-    $mail->IsSMTP(); // telling the class to use SMTP
-    $mail->SMTPAuth   = true;                  // enable SMTP authentication
-    $mail->SMTPSecure = "tls";
-    $mail->Host       = "smtp.gmail.com";      // SMTP server
-    $mail->Port       = 587;                   // SMTP port
-    $mail->Username   = "donotreply.ssbcsj@gmail.com";  // username
-    $mail->Password   = "AumSriSairam";            // password
-
-    $mail->SetFrom('raghuram.kanadam@gmail.com', 'Raghuram Kanadam');
-
-    $mail->Subject    = $subject;
-
-    $mail->MsgHTML($contents);
-
-    if (!empty($to)){
-        if (is_array($to)) {
-            foreach($to as $a) {
-                $mail->AddAddress($a);
-            }
-        } else {
-            $mail->AddAddress($to);
-        }
-    }
-
-    if (!empty($cc)){
+    $addresses = array($to);
+    if (!empty($cc)) {
         if (is_array($cc)) {
-            foreach($cc as $a) {
-                $mail->AddCC($a);
+            foreach ($cc as $address) {
+                array_push($address);
             }
-        } else {
-            $mail->AddCC($cc);
+        } else if (is_string($cc)) {
+            array_push($cc);
         }
     }
-    if (!empty($bcc)){
+    if (!empty($bcc)) {
         if (is_array($bcc)) {
-            foreach($bcc as $a) {
-                $mail->AddBCC($a);
+            foreach ($bcc as $address) {
+                array_push($address);
             }
-        } else {
-            $mail->AddBCC($bcc);
+        } else if (is_string($bcc)) {
+            array_push($bcc);
         }
     }
 
-
-    if(!$mail->Send()) {
-        return false;
-    } else {
-        return true;
-    }
+    // To send HTML mail, the Content-type header must be set
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+    return mail(join(",", $addresses), $subject,$contents, implode("\r\n", $headers));
 }
