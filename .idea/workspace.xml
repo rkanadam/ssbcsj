@@ -40,8 +40,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/tests/resources/files/Sample_01_Simple.pptx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpoffice/common/tests/resources/images/PHPPowerPointLogo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/util.php" afterPath="$PROJECT_DIR$/server/util.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="ssbcsj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,14 +74,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+            <state relative-caret-position="303">
+              <caret line="106" column="33" lean-forward="true" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
               <folding>
-                <marker date="1503174987000" expanded="true" signature="7213:7231" ph="..." />
-                <marker date="1503174987000" expanded="true" signature="7295:7307" ph="..." />
+                <marker date="1503332924000" expanded="true" signature="7213:7231" ph="..." />
+                <marker date="1503332924000" expanded="true" signature="7295:7307" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="birthday_bhajan_signup.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="birthday_bhajan_signup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/birthday_bhajan_signup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -120,16 +119,6 @@
                 <marker date="1503332648000" expanded="true" signature="5981:6172" ph="..." />
                 <marker date="1503332648000" expanded="true" signature="6272:6360" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/birthday/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" column="40" lean-forward="false" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,12 +175,12 @@
         <option value="$PROJECT_DIR$/shivaratri/index.html" />
         <option value="$PROJECT_DIR$/slide_maker.php" />
         <option value="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/birthday/index.html" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/server/util.php" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server/birthday_bhajan_signup.php" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -909,7 +898,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixing index.html file" />
     <MESSAGE value="Fixing center title" />
     <MESSAGE value="Adding Cupertino to Wednesday" />
     <MESSAGE value="Adding Bhajan Tutors to the cc list" />
@@ -934,7 +922,8 @@
     <MESSAGE value="Fixing Tapovanam page numbers" />
     <MESSAGE value="Updating IP address" />
     <MESSAGE value="Fixing mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing mail" />
+    <MESSAGE value="Fixing e-mails" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing e-mails" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,8 +947,8 @@
         <state relative-caret-position="1890">
           <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
           <folding>
-            <marker date="1503174987000" expanded="true" signature="7213:7231" ph="..." />
-            <marker date="1503174987000" expanded="true" signature="7295:7307" ph="..." />
+            <marker date="1503332924000" expanded="true" signature="7213:7231" ph="..." />
+            <marker date="1503332924000" expanded="true" signature="7295:7307" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1035,8 +1024,8 @@
         <state relative-caret-position="1890">
           <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
           <folding>
-            <marker date="1503174987000" expanded="true" signature="7213:7231" ph="..." />
-            <marker date="1503174987000" expanded="true" signature="7295:7307" ph="..." />
+            <marker date="1503332924000" expanded="true" signature="7213:7231" ph="..." />
+            <marker date="1503332924000" expanded="true" signature="7295:7307" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1180,17 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="25" lean-forward="false" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
-          <folding>
-            <marker date="1503174987000" expanded="true" signature="7213:7231" ph="..." />
-            <marker date="1503174987000" expanded="true" signature="7295:7307" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/birthday_bhajan_signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -1231,16 +1209,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <marker date="1503332624000" expanded="true" signature="6716:7671" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/birthday_bhajan_signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1261,6 +1229,27 @@
             <marker date="1503332648000" expanded="true" signature="5892:6177" ph="..." />
             <marker date="1503332648000" expanded="true" signature="5981:6172" ph="..." />
             <marker date="1503332648000" expanded="true" signature="6272:6360" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <marker date="1503332624000" expanded="true" signature="6716:7671" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="106" column="33" lean-forward="true" selection-start-line="106" selection-start-column="33" selection-end-line="106" selection-end-column="33" />
+          <folding>
+            <marker date="1503332924000" expanded="true" signature="7213:7231" ph="..." />
+            <marker date="1503332924000" expanded="true" signature="7295:7307" ph="..." />
           </folding>
         </state>
       </provider>

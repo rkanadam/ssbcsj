@@ -92,17 +92,17 @@
                     if (event.description) {
                         var lines = $.trim (event.description).split ("\n");
                         var html = [];
-                        for (var i = 0, len = lines.length; i < len; ++i) {
-                            if (lines[i].indexOf ("------") !== -1) {
-                                ++i;
-                                for (var j = i; j < lines.length; ++j) {
-                                    if (lines[j].indexOf ("------") !== -1) {
+                        for (var j = 0, len = lines.length; j < len; ++j) {
+                            if (lines[j].indexOf ("------") !== -1) {
+                                ++j;
+                                for (var k = j; k < lines.length; ++k) {
+                                    if (lines[k].indexOf ("------") !== -1) {
                                         break;
                                     }
                                 }
-                                for (;i < j; ++i) {
-                                    if ($.trim(lines[i])) {
-                                        html.push ($.trim(lines[i]));
+                                for (;j < k; ++j) {
+                                    if ($.trim(lines[j])) {
+                                        html.push ($.trim(lines[j]));
                                     }
                                 }
                                 break;
