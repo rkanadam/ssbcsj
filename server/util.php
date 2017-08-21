@@ -54,7 +54,7 @@ $drive = new Google_Service_Drive($client);
 
 function email ($to, $subject, $contents, $cc = null, $bcc = null) {
 
-    $addresses = array($to);
+    $addresses = is_array($to) ? $to : array($to);
     if (!empty($cc)) {
         if (is_array($cc)) {
             foreach ($cc as $address) {
@@ -77,5 +77,5 @@ function email ($to, $subject, $contents, $cc = null, $bcc = null) {
     // To send HTML mail, the Content-type header must be set
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-    return mail(join(",", $addresses), $subject,$contents, implode("\r\n", $headers));
+    return mail(join(", ", $addresses), $subject,$contents, implode("\r\n", $headers));
 }
