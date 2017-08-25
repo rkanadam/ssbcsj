@@ -111,7 +111,11 @@
                         if (html.length) {
                             $event.find(".parking").html ( html.join("<br/>") );
 
+                        } else {
+                            $event.find(".parking").html ( "" );
                         }
+                    } else {
+                        $event.find(".parking").html ( "" );
                     }
                     $event.show();
 
