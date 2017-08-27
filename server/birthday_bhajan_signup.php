@@ -94,6 +94,9 @@ EOD;
     } else if (stristr($city, "sunnyvale") !== FALSE) {
         array_push($defaultFolks, "swamiemail108@gmail.com");
         array_push($defaultFolks, "sathyanandb@gmail.com");
+    } else if (stristr($city, "peninsula") !== FALSE) {
+        array_push($defaultFolks, "shankarxv@gmail.com");
+        array_push($defaultFolks, "bhaskaramachandran@gmail.com");
     }
     foreach ($defaultFolks as $defaultFolk) {
         $attendee = new Google_Service_Calendar_EventAttendee ();

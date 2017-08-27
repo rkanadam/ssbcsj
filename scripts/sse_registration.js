@@ -7,7 +7,7 @@
             }
             e.preventDefault();
             var $this = $(this);
-            $.get("server/sse/api.php", $this.serialize(), function (responses) {
+            $.get("../server/sse/api.php", $this.serialize(), function (responses) {
                 if (responses === false) {
                     alert("Looks like we were not able to complete the search. Please let the web master know");
                     return false;
@@ -45,7 +45,7 @@
             var query = $.trim($this.attr("searchData"));
             if (query) {
                 if (query) {
-                    $.get("server/sse/api.php", {q: query}, function (responses) {
+                    $.get("../server/sse/api.php", {q: query}, function (responses) {
                         if (responses === false) {
                             alert("Looks like we were not able to complete the search. Please let the web master know");
                             return false;
@@ -89,7 +89,7 @@
 
             e.preventDefault();
             var $this = $(this);
-            $.post("server/sse/api.php", $this.serialize(), function (response) {
+            $.post("../server/sse/api.php", $this.serialize(), function (response) {
                 if (response !== true) {
                     alert("Your information could not be saved. Please contact the web master.");
                 } else {

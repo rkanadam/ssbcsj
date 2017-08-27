@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SSBCSJ - SSE Registration - 2017-2018</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../styles/index.css">
+
+    <link rel="shortcut icon" href="../styles/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../styles/images/favicon.ico" type="image/x-icon">
+
+    <script src="../scripts/validator.min.js"></script>
+    <script src="../scripts/sse_registration.js"></script>
+</head>
+<body>
+<div class="content">
+    <a href="../index.html">
+        <div class="jumbotron" id="logo"></div>
+    </a>
+
+    <div class="container content" style="margin-top: -25px">
+        <div class="row">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-8">
+                <h1>SSE Registration for the year 2016-17</h1>
+            </div>
+        </div>
+        <!-- Example row of columns -->
+        <div class="row" style="margin: 0px 0px 25px 0px" id="searchContent">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="col-sm-8">
+                <h4>Search for exisiting or previous year's registrations. You may type in a few characters of the
+                    parent or the
+                    child and click on search.</h4>
+
+                <form class="form" id="searchForm">
+                    <div class="form-group form-group-lg">
+                        <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-search"
+                                                                 aria-hidden="true"></span></div>
+                            <input type="text" size="25" class="form-control" id="search"
+                                   name="q"
+                                   min="5"
+                                   data-minlength="5"
+                                   required="required"
+                                   placeholder="Enter at least 5 characters or more and  click search">
+
+                        </div>
+                    </div>
+                    <div class="form-group form-group-lg">
+                        <div class="input-group" style="width:100%">
+                            <button type="submit" class="btn btn-primary btn-lg">Search &raquo;</button>
+                            <button type="button" class="btn btn-primary btn-lg pull-right" id="newRegistration">New
+                                Registration &raquo;
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="searchResults" style="display:none;">
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-8" style="padding-top: 10px;padding-bottom: 10px;">
+                    We found the following children. Please click on a child to continue editing their information.
+                    Please note
+                    we
+                    will also populate all of their siblings from this information.
+                </div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">&nbsp;</div>
+                <div class="col-sm-8">
+                    <table class="table table-bordered table-striped table-condensed">
+                        <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <form id="registrationForm" style="display:none;">
+            <fieldset>
+                <legend>School grade to SSE Group Mapping:</legend>
+                <ul>
+                    <li>Pre-K &amp; KG go to Sai Nursery</li>
+                    <li>Grades 1,2 &amp; 3 attend Group1</li>
+                    <li>Grades 4,5 &amp; 6 attend Group2</li>
+                    <li>Grades 7,8,9 &amp; 10 attend Group3</li>
+                    <li>Grades 11 &amp; 12 attend Group4</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Information of Parents</legend>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="mothersfirstname">Mother's First Name</label>
+                            <input type="text" class="form-control" id="mothersfirstname" name="mothersfirstname"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="motherslastname">Mother's Last Name</label>
+                            <input type="text" class="form-control" id="motherslastname" name="motherslastname"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="mothersemail">Mother's E-Mail</label>
+                            <input type="email" class="form-control" id="mothersemail" name="mothersemail"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="mothersphone">Mother's Phone</label>
+                            <input type="text" class="form-control" id="mothersphone" name="mothersphone"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="fathersfirstname">Father's First Name</label>
+                            <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="fatherslastname">Father's Last Name</label>
+                            <input type="text" class="form-control" id="fatherslastname" name="fatherslastname"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="fathersemail">Father's E-Mail</label>
+                            <input type="email" class="form-control" id="fathersemail" name="fathersemail"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="fathersphone">Father's Phone</label>
+                            <input type="text" class="form-control" id="fathersphone" name="fathersphone"
+                                   required="required">
+                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Information of Children</legend>
+                <div class="row bordered-row tableHeader">
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label>First Name</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label>Last Name</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label>SSE Group</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label>School Grade</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>Known Allergies</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <label>1<sup>st</sup> Child</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild1"
+                                   name="firstnameofchild1">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild1"
+                                   name="lastnameofchild1">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="ssegroupofchild1" name="ssegroupofchild1">
+                                <option>Sai Nursery</option>
+                                <option>Group 1</option>
+                                <option>Group 2</option>
+                                <option>Group 3</option>
+                                <option>Group 4</option>
+                            </select>
+                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
+                Nov/23/2011
+            </small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="schoolgradeofchild1" name="schoolgradeofchild1">
+                                <option>Pre K</option>
+                                <option>Kindergarten</option>
+                                <option>Grade 1</option>
+                                <option>Grade 2</option>
+                                <option>Grade 3</option>
+                                <option>Grade 4</option>
+                                <option>Grade 5</option>
+                                <option>Grade 6</option>
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>Grade 10</option>
+                                <option>Grade 11</option>
+                                <option>Grade 12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?"
+                      id="allergiesofchild1" name="allergiesofchild1"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <label>2<sup>nd</sup> Child</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild2"
+                                   name="firstnameofchild2">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild2"
+                                   name="lastnameofchild2">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="ssegroupofchild2" name="ssegroupofchild2">
+                                <option>Sai Nursery</option>
+                                <option>Group 1</option>
+                                <option>Group 2</option>
+                                <option>Group 3</option>
+                                <option>Group 4</option>
+                            </select>
+                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
+                Nov/23/2011
+            </small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="schoolgradeofchild2" name="schoolgradeofchild2">
+                                <option>Pre K</option>
+                                <option>Kindergarten</option>
+                                <option>Grade 1</option>
+                                <option>Grade 2</option>
+                                <option>Grade 3</option>
+                                <option>Grade 4</option>
+                                <option>Grade 5</option>
+                                <option>Grade 6</option>
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>Grade 10</option>
+                                <option>Grade 11</option>
+                                <option>Grade 12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?"
+                      id="allergiesofchild2" name="allergiesofchild2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="form-group">
+                            <label>3<sup>rd</sup> Child</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name" class="form-control" id="firstnameofchild3"
+                                   name="firstnameofchild3">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-control" id="lastnameofchild3"
+                                   name="lastnameofchild3">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="ssegroupofchild3" name="ssegroupofchild3">
+                                <option>Sai Nursery</option>
+                                <option>Group 1</option>
+                                <option>Group 2</option>
+                                <option>Group 3</option>
+                                <option>Group 4</option>
+                            </select>
+                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
+                Nov/23/2011
+            </small></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control" id="schoolgradeofchild3" name="schoolgradeofchild3">
+                                <option>Pre K</option>
+                                <option>Kindergarten</option>
+                                <option>Grade 1</option>
+                                <option>Grade 2</option>
+                                <option>Grade 3</option>
+                                <option>Grade 4</option>
+                                <option>Grade 5</option>
+                                <option>Grade 6</option>
+                                <option>Grade 7</option>
+                                <option>Grade 8</option>
+                                <option>Grade 9</option>
+                                <option>Grade 10</option>
+                                <option>Grade 11</option>
+                                <option>Grade 12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+            <textarea class="form-control" placeholder="Any known food allergies ?" id="allergiesofchild3"
+                      name="allergiesofchild3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions and Feedback</legend>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>What are all your expectations from Sai Spiritual Education ?</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <textarea class="form-control"
+                                      name="expectations" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <span>What makes SSE interesting to you ?</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <textarea class="form-control"
+                                      name="interesting" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <span>What is not interesting in an SSE Class ?</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <textarea class="form-control"
+                                      name="notinteresting" required="required"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <span>How would you like to change it ?</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <textarea class="form-control"
+                                      name="change" required="required"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Comments and Communication</legend>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <span>Do you receive center communication ?</span>
+                    </div>
+                    <div class="col-sm-1">
+                        <span>Yes&nbsp;</span>
+                        <span><input type="radio" name="centercommunication" value="yes" required="true"
+                                     checked="checked"></span>
+                    </div>
+                    <div class="col-sm-1">
+                        <span>No&nbsp;</span>
+                        <span><input type="radio" name="centercommunication" value="no" required="true"></span>
+                    </div>
+                    <div class="col-sm-2">
+                        <span>Any additional comments ?</span>
+                    </div>
+                    <div class="col-sm-5">
+            <textarea class="form-control"
+                      name="comments"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            <br/>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                </div>
+                <div class="col-sm-6">
+                    <a class="btn btn-default btn-lg pull-right" href="sse_registration.html" role="button">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="indicator" title="Please wait ..." style="overflow: hidden;display: none">
+    <div style="position:absolute;top: 0%;left: 0%;width: 100%;height: 100%;background: #CCC;opacity: .9;z-index: 100">
+    </div>
+    <div class="progress progress-striped active"
+         style="height: 50px;margin-bottom: 0px;position:absolute;top: 50%;left: 25%;width: 50%;z-index: 101">
+        <div class="progress-bar progress-bar-info" style="width: 100%">
+            <h4>Contacting the server for information ...</h4>
+        </div>
+    </div>
+</div>
+
+<!-- /container -->
+</body>
+</html>

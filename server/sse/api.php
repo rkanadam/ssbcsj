@@ -37,41 +37,12 @@ ServiceRequestFactory::setInstance($serviceRequest);
 
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-$spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015');
-$mainFeed = $spreadsheet->getWorksheets()->getByTitle("Main")->getListFeed();
-$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2016 Registration")->getListFeed();
+$spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015/16/17');
+$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2017 Registration")->getListFeed();
 
 $rows = array();
 
-foreach ($mainFeed->getEntries() as $entry) {
-    $values = $entry->getValues();
-    if (   (!empty ($values["fathersfirstname"]) && !empty ($values["fatherslastname"]))
-        || (!empty ($values["mothersfirstname"]) && !empty ($values["motherslastname"]))) {
-        $properties = array("firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild");
-        for ($i = 1; $i < 4; ++$i) {
-            if (!empty($values["firstnameofchild$i"])) {
-                //A child is present at this index
-                $row = array();
-                $row["timestamp"] = trim($values["timestamp"]);
-                $row["mothersfirstname"] = trim($values["mothersfirstname"]);
-                $row["motherslastname"] = trim($values["motherslastname"]);
-                $row["fathersfirstname"] = trim($values["fathersfirstname"]);
-                $row["fatherslastname"] = trim($values["fatherslastname"]);
-
-                //Copy Child Properties
-                foreach ($properties as $key) {
-                    $row[$key] = trim($values["$key$i"]);
-                }
-
-                $combinedKey = strtolower(sprintf("%s-%s", $row["firstnameofchild"], $row["lastnameofchild"]));
-
-                $rows[$combinedKey] = $row;
-            }
-        }
-    }
-}
-
-$sheetsToMerge = array("2015 Registration", "2016 Registration");
+$sheetsToMerge = array("2016 Registration", "2017 Registration");
 foreach ($sheetsToMerge as $sheetName) {
     $registrationFeed = $spreadsheet->getWorksheets()->getByTitle($sheetName)->getListFeed();
     foreach ($registrationFeed->getEntries() as $entry) {
@@ -88,8 +59,8 @@ foreach ($sheetsToMerge as $sheetName) {
             $row["ssegroupofchild"] = trim($values["ssegroupofchild"]);
             $row["schoolgradeofchild"] = trim($values["schoolgradeofchild"]);
             $row["url"] = $entry->getEditUrl();
-            $row["sheetTitle"] = "2015 Registration";
-            $combinedKey = strtolower(sprintf("%s-%s", $row["firstnameofchild"], $row["lastnameofchild"]));
+            $row["sheetTitle"] = $sheetName;
+            $combinedKey = strtolower(sprintf("%s-%s", strtolower ($row["firstnameofchild"]), strtolower($row["lastnameofchild"])));
             $rows[$combinedKey] = $row;
         }
     }
@@ -143,7 +114,7 @@ if ($method === "get") {
     $parentPropertiesToCopy = array(
         "fathersfirstname", "fatherslastname", "fathersemail", "fathersphone",
         "mothersfirstname", "motherslastname", "mothersemail", "mothersphone",
-        "comments", "centercommunication");
+        "comments", "centercommunication", "expectations", "interesting", "notinteresting", "change");
 
     $childPropertiesToCopy = array(
         "firstnameofchild", "lastnameofchild", "ssegroupofchild", "schoolgradeofchild", "allergiesofchild");
@@ -165,7 +136,7 @@ if ($method === "get") {
 
     foreach ($values as $value) {
         $combinedKey = strtolower(sprintf("%s-%s", $value["firstnameofchild"], $value["lastnameofchild"]));
-        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2015 Registration") {
+        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2017 Registration") {
             ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
         }
         $registrationFeed->insert($value);
