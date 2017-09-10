@@ -42,7 +42,7 @@ $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2017 Registration
 
 $rows = array();
 
-$sheetsToMerge = array("2016 Registration", "2017 Registration");
+$sheetsToMerge = array("2017 Registration");
 foreach ($sheetsToMerge as $sheetName) {
     $registrationFeed = $spreadsheet->getWorksheets()->getByTitle($sheetName)->getListFeed();
     foreach ($registrationFeed->getEntries() as $entry) {
