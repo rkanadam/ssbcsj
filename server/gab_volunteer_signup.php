@@ -38,7 +38,7 @@ ServiceRequestFactory::setInstance($serviceRequest);
 
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-$spreadsheet = $spreadsheetFeed->getByTitle('2016_GAB_VOLUNTEER_SIGNUP');
+$spreadsheet = $spreadsheetFeed->getByTitle('2017_GAB_VOLUNTEER_SIGNUP');
 $worksheet = $spreadsheet->getWorksheets()->getByTitle("Volunteer List");
 $feed = $worksheet->getCellFeed();
 
@@ -99,8 +99,8 @@ if ($method === "get") {
         }
         //Sending out an Email to the Volunteer who's signing up
         $email = $_REQUEST["email"];
-        $emailBody = "Sairam " . $_REQUEST["name"] . ", \n\n Thank you for volunteering for Global Akhanda Bhajan 2016. You are assigned for " . $_REQUEST["what"] . " service at " . $_REQUEST["time"] . ".\n\n Thank you, \n GAB 2016 Team";
-        mail($email,"GAB 2016 Volunteering Confirmation",$emailBody);
+        $emailBody = "Sairam " . $_REQUEST["name"] . ", \n\n Thank you for volunteering for Global Akhanda Bhajan 2016. You are assigned for " . $_REQUEST["what"] . " service at " . $_REQUEST["time"] . ".\n\n Thank you, \n GAB 2017 Team";
+        mail($email,"GAB 2017 Volunteering Confirmation",$emailBody);
         echo json_encode(true);
         return 0;
     }
