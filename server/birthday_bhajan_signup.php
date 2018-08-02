@@ -10,7 +10,7 @@ if ($method === "get") {
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2017-08-22T07:00:00.000Z'
+        'timeMin' => '2018-08-22T07:00:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
@@ -26,7 +26,7 @@ if ($method === "get") {
 
 } else if ($method === "post") {
     $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2017")->getListFeed();
+    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2018")->getListFeed();
 
     $value = array();
     $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
@@ -54,7 +54,7 @@ if ($method === "get") {
 
     $start = new DateTime($date);
     $start->setTimezone(new DateTimeZone($timezone));
-    $firstDay = new DateTime("2017-08-23T03:00:00.000Z");
+    $firstDay = new DateTime("2018-08-23T03:00:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
     $dayNumber = $interval->days + 1;
