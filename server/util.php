@@ -58,19 +58,19 @@ function email ($to, $subject, $contents, $cc = null, $bcc = null) {
     if (!empty($cc)) {
         if (is_array($cc)) {
             foreach ($cc as $address) {
-                array_push($address);
+                array_push($addresses, $address);
             }
         } else if (is_string($cc)) {
-            array_push($cc);
+            array_push($addresses, $cc);
         }
     }
     if (!empty($bcc)) {
         if (is_array($bcc)) {
             foreach ($bcc as $address) {
-                array_push($address);
+                array_push($addresses, $address);
             }
         } else if (is_string($bcc)) {
-            array_push($bcc);
+            array_push($addresses, $bcc);
         }
     }
 

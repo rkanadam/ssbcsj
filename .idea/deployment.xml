@@ -6,7 +6,6 @@
         <serverdata>
           <mappings>
             <mapping deploy="/signups" local="$PROJECT_DIR$" web="/csj/signups" />
-            <mapping deploy="/sai90/slide_maker.php" local="$PROJECT_DIR$/slide_maker.php1" web="/csj/sai90/slide_maker.php" />
           </mappings>
         </serverdata>
       </paths>
