@@ -57,7 +57,7 @@ if ($method === "get") {
     $firstDay = new DateTime("2018-08-23T03:00:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
-    $dayNumber = $interval->days + 1;
+    $dayNumber = $interval->days;
     $endingPageNumber = ($dayNumber * 5) % 155;
     $startingPageNumber = $endingPageNumber - 4;
     if ($endingPageNumber === 0) {
@@ -89,7 +89,7 @@ EOD;
 
     $defaultFolks = array("raghuram.kanadam@gmail.com");
     if (stristr($city, "fremont") !== FALSE) {
-        array_push($defaultFolks, "hasmouli@yahoo.com");
+        array_push($defaultFolks, "yksomasekhar@gmail.com");
         array_push($defaultFolks, "siva.paturi@gmail.com");
     } else if (stristr($city, "sunnyvale") !== FALSE) {
         array_push($defaultFolks, "swamiemail108@gmail.com");
