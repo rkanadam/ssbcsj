@@ -38,11 +38,11 @@ ServiceRequestFactory::setInstance($serviceRequest);
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
 $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015/16/17');
-$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2017 Registration")->getListFeed();
+$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2018 Registration")->getListFeed();
 
 $rows = array();
 
-$sheetsToMerge = array("2017 Registration");
+$sheetsToMerge = array("2017 Registration", "2018 Registration");
 foreach ($sheetsToMerge as $sheetName) {
     $registrationFeed = $spreadsheet->getWorksheets()->getByTitle($sheetName)->getListFeed();
     foreach ($registrationFeed->getEntries() as $entry) {
@@ -136,7 +136,7 @@ if ($method === "get") {
 
     foreach ($values as $value) {
         $combinedKey = strtolower(sprintf("%s-%s", $value["firstnameofchild"], $value["lastnameofchild"]));
-        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2017 Registration") {
+        if ($rows[$combinedKey] && $rows[$combinedKey]["url"] && $rows[$combinedKey]["sheetTitle"] === "2018 Registration") {
             ServiceRequestFactory::getInstance()->delete($rows[$combinedKey]["url"]);
         }
         $registrationFeed->insert($value);
