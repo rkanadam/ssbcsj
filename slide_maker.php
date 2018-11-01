@@ -155,6 +155,7 @@ $base = empty($callback) ? "" : "https://52.207.232.254:8010/ssbcsj/";
                                             <select name = "template" class="form-control" id = "slideTemplate">
                                                 <option value="25th Anniversary" selected>25th Anniversary</option>
                                                 <option value="CSJ">CSJ</option>
+                                                <option value="GAB2018">GAB 2018</option>
                                                 <option value="GAB2017">GAB 2017</option>
                                                 <option value="GAB2016">GAB 2016</option>
                                                 <option value="Peninsula">Peninsula Sai Center</option>
