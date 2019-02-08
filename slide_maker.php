@@ -159,7 +159,7 @@ $base = empty($callback) ? "" : "https://slides.ssbcsj.org/ssbcsj/";
                                                 <option value="GAB2017">GAB 2017</option>
                                                 <option value="GAB2016">GAB 2016</option>
                                                 <option value="Peninsula">Peninsula Sai Center</option>
-                                                <option value="Shivaratri2016">Shivaratri 2016</option>
+                                                <option value="Shivaratri2019">Shivaratri 2019</option>
                                                 <option value="Regional Retreat 2016">Regional Retreat 2016</option>
                                             </select>
                                         </div>
