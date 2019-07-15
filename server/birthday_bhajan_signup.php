@@ -26,7 +26,7 @@ if ($method === "get") {
 
 } else if ($method === "post") {
     $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2018")->getListFeed();
+    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2019")->getListFeed();
 
     $value = array();
     $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
@@ -87,10 +87,11 @@ EOD;
 
     $event->setDescription($description);
 
-    $defaultFolks = array("raghuram.kanadam@gmail.com");
+    $defaultFolks = array("stbhutia@yahoo.com");
     if (stristr($city, "fremont") !== FALSE) {
-        array_push($defaultFolks, "yksomasekhar@gmail.com");
-        array_push($defaultFolks, "siva.paturi@gmail.com");
+        array_push($defaultFolks, "madhumitha1988@gmail.com");
+        array_push($defaultFolks, "sidc93@gmail.com");
+        array_push($defaultFolks, "sharankashyap@gmail.com");
     } else if (stristr($city, "sunnyvale") !== FALSE) {
         array_push($defaultFolks, "swamiemail108@gmail.com");
         array_push($defaultFolks, "sathyanandb@gmail.com");
@@ -139,7 +140,7 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
     <div>Sairam! ${name}</div>
     <div style = "padding: 2em">
          <div>
-             Thank you for signing up to host Swami's bhajans on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Raghu at raghuram.kanadam@gmail.com or 408-702-2043.
+             Thank you for signing up to host Swami's bhajans on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Susandhya at stbhutia@yahoo.com or 408-836-0179.
              Bhajans start at 8PM and the format is:
              <ul>
                 <li>3 OMs</li>

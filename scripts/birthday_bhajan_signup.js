@@ -43,8 +43,8 @@
 
             var availableDates = [];
             $.each(daysOfTheWeek, function (_, dayOfTheWeek) {
-                var firstDate = new Date(2018, 7, 23, 20, 0, 0, 0); // This should be the first day the bhajan starts
-                var lastDate = new Date(2018, 10, 22, 20, 0, 0, 0); // This should be the last day the bhajan starts
+                var firstDate = new Date(2019, 7, 21, 20, 0, 0, 0); // This should be the first day the bhajan starts
+                var lastDate = new Date(2019, 10, 22, 20, 0, 0, 0); // This should be the last day the bhajan starts
                 var d = new Date(firstDate.toISOString());
                 d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
                 //We are trying to determine the very first day of the said week of the day when the bhajan will begin
@@ -95,7 +95,7 @@
                 if (response !== true) {
                     alert("Uh-oh we had some trouble requesting your signup. Please contact the web master.");
                 } else {
-                    alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghu @ raghuram.kanadam@gmail.com");
+                    alert("We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghuram @ raghuram.kanadam@gmail.com");
                 }
                 window.location.reload();
             }, "json");
