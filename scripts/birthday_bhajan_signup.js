@@ -43,7 +43,7 @@
 
             var availableDates = [];
             $.each(daysOfTheWeek, function (_, dayOfTheWeek) {
-                var firstDate = new Date(2019, 7, 24, 20, 0, 0, 0); // This should be the first day the bhajan starts
+                var firstDate = new Date(2019, 7, 21, 20, 0, 0, 0); // This should be the first day the bhajan starts
                 var lastDate = new Date(2019, 10, 22, 20, 0, 0, 0); // This should be the last day the bhajan starts
                 var d = new Date(firstDate.toISOString());
                 d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
