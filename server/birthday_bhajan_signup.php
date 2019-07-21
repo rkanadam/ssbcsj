@@ -10,7 +10,7 @@ if ($method === "get") {
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2018-08-22T07:00:00.000Z'
+        'timeMin' => '2019-08-24T07:00:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
@@ -54,7 +54,7 @@ if ($method === "get") {
 
     $start = new DateTime($date);
     $start->setTimezone(new DateTimeZone($timezone));
-    $firstDay = new DateTime("2018-08-23T03:00:00.000Z");
+    $firstDay = new DateTime("2019-08-24T07:00:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
     $dayNumber = $interval->days;
