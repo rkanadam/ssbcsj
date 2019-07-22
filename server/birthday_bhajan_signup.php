@@ -40,7 +40,7 @@ if ($method === "get") {
     if (!empty ($value["date"])) {
         $parsedDate = DateTime::createFromFormat('Y-m-d\TH:i:s+', $value["date"]);
         $parsedDate->setTimeZone(new DateTimeZone('America/Los_Angeles'));
-        $value["date"] = $datetime->format ("F/d/Y - D");
+        $value["date"] = $parsedDate->format ("F/d/Y - D");
     }
     $registrationFeed->insert($value);
 
