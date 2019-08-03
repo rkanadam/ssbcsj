@@ -90,6 +90,8 @@ EOD;
     if (!empty($comments)) {
         $description .= "\n-----------------------------------\n$phone\n\n";
     }
+    $description .= "\n-----------------------------------\nQuestion ? Please check with the devotional co-ordinator, Susandhya, stbhutia@yahoo.com or 408-836-0179\n\n";
+
 
     $event->setDescription($description);
 
