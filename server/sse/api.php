@@ -67,7 +67,7 @@ foreach ($sheetsToMerge as $sheetName) {
 }
 
 
-ServiceRequestFactory::getInstance()->post($this->getPostUrl(), $entry);
+//ServiceRequestFactory::getInstance()->post($this->getPostUrl(), $entry);
 
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
