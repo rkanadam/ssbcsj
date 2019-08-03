@@ -94,16 +94,16 @@ EOD;
     $event->setDescription($description);
 
     $defaultFolks = array("stbhutia@yahoo.com");
-    if (stristr($city, "fremont") !== FALSE) {
+    if (stristr($city, "1") !== FALSE) {
+        array_push($defaultFolks, "swamiemail108@gmail.com");
+        array_push($defaultFolks, "sathyanandb@gmail.com");
+        array_push($defaultFolks, "Sameer.Mandalika@gmail.com");
+    } else if (stristr($city, "4") !== FALSE) {
+        array_push($defaultFolks, "vk2004@gmail.com");
+    } else {
         array_push($defaultFolks, "madhumitha1988@gmail.com");
         array_push($defaultFolks, "sidc93@gmail.com");
         array_push($defaultFolks, "sharankashyap@gmail.com");
-    } else if (stristr($city, "sunnyvale") !== FALSE) {
-        array_push($defaultFolks, "swamiemail108@gmail.com");
-        array_push($defaultFolks, "sathyanandb@gmail.com");
-    } else if (stristr($city, "peninsula") !== FALSE) {
-        array_push($defaultFolks, "shankarxv@gmail.com");
-        array_push($defaultFolks, "bhaskaramachandran@gmail.com");
     }
     foreach ($defaultFolks as $defaultFolk) {
         $attendee = new Google_Service_Calendar_EventAttendee ();
@@ -164,6 +164,16 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
                                                       href="http://region7saicenters.org/csj/signups/sai-tapovanam-with-page-numbers.pdf">Link
                     to online Tapovanam book</a></li>
                 <li>Aarti</li>
+            </ul>
+         </div>
+         <br/>
+         <div>
+            Hosting Guidelines
+            <ul>
+                <li>Please attend bhajan the previous day to welcome everyone</li>
+                <li>You must collect Tapovanam books from the previous host</li>
+                <li>Please keep the altar simple</li>
+                <li>Only Vibhuti prasad & one fruit recommended for prasad</li>
             </ul>
          </div>
          <br/>
