@@ -37,12 +37,12 @@ ServiceRequestFactory::setInstance($serviceRequest);
 
 $spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
 $spreadsheetFeed = $spreadsheetService->getSpreadsheets();
-$spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015/16/17');
-$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2018 Registration")->getListFeed();
+$spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ SSE Registration 2015/16/17 - DONOTCHANGETITLE');
+$registrationFeed = $spreadsheet->getWorksheets()->getByTitle("2019 Registration")->getListFeed();
 
 $rows = array();
 
-$sheetsToMerge = array("2017 Registration", "2018 Registration");
+$sheetsToMerge = array("2018 Registration", "2019 Registration");
 foreach ($sheetsToMerge as $sheetName) {
     $registrationFeed = $spreadsheet->getWorksheets()->getByTitle($sheetName)->getListFeed();
     foreach ($registrationFeed->getEntries() as $entry) {
@@ -67,7 +67,7 @@ foreach ($sheetsToMerge as $sheetName) {
 }
 
 
-//ServiceRequestFactory::getInstance()->post($this->getPostUrl(), $entry);
+ServiceRequestFactory::getInstance()->post($this->getPostUrl(), $entry);
 
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 

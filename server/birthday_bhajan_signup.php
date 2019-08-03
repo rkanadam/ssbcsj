@@ -166,7 +166,6 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
                 <li>Aarti</li>
             </ul>
          </div>
-         <br/>
          <div>
             Hosting Guidelines
             <ul>
