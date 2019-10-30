@@ -154,6 +154,7 @@ $base = empty($callback) ? "" : "https://slides.ssbcsj.org/ssbcsj/";
                                             <label for="slideTemplate">Slide Template</label>
                                             <select name = "template" class="form-control" id = "slideTemplate">
                                                 <option value="CSJ" selected>CSJ</option>
+                                                <option value="GAB2019">GAB 2019</option>
                                                 <option value="25th Anniversary">25th Anniversary</option>
                                                 <option value="GAB2018">GAB 2018</option>
                                                 <option value="GAB2017">GAB 2017</option>
