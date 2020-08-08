@@ -10,7 +10,7 @@ if ($method === "get") {
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2019-08-22T03:00:00.000Z'
+        'timeMin' => '2020-08-21T02:15:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
@@ -26,7 +26,7 @@ if ($method === "get") {
 
 } else if ($method === "post") {
     $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2019")->getListFeed();
+    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2020")->getListFeed();
 
     $value = array();
     $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
@@ -55,12 +55,12 @@ if ($method === "get") {
     $phone = $_REQUEST["phone"];
     $city = $value["city"];
 
-    $event->setSummary("SSBCSJ Birthday Bhajan - Residence of $name");
+    $event->setSummary("SSBCSJ Birthday Bhajan - Residence of $name - Virtual");
     $event->setLocation($address);
 
     $start = new DateTime($date);
     $start->setTimezone(new DateTimeZone($timezone));
-    $firstDay = new DateTime("2019-08-22T03:00:00.000Z");
+    $firstDay = new DateTime("2020-08-21T02:15:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
     $dayNumber = $interval->days;
@@ -77,10 +77,8 @@ if ($method === "get") {
     3 OMs
     3 Gayatris
     108 Names
-    5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber)
-    9 Bhajans
-    Multifaith chants
-    Aarati
+    Tapovanam Reading
+    Aarti
     Samastha Lokah
 EOD;
 
@@ -96,17 +94,17 @@ EOD;
     $event->setDescription($description);
 
     $defaultFolks = array("stbhutia@yahoo.com");
-    if (stristr($city, "1") !== FALSE) {
-        array_push($defaultFolks, "swamiemail108@gmail.com");
-        array_push($defaultFolks, "sathyanandb@gmail.com");
-        array_push($defaultFolks, "Sameer.Mandalika@gmail.com");
-    } else if (stristr($city, "4") !== FALSE) {
-        array_push($defaultFolks, "vk2004@gmail.com");
-    } else {
-        array_push($defaultFolks, "madhumitha1988@gmail.com");
-        array_push($defaultFolks, "sidc93@gmail.com");
-        array_push($defaultFolks, "sharankashyap@gmail.com");
-    }
+//    if (stristr($city, "1") !== FALSE) {
+//        array_push($defaultFolks, "swamiemail108@gmail.com");
+//        array_push($defaultFolks, "sathyanandb@gmail.com");
+//        array_push($defaultFolks, "Sameer.Mandalika@gmail.com");
+//    } else if (stristr($city, "4") !== FALSE) {
+//        array_push($defaultFolks, "vk2004@gmail.com");
+//    } else {
+//        array_push($defaultFolks, "madhumitha1988@gmail.com");
+//        array_push($defaultFolks, "sidc93@gmail.com");
+//        array_push($defaultFolks, "sharankashyap@gmail.com");
+//    }
     foreach ($defaultFolks as $defaultFolk) {
         $attendee = new Google_Service_Calendar_EventAttendee ();
         $attendee->setEmail($defaultFolk);
@@ -149,19 +147,13 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
     <div style = "padding: 2em">
          <div>
              Thank you for signing up to host Swami's bhajans on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Susandhya at stbhutia@yahoo.com or 408-836-0179.
-             Bhajans start at 8PM and the format is:
+             Bhajans start at 7:15PM and the format is:
              <ul>
                 <li>3 OMs</li>
                 <li>3 Gayatris</li>
                 <li>108 Names of Sathya Sai <a target="_blank"
                                                href="http://region7saicenters.org/csj/signups/108.pdf">Link
                     to 108 names of Sai</a></li>
-                <li>9 Bhajans <a target="_blank"
-                                 href="http://region7saicenters.org/csj/images/documents/ssbcsj_Center%20Bhajan%20book.pdf">Link
-                    to Bhajan Book </a></li>
-                <li>Multi Faith Chants <a target="_blank"
-                                          href="http://region7saicenters.org/csj/signups/108.pdf">Link
-                    to Multi Faith Chants </a></li>
                 <li>5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber) <a target="_blank"
                                                       href="http://region7saicenters.org/csj/signups/sai-tapovanam-with-page-numbers.pdf">Link
                     to online Tapovanam book</a></li>
@@ -170,11 +162,16 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
          </div>
          <div>
             Hosting Guidelines
+<!--            <ul>-->
+<!--                <li>Please attend bhajan the previous day to welcome everyone</li>-->
+<!--                <li>You must collect Tapovanam books from the previous host</li>-->
+<!--                <li>Please keep the altar simple</li>-->
+<!--                <li>Only Vibhuti prasad & one fruit recommended for prasad</li>-->
+<!--            </ul>-->
             <ul>
-                <li>Please attend bhajan the previous day to welcome everyone</li>
-                <li>You must collect Tapovanam books from the previous host</li>
+                <li>Please login 5 minutes early.</li>
+                <li>Please watch out for any additional annoucements facilitating the hosting</li>
                 <li>Please keep the altar simple</li>
-                <li>Only Vibhuti prasad & one fruit recommended for prasad</li>
             </ul>
          </div>
          <br/>

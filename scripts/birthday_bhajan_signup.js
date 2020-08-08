@@ -10,8 +10,8 @@
                 var event = events[i];
                 var start = new Date(event.start);
                 var day = start.getDay();
-                //If the event does not start at 5PM or 8PM then it must be a service event or something like that. Just ignore it
-                if (!(start.getHours() === 17 || start.getHours() === 20)) {
+                //If the event does not start at 5PM or 7:15 PM or 8PM then it must be a service event or something like that. Just ignore it
+                if (!(start.getHours() === 17 || start.getHours() === 20 || (start.getHours() === 19 && start.getMinutes() === 15))) {
                     continue;
                 }
                 if (daysToEvents[day]) {
@@ -43,8 +43,8 @@
 
             var availableDates = [];
             $.each(daysOfTheWeek, function (_, dayOfTheWeek) {
-                var firstDate = new Date(2019, 7, 21, 20, 0, 0, 0); // This should be the first day the bhajan starts
-                var lastDate = new Date(2019, 10, 22, 20, 0, 0, 0); // This should be the last day the bhajan starts
+                var firstDate = new Date(2020, 7, 20, 19, 15, 0, 0); // This should be the first day the bhajan starts
+                var lastDate = new Date(2020, 10, 22, 19, 0, 0, 0); // This should be the last day the bhajan starts
                 var d = new Date(firstDate.toISOString());
                 d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
                 //We are trying to determine the very first day of the said week of the day when the bhajan will begin
