@@ -74,12 +74,14 @@ if ($method === "get") {
     $description = <<<EOD
 
     Format:
-    3 OMs
-    3 Gayatris
-    108 Names
-    Tapovanam Reading
-    Aarti
-    Samastha Lokah
+        3 OMs
+        3 Gayatris
+        108 Names of Sathya Sai Link to 108 names of Sai
+        5 pages reading of Tapovanam Link to online Tapovanam book
+        3 Bhajans
+        3 Sai Gayatris
+        Aarati
+        Samastha Lokah Sukhino Bhavantu
 EOD;
 
     if (!empty($comments)) {
@@ -157,7 +159,10 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
                 <li>5 pages of Tapovanam (Page #$startingPageNumber to $endingPageNumber) <a target="_blank"
                                                       href="http://region7saicenters.org/csj/signups/sai-tapovanam-with-page-numbers.pdf">Link
                     to online Tapovanam book</a></li>
+                <li>3 Bhajans</li>
+                <li>3 Sai Gayatris</li>
                 <li>Aarti</li>
+                <li>Samastha Lokah Sukhino Bhavantu</li>
             </ul>
          </div>
          <div>
@@ -169,8 +174,9 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
 <!--                <li>Only Vibhuti prasad & one fruit recommended for prasad</li>-->
 <!--            </ul>-->
             <ul>
+                <li>Please do a dry run the day before to ensure you are able to connect and host.</li>
                 <li>Please login 5 minutes early.</li>
-                <li>Please watch out for any additional annoucements facilitating the hosting</li>
+                <li>Please watch out for any additional announcements facilitating the hosting</li>
                 <li>Please keep the altar simple</li>
             </ul>
          </div>
