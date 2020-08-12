@@ -55,7 +55,7 @@ if ($method === "get") {
     $phone = $_REQUEST["phone"];
     $city = $value["city"];
 
-    $event->setSummary("SSBCSJ Birthday Bhajan - Virtual - $name - ");
+    $event->setSummary("SSBCSJ Birthday Bhajan - Virtual - $name");
     $event->setLocation($address);
 
     $start = new DateTime($date);
