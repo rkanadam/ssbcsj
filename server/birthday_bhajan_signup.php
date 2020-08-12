@@ -55,7 +55,7 @@ if ($method === "get") {
     $phone = $_REQUEST["phone"];
     $city = $value["city"];
 
-    $event->setSummary("SSBCSJ Birthday Bhajan - Residence of $name - Virtual");
+    $event->setSummary("SSBCSJ Birthday Bhajan - Virtual - $name - ");
     $event->setLocation($address);
 
     $start = new DateTime($date);
@@ -174,10 +174,12 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
 <!--                <li>Only Vibhuti prasad & one fruit recommended for prasad</li>-->
 <!--            </ul>-->
             <ul>
-                <li>Please do a dry run the day before to ensure you are able to connect and host.</li>
+                <li>Please attend the Prayer session the previous day</li>
+                <li>Test run the Zoom link and set up the previous evening.</li>
                 <li>Please login 5 minutes early.</li>
-                <li>Please watch out for any additional announcements facilitating the hosting</li>
                 <li>Please keep the altar simple</li>
+                <li>Please watch out for any additional announcements facilitating the hosting</li>
+                <li>After prayer pls send the altar picture to stbhutia@yahoo.com</li>
             </ul>
          </div>
          <br/>

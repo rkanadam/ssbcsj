@@ -77,8 +77,12 @@
                         $event.html($("#event0").html());
                     }
                     $event.find(".day").text(getUserFriendlyDayName(event.start));
-                    if (event.summary && event.summary.toLowerCase ().indexOf ("residence of") !== -1) {
-                        $event.find(".residence").text (" - " + event.summary.substring(event.summary.toLowerCase ().indexOf ("residence of") + "residence of".length));
+                    if (event.summary && (event.summary.toLowerCase ().indexOf ("residence of") !== -1 || event.summary.toLowerCase ().indexOf ("virtual") !== -1)) {
+                        if (event.summary.toLowerCase ().indexOf ("virtual") !== -1) {
+                            $event.find(".residence").text (" - " + event.summary.substring(event.summary.toLowerCase ().indexOf ("virtual") + "virtual - ".length));
+                        } else {
+                            $event.find(".residence").text (" - " + event.summary.substring(event.summary.toLowerCase ().indexOf ("residence of") + "residence of".length));
+                        }
                     } else if (/celebration (at|in) the center/i.exec(event.summary)){
                         $event.find(".residence").text (" - Center");
                     }
