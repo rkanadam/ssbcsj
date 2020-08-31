@@ -47,7 +47,7 @@
                 var event = events[i];
                 event.start = new Date(event.start);
                 event.end = new Date(event.end);
-                if (event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary) || event.start.getHours() === 5) {
+                if (event.start.getHours() === 19 || event.start.getHours() === 20 || event.start.getHours() === 17 || /celebration in the center/i.exec(event.summary) || event.start.getHours() === 5) {
                     if (event.start.getTime() >= today.getTime()) {
                         if (event.end.getTime() < now.getTime()) {
                             pastEvents.push(event);
