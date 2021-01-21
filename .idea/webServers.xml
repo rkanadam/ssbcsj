@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a9adac44-99c4-4c32-b600-2e5df0eeaa2e" name="ftp.region7saicenters.org" url="http://ftp.region7saicenters.org">
+        <fileTransfer host="ftp.region7saicenters.org" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>SSBCSJ - SSE Registration - 2020-2021</title>
+    <title>SSSBCSJ - SSE Registration - 2020-2021</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -163,7 +163,7 @@
                         <div class="form-group">
                             <label for="fathersfirstname">Father's First Name</label>
                             <input type="text" class="form-control" id="fathersfirstname" name="fathersfirstname"
-                                   >
+                            >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -172,7 +172,7 @@
                         <div class="form-group">
                             <label for="fatherslastname">Father's Last Name</label>
                             <input type="text" class="form-control" id="fatherslastname" name="fatherslastname"
-                                   >
+                            >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -181,7 +181,7 @@
                         <div class="form-group">
                             <label for="fathersemail">Father's E-Mail</label>
                             <input type="email" class="form-control" id="fathersemail" name="fathersemail"
-                                   >
+                            >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -190,7 +190,7 @@
                         <div class="form-group">
                             <label for="fathersphone">Father's Phone</label>
                             <input type="text" class="form-control" id="fathersphone" name="fathersphone"
-                                   >
+                            >
                             <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                             <span class="help-block with-errors"></span>
                         </div>
@@ -236,6 +236,7 @@
                         <div class="form-group">
                             <label>1<sup>st</sup> Child</label>
                         </div>
+                        <input type="hidden" id="rangeofchild1" name="rangeofchild1">
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
@@ -259,7 +260,7 @@
                                 <option>Group 4</option>
                             </select>
                             <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
-                Nov/23/2013
+                Nov/23/2016
             </small></span>
                         </div>
                     </div>
@@ -295,6 +296,7 @@
                         <div class="form-group">
                             <label>2<sup>nd</sup> Child</label>
                         </div>
+                        <input type="hidden" id="rangeofchild2" name="rangeofchild2">
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
@@ -354,6 +356,7 @@
                         <div class="form-group">
                             <label>3<sup>rd</sup> Child</label>
                         </div>
+                        <input type="hidden" id="rangeofchild3" name="rangeofchild3">
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
@@ -456,28 +459,22 @@
                     <div class="col-sm-3">
                         <span>Do you receive center communication ?</span>
                     </div>
-                    <div class="col-sm-1">
-                        <span>Yes&nbsp;</span>
-                        <span><input type="radio" name="centercommunication" value="yes" required="true"
-                                     checked="checked"></span>
-                    </div>
-                    <div class="col-sm-1">
-                        <span>No&nbsp;</span>
-                        <span><input type="radio" name="centercommunication" value="no" required="true"></span>
+                    <div class="col-sm-3">
+                        <select name="centercommunication" class="form-control">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
                         <span>SSE children offer bhajans 2nd week of every month. Would you like to be contacted for offering bhajans during SSE week ?</span>
                     </div>
-                    <div class="col-sm-1">
-                        <span>Yes&nbsp;</span>
-                        <span><input type="radio" name="bhajans" value="yes" required="true"
-                                     checked="checked"></span>
-                    </div>
-                    <div class="col-sm-1">
-                        <span>No&nbsp;</span>
-                        <span><input type="radio" name="bhajans" value="no" required="true"></span>
+                    <div class="col-sm-3">
+                        <select name="bhajans" class="form-control">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row">

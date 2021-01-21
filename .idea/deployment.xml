@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="CSJ" uploadOnCheckin="8fd28085-ea77-4f30-a5f0-80386f5f070c">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="ftp.region7saicenters.org" uploadOnCheckin="8fd28085-ea77-4f30-a5f0-80386f5f070c" autoUploadExternalChanges="true">
     <serverData>
-      <paths name="CSJ">
+      <paths name="ftp.region7saicenters.org">
         <serverdata>
           <mappings>
-            <mapping deploy="/signups" local="$PROJECT_DIR$" web="/csj/signups" />
+            <mapping deploy="/signups" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
     <option name="myUploadOnCheckinName" value="CSJ" />
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
