@@ -12,16 +12,18 @@
     'mothersphone',
     'firstnameofchild',
     'lastnameofchild',
-    'ssegroupofchild',
     'schoolgradeofchild',
-    'allergiesofchild',
-    'comments',
-    'centercommunication',
-    'bhajans',
+    'emailofchild',
+    'phonenumberofchild',
     'expectations',
     'interesting',
     'notinteresting',
     'change',
+    'centercommunication',
+    'bhajans',
+    'covid19comments',
+    'inperson',
+    'instrument',
   ];
 
   $(function() {
@@ -108,8 +110,9 @@
         var propertiesToCopy = [
           'firstnameofchild',
           'lastnameofchild',
-          'ssegroupofchild',
           'schoolgradeofchild',
+          'emailofchild',
+          'phonenumberofchild',
         ];
 
         const indicesToCopy = propertiesToCopy.map(
