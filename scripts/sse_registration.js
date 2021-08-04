@@ -1,7 +1,12 @@
 (function($) {
 
   const properties = [
-    'ignore',
+    'year',
+    'firstnameofchild',
+    'lastnameofchild',
+    'schoolgradeofchild',
+    'emailofchild',
+    'phonenumberofchild',
     'fathersfirstname',
     'fatherslastname',
     'fathersemail',
@@ -10,11 +15,6 @@
     'motherslastname',
     'mothersemail',
     'mothersphone',
-    'firstnameofchild',
-    'lastnameofchild',
-    'schoolgradeofchild',
-    'emailofchild',
-    'phonenumberofchild',
     'expectations',
     'interesting',
     'notinteresting',
@@ -142,6 +142,12 @@
             val(result[properties.indexOf('centercommunication')]);
         $form.find('[name=bhajans]').
             val(result[properties.indexOf('bhajans')]);
+        $form.find('[name=inperson]').
+            val(result[properties.indexOf('inperson')]);
+        $form.find('[name=instrument]').
+            val(result[properties.indexOf('instrument')]);
+        $form.find('[name=covid19comments]').
+            val(result[properties.indexOf('covid19comments')]);
         $form.show();
       }
     });
