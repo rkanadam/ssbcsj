@@ -35,6 +35,17 @@
 
     <script src="../scripts/validator.min.js"></script>
     <script src="../scripts/sse_registration.js"></script>
+    <style type="text/css">
+        fieldset .row {
+            padding: 1em 0em;
+        }
+
+        .highlight {
+            font-weight: bolder;
+            text-decoration: underline;
+            color: maroon;
+        }
+    </style>
 </head>
 <body>
 <div class="content">
@@ -46,14 +57,14 @@
         <div class="row">
             <div class="col-sm-2">&nbsp;</div>
             <div class="col-sm-8">
-                <h1>SSE Registration for the year 2020-21</h1>
+                <h1>SSE Registration for the year 2021-22</h1>
             </div>
         </div>
         <!-- Example row of columns -->
         <div class="row" style="margin: 0px 0px 25px 0px" id="searchContent">
             <div class="col-sm-2">&nbsp;</div>
             <div class="col-sm-8">
-                <h4>Search for exisiting or previous year's registrations. You may type in a few characters of the
+                <h4>Search for existing or previous year's registrations. You may type in a few characters of the
                     parent or the
                     child and click on search.</h4>
 
@@ -110,11 +121,11 @@
             <fieldset>
                 <legend>School grade to SSE Group Mapping:</legend>
                 <ul>
-                    <li>Pre-K &amp; KG go to Sai Nursery</li>
-                    <li>Grades 1,2 &amp; 3 attend Group1</li>
-                    <li>Grades 4,5 &amp; 6 attend Group2</li>
-                    <li>Grades 7,8,9 &amp; 10 attend Group3</li>
-                    <li>Grades 11 &amp; 12 attend Group4</li>
+                    <li>Pre-K &amp;amp; KG go to Sai Nursery</li>
+                    <li>Grades 1,2 &amp;amp; 3 attend Group1</li>
+                    <li>Grades 4,5 &amp;amp; 6 attend Group2</li>
+                    <li>Grades 7,8,9 &amp;amp; 10 attend Group3</li>
+                    <li>Grades 11 &amp;amp; 12 attend Group4</li>
                 </ul>
             </fieldset>
             <fieldset>
@@ -217,17 +228,17 @@
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
-                            <label>SSE Group</label>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="form-group">
                             <label>School Grade</label>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="form-group">
-                            <label>Known Allergies</label>
+                            <label>Child's e-mail</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label>Child's phone number</label>
                         </div>
                     </div>
                 </div>
@@ -252,20 +263,6 @@
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
-                            <select class="form-control" id="ssegroupofchild1" name="ssegroupofchild1">
-                                <option>Sai Nursery</option>
-                                <option>Group 1</option>
-                                <option>Group 2</option>
-                                <option>Group 3</option>
-                                <option>Group 4</option>
-                            </select>
-                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
-                Nov/23/2016
-            </small></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="form-group">
                             <select class="form-control" id="schoolgradeofchild1" name="schoolgradeofchild1">
                                 <option>Pre K</option>
                                 <option>Kindergarten</option>
@@ -286,8 +283,18 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="form-group">
-            <textarea class="form-control" placeholder="Any known food allergies ?"
-                      id="allergiesofchild1" name="allergiesofchild1"></textarea>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="emailofchild1" name="emailofchild1">
+                                <span class="warning" aria-hidden="true"><small>This will enable us to add the child to Google Classroom. Please do either phone number or e-mail, both would be preferred.
+            </small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phonenumberofchild1" name="phonenumberofchild1">
+                            <span class="warning" aria-hidden="true"><small>This will enable us to add the child to WhatsApp groups.
+            </small></span>
                         </div>
                     </div>
                 </div>
@@ -312,20 +319,6 @@
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
-                            <select class="form-control" id="ssegroupofchild2" name="ssegroupofchild2">
-                                <option>Sai Nursery</option>
-                                <option>Group 1</option>
-                                <option>Group 2</option>
-                                <option>Group 3</option>
-                                <option>Group 4</option>
-                            </select>
-                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
-                Nov/23/2012
-            </small></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="form-group">
                             <select class="form-control" id="schoolgradeofchild2" name="schoolgradeofchild2">
                                 <option>Pre K</option>
                                 <option>Kindergarten</option>
@@ -346,8 +339,18 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="form-group">
-            <textarea class="form-control" placeholder="Any known food allergies ?"
-                      id="allergiesofchild2" name="allergiesofchild2"></textarea>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="emailofchild2" name="emailofchild2">
+                                <span class="warning" aria-hidden="true"><small>This will enable us to add the child to Google Classroom. Please do either phone number or e-mail, both would be preferred.
+            </small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phonenumberofchild2" name="phonenumberofchild2">
+                            <span class="warning" aria-hidden="true"><small>This will enable us to add the child to WhatsApp groups.
+            </small></span>
                         </div>
                     </div>
                 </div>
@@ -372,20 +375,6 @@
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
-                            <select class="form-control" id="ssegroupofchild3" name="ssegroupofchild3">
-                                <option>Sai Nursery</option>
-                                <option>Group 1</option>
-                                <option>Group 2</option>
-                                <option>Group 3</option>
-                                <option>Group 4</option>
-                            </select>
-                            <span class="warning" aria-hidden="true"><small>The child's date of birth should be on or before
-                Nov/23/2012
-            </small></span>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="form-group">
                             <select class="form-control" id="schoolgradeofchild3" name="schoolgradeofchild3">
                                 <option>Pre K</option>
                                 <option>Kindergarten</option>
@@ -406,8 +395,18 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="form-group">
-            <textarea class="form-control" placeholder="Any known food allergies ?" id="allergiesofchild3"
-                      name="allergiesofchild3"></textarea>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="emailofchild3" name="emailofchild3">
+                                <span class="warning" aria-hidden="true"><small>This will enable us to add the child to Google Classroom. Please do either phone number or e-mail, both would be preferred.
+            </small></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phonenumberofchild3" name="phonenumberofchild3">
+                            <span class="warning" aria-hidden="true"><small>This will enable us to add the child to WhatsApp groups.
+            </small></span>
                         </div>
                     </div>
                 </div>
@@ -456,10 +455,10 @@
             <fieldset>
                 <legend>Comments and Communication</legend>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-5">
                         <span>Do you receive center communication ?</span>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-7">
                         <select name="centercommunication" class="form-control">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
@@ -467,28 +466,61 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-5">
                         <span>SSE children offer bhajans 2nd week of every month. Would you like to be contacted for offering bhajans during SSE week ?</span>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-7">
                         <select name="bhajans" class="form-control">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
                     </div>
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Covid-19 Updates</legend>
                 <div class="row">
-                    <div class="col-sm-3">
-                        <span>Any additional comments ?</span>
-                    </div>
                     <div class="col-sm-5">
-                        <textarea class="form-control"
-                                  name="comments"></textarea>
+                        <span>Last year has been different for many of us. <br/>
+                            How has <span class="highlight">transitioning to online</span> SSE worked for you ?
+                            Would you have comments you would like to share ?
+                        </span>
+                    </div>
+                    <div class="col-sm-7">
+                            <textarea class="form-control"
+                                      name="covid19comments" required="required"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>SSE will continue to be online for the remainder of 2021.<br/>
+                            From January 2022 we intend to <span
+                                    class="highlight">meet once a month in person </span>. <br/>
+                            Would you be open to sending children to attending SSE in person ?
+                        </span>
+                    </div>
+                    <div class="col-sm-7">
+                        <select name="inperson" class="form-control" required>
+                            <option value="" selected></option>
+                            <option value="yes">Yes, I am comfortable sending children to attend SSE in person in 2022
+                            </option>
+                            <option value="no">No, would prefer the online option</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>Would you child like to learn an instrument for playing during center bhajans ? While Swami has blessed the center with many talented mentors, your commitment once the child signs up will be critical.</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <select name="instrument" class="form-control">
+                            <option value="yes">Yes, please, we would like for the child to learn an instrument</option>
+                            <option value="no">No, not right now. Thank you</option>
+                        </select>
                     </div>
                 </div>
             </fieldset>
             <br/>
-
             <div class="row">
                 <div class="col-sm-6">
                     <button type="submit" class="btn btn-primary btn-lg">Register</button>
