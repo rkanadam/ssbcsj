@@ -13,9 +13,9 @@ use Google\Spreadsheet\ServiceRequestFactory;
 
 $scopes = implode(' ', array("https://spreadsheets.google.com/feeds", Google_Service_Drive::DRIVE_READONLY, Google_Service_Calendar::CALENDAR));
 
-$privateKey = file_get_contents("${base}auth.p12");
+$privateKey = file_get_contents("${base}auth2.p12");
 
-$clientEmail = "684263653197-clcarg5o7cg5u2rq9h5arkf0fcbr3k57@developer.gserviceaccount.com";
+$clientEmail = "684263653197-compute@developer.gserviceaccount.com";
 
 $credentials = new Google_Auth_AssertionCredentials(
     $clientEmail,
@@ -33,9 +33,6 @@ $accessToken = $accessToken->{"access_token"};
 
 $serviceRequest = new DefaultServiceRequest($accessToken);
 ServiceRequestFactory::setInstance($serviceRequest);
-
-$spreadsheetService = new Google\Spreadsheet\SpreadsheetService();
-$spreadsheetFeed = $spreadsheetService->getSpreadsheets();
 
 
 function startsWith($haystack, $needle)

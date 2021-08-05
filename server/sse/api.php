@@ -11,9 +11,9 @@ use Google\Spreadsheet\DefaultServiceRequest;
 use Google\Spreadsheet\ServiceRequestFactory;
 
 
-$privateKey = file_get_contents("${base}auth.p12");
+$privateKey = file_get_contents("${base}auth2.p12");
 
-$clientEmail = "684263653197-clcarg5o7cg5u2rq9h5arkf0fcbr3k57@developer.gserviceaccount.com";
+$clientEmail = "684263653197-compute@developer.gserviceaccount.com";
 $scopes = array("https://spreadsheets.google.com/feeds");
 
 $credentials = new Google_Auth_AssertionCredentials(

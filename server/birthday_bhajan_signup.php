@@ -1,16 +1,16 @@
 <?php
 require_once "util.php";
 
+
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 $calendarId = 'rs5nhgqdv7hsiruqnralb4t0ak@group.calendar.google.com';
 $calendarService = new Google_Service_Calendar($client);
-
 if ($method === "get") {
     // Print the next 10 events on the user's calendar.
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2020-08-21T02:15:00.000Z'
+        'timeMin' => '2020-08-21T02:00:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
@@ -25,9 +25,6 @@ if ($method === "get") {
     echo json_encode($response);
 
 } else if ($method === "post") {
-    $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
-    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2020")->getListFeed();
-
     $value = array();
     $propertiesToCopy = array("city", "date", "name", "email", "phone", "address", "comments");
     $value["timestamp"] = date("n/j/Y H:i:s");
@@ -43,7 +40,9 @@ if ($method === "get") {
         $parsedDate->modify('-1 day'); // Dont ask, just do, no time to debug
         $value["date"] = $parsedDate->format ("F/d/Y - D");
     }
-    $registrationFeed->insert($value);
+//    $spreadsheet = $spreadsheetFeed->getByTitle('SSBCSJ - Birthday Bhajan Signup');
+//    $registrationFeed = $spreadsheet->getWorksheets()->getByTitle("Signup Requests 2020")->getListFeed();
+//    $registrationFeed->insert($value);
 
     $event = new Google_Service_Calendar_Event ();
 
@@ -60,7 +59,7 @@ if ($method === "get") {
 
     $start = new DateTime($date);
     $start->setTimezone(new DateTimeZone($timezone));
-    $firstDay = new DateTime("2020-08-21T02:15:00.000Z");
+    $firstDay = new DateTime("2021-08-20T02:00:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
     $dayNumber = $interval->days;
@@ -149,7 +148,7 @@ function sendMail($name, $date, $to, $cc = null, $startingPageNumber, $endingPag
     <div style = "padding: 2em">
          <div>
              Thank you for signing up to host Swami's bhajans on <strong>${date}</strong>. If you have questions on the format or the altar or anything else, please contact Susandhya at stbhutia@yahoo.com or 408-836-0179.
-             Bhajans start at 7:15PM and the format is:
+             Bhajans start at 7:00PM and the format is:
              <ul>
                 <li>3 OMs</li>
                 <li>3 Gayatris</li>
