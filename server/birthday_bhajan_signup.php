@@ -94,7 +94,7 @@ EOD;
 
     $event->setDescription($description);
 
-    $defaultFolks = array("stbhutia@yahoo.com");
+    $defaultFolks = array("stbhutia@yahoo.com", "raghuram.kanadam@gmail.com");
 //    if (stristr($city, "1") !== FALSE) {
 //        array_push($defaultFolks, "swamiemail108@gmail.com");
 //        array_push($defaultFolks, "sathyanandb@gmail.com");
