@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Fixing SSE Registration with new Node API">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/birthday_bhajan_signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/birthday_bhajan_signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +30,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="gke_sathya-sai-ya-app_us-central1-c_alpha" />
+    <option name="namespace" value="default" />
+  </component>
   <component name="PerforceDirect.Settings">
     <option name="showCmds" value="true" />
-  </component>
-  <component name="PhpServers">
-    <servers />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -77,6 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -88,12 +98,16 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/sse" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="options.lastSelected" value="web.server" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -105,9 +119,9 @@
       <recent name="$PROJECT_DIR$/styles/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/sse" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/i2i/js/app" />
       <recent name="$PROJECT_DIR$/i2i/js/lib" />
     </key>
@@ -210,34 +224,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,7 +250,16 @@
       <option name="presentableId" value="Default" />
       <updated>1611115237747</updated>
       <workItem from="1611115238968" duration="964000" />
-      <workItem from="1611116282991" duration="14964000" />
+      <workItem from="1611116282991" duration="15553000" />
+      <workItem from="1611899699905" duration="1180000" />
+      <workItem from="1612478637343" duration="595000" />
+      <workItem from="1612718010285" duration="671000" />
+      <workItem from="1612765944356" duration="17000" />
+      <workItem from="1614353810389" duration="142000" />
+      <workItem from="1614356249763" duration="1175000" />
+      <workItem from="1627759205307" duration="8250000" />
+      <workItem from="1628188575872" duration="3019000" />
+      <workItem from="1628703441241" duration="6883000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing SSE Registration with new Node API">
       <created>1611201746299</created>
@@ -273,7 +268,56 @@
       <option name="project" value="LOCAL" />
       <updated>1611201746299</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixing SSE Registration with new Node API">
+      <created>1611204853830</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611204853830</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed registration for 2021-22">
+      <created>1628063283948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628063283948</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixing SSE Registration with new Node API">
+      <created>1628063999885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628063999885</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixing SSE Registration with new Node API">
+      <created>1628065014334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628065014334</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixing SSSBCSJ Birthday signup">
+      <created>1628191001364</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628191001364</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixing birthday bhajans sign up.">
+      <created>1628708614774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628708614775</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixing SSE Registration with new Node API">
+      <created>1628709954425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628709954425</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -346,9 +390,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Fixing month" />
-    <MESSAGE value="Fixing the signup days" />
-    <MESSAGE value="Allowing only 2017 SSE" />
     <MESSAGE value="Moving to GAB 2017" />
     <MESSAGE value="Adding 2017" />
     <MESSAGE value="Updating birthday bhajans" />
@@ -370,6 +411,9 @@
     <MESSAGE value="Updating website for 95th Birthday" />
     <MESSAGE value="Updating items for 95th birthday" />
     <MESSAGE value="Updating 93rd to Just Birthday" />
+    <MESSAGE value="Fixed registration for 2021-22" />
+    <MESSAGE value="Fixing SSSBCSJ Birthday signup" />
+    <MESSAGE value="Fixing birthday bhajans sign up." />
     <MESSAGE value="Fixing SSE Registration with new Node API" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixing SSE Registration with new Node API" />
   </component>

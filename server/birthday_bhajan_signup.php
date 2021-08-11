@@ -35,7 +35,7 @@ if ($method === "get") {
         $value["city"] = $_REQUEST["cityName"];
     }
     if (!empty ($value["date"])) {
-        $parsedDate = DateTime::createFromFormat('Y-m-d\TH:i:s+', $value["date"]);
+        $parsedDate = DateTime::createFromFormat('m/d/Y, H:i:s+ A', $value["date"]);
         $parsedDate->setTimeZone(new DateTimeZone('America/Los_Angeles'));
         $parsedDate->modify('-1 day'); // Dont ask, just do, no time to debug
         $value["date"] = $parsedDate->format ("F/d/Y - D");
