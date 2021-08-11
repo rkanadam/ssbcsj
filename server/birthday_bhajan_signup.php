@@ -10,7 +10,7 @@ if ($method === "get") {
     $optParams = array(
         'orderBy' => 'startTime',
         'singleEvents' => TRUE,
-        'timeMin' => '2020-08-21T02:00:00.000Z'
+        'timeMin' => '2021-08-21T02:00:00.000Z'
     );
 
     $results = $calendarService->events->listEvents($calendarId, $optParams);
