@@ -83,7 +83,7 @@
                 {timeZone: 'America/Los_Angeles'}));
         event.end = new Date(event.end);
         event.end = new Date(
-            event.start.toLocaleString('en-US',
+            event.end.toLocaleString('en-US',
                 {timeZone: 'America/Los_Angeles'}));
         if (event.start.getHours() === 19 || event.start.getHours() === 20 ||
             event.start.getHours() === 17 ||
