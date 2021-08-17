@@ -24,6 +24,7 @@
     'covid19comments',
     'inperson',
     'instrument',
+    'service',
   ];
 
   $(function() {

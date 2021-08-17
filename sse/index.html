@@ -450,11 +450,6 @@
                                       name="change" required="required"></textarea>
                         </div>
                     </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Comments and Communication</legend>
-                <div class="row">
                     <div class="col-sm-5">
                         <span>Do you receive center communication ?</span>
                     </div>
@@ -465,6 +460,9 @@
                         </select>
                     </div>
                 </div>
+            </fieldset>
+            <fieldset>
+                <legend>Service and Devotion</legend>
                 <div class="row">
                     <div class="col-sm-5">
                         <span>SSE children offer bhajans 2nd week of every month. Would you like to be contacted for offering bhajans during SSE week ?</span>
@@ -474,6 +472,56 @@
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>Would you child like to learn an instrument for playing during center bhajans ? While Swami has blessed the center with many talented mentors, your commitment once the child signs up will be critical.</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <select name="instrument" class="form-control">
+                            <option value="yes">Yes, please, we would like for the child to learn an instrument</option>
+                            <option value="no">No, not right now. Thank you</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <span>SSE children participate in many different service activities like Tutoring at Voices Academy, Making Sandwiches, Making Pasta, Collecting winter supplies / food / clothing. Would like to participate in any of these ?</span>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <label>Tutoring</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input name="service" value="tutoring" type="checkbox" class="form-control">
+                            </div>
+                            <div class="col-sm-9">
+                                <label>Sandwich Preparation</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input name="service" value=sandwich" type="checkbox" class="form-control">
+                            </div>
+                            <div class="col-sm-9">
+                                <label>Pasta Preparation</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input name="service" value=pasta" type="checkbox" class="form-control">
+                            </div>
+                            <div class="col-sm-9">
+                                <label>Dry Food / Clothes Collection</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input name="service" value=collection" type="checkbox" class="form-control">
+                            </div>
+                            <div class="col-sm-9">
+                                <label>Any other service activity</label>
+                            </div>
+                            <div class="col-sm-3">
+                                <input name="other" value=collection" type="checkbox" class="form-control">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </fieldset>
@@ -505,17 +553,6 @@
                             <option value="yes">Yes, I am comfortable sending children to attend SSE in person in 2022
                             </option>
                             <option value="no">No, would prefer the online option</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-5">
-                        <span>Would you child like to learn an instrument for playing during center bhajans ? While Swami has blessed the center with many talented mentors, your commitment once the child signs up will be critical.</span>
-                    </div>
-                    <div class="col-sm-7">
-                        <select name="instrument" class="form-control">
-                            <option value="yes">Yes, please, we would like for the child to learn an instrument</option>
-                            <option value="no">No, not right now. Thank you</option>
                         </select>
                     </div>
                 </div>
