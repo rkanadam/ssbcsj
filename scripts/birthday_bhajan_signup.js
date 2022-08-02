@@ -50,8 +50,8 @@
 
       var availableDates = [];
       $.each(daysOfTheWeek, function(_, dayOfTheWeek) {
-        var firstDate = new Date(2021, 7, 19, 19, 0, 0, 0); // This should be the first day the bhajan starts
-        var lastDate = new Date(2021, 10, 22, 19, 0, 0, 0); // This should be the last day the bhajan starts
+        var firstDate = new Date(2022, 7, 18, 19, 0, 0, 0); // This should be the first day the bhajan starts
+        var lastDate = new Date(2022, 10, 22, 19, 0, 0, 0); // This should be the last day the bhajan starts
         var d = new Date(firstDate.getTime());
         d.setDate(d.getDate() - d.getDay() + dayOfTheWeek);
         //We are trying to determine the very first day of the said week of the day when the bhajan will begin
