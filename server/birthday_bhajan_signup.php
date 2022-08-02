@@ -59,7 +59,7 @@ if ($method === "get") {
 
     $start = new DateTime($date);
     $start->setTimezone(new DateTimeZone($timezone));
-    $firstDay = new DateTime("2021-08-20T02:00:00.000Z");
+    $firstDay = new DateTime("2022-08-18T02:00:00.000Z");
     $firstDay->setTimezone(new DateTimeZone($timezone));
     $interval = $start->diff($firstDay);
     $dayNumber = $interval->days;
