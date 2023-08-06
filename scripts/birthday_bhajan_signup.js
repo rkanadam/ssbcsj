@@ -25,8 +25,8 @@
             const swamisBirthday = new Date().getFullYear() - 1926 + 1;
 
             var availableDates = [];
-            var firstDate = new Date(2023, 10, 22, 19, 30, 0, 0); // This should be the first day the bhajan starts
-            firstDate.setDate(firstDate.getDate() - swamisBirthday);
+            var firstDate = new Date(2023, 7, 18, 19, 30, 0, 0); // This should be the first day the bhajan starts
+            //firstDate.setDate(firstDate.getDate() - swamisBirthday + 1);
             var lastDate = new Date(2023, 10, 22, 19, 30, 0, 0); // This should be the last day the bhajan starts
             var d = new Date(firstDate.getTime());
             for (var i = 1; i <= 98; ++i) {
