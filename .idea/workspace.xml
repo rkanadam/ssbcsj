@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Fixing SSE Registration with new Node API">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/birthday/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/birthday/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -231,7 +229,7 @@
       <workItem from="1628703441241" duration="9836000" />
       <workItem from="1629207640728" duration="926000" />
       <workItem from="1691351723610" duration="3682000" />
-      <workItem from="1691355444755" duration="873000" />
+      <workItem from="1691355444755" duration="1754000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing SSE Registration with new Node API">
       <created>1611201746299</created>
@@ -310,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628797144182</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixing SSE Registration with new Node API">
+      <created>1691356563644</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1691356563644</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">

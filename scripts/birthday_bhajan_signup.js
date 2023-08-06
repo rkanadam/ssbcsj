@@ -7,7 +7,7 @@
             events = events || [];
             for (var i = 0, len = events.length; i < len; ++i) {
                 var event = events[i];
-                var start = new Date(event.start);
+                var start = new Date(event.start.dateTime);
                 //convert to PST
                 start = new Date(
                     start.toLocaleString('en-US', {timeZone: 'America/Los_Angeles'}));
@@ -69,11 +69,11 @@
                     e.preventDefault();
                     var $this = $(this);
 
-                    function getFormData($form){
+                    function getFormData($form) {
                         var unindexed_array = $form.serializeArray();
                         var indexed_array = {};
 
-                        $.map(unindexed_array, function(n, i){
+                        $.map(unindexed_array, function (n, i) {
                             indexed_array[n['name']] = n['value'];
                         });
 
@@ -81,13 +81,8 @@
                     }
 
                     $.post(apiLocation, getFormData($this), function (response) {
-                        if (response !== true) {
-                            alert(
-                                'Uh-oh we had some trouble requesting your signup. Please contact the web master.');
-                        } else {
-                            alert(
-                                'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Raghuram @ raghuram.kanadam@gmail.com');
-                        }
+                        alert(
+                            'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Sudheesh @ smad4om@gmail.com, 408-836-0179');
                         window.location.reload();
                     }, 'json');
 
