@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Fixing SSE Registration with new Node API">
+    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Adding support for birthday signups.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/birthday_bhajan_signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +230,7 @@
       <workItem from="1628703441241" duration="9836000" />
       <workItem from="1629207640728" duration="926000" />
       <workItem from="1691351723610" duration="3682000" />
-      <workItem from="1691355444755" duration="1754000" />
+      <workItem from="1691355444755" duration="3893000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing SSE Registration with new Node API">
       <created>1611201746299</created>
@@ -315,7 +316,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691356563644</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adding support for birthday signups.">
+      <created>1691357283319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691357283319</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adding support for birthday signups.">
+      <created>1691357692037</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691357692037</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adding support for birthday signups.">
+      <created>1691425408484</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1691425408484</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -387,7 +409,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Moving to GAB 2017" />
     <MESSAGE value="Adding 2017" />
     <MESSAGE value="Updating birthday bhajans" />
     <MESSAGE value="Adding all locations for signup" />
@@ -412,6 +433,7 @@
     <MESSAGE value="Fixing SSSBCSJ Birthday signup" />
     <MESSAGE value="Fixing birthday bhajans sign up." />
     <MESSAGE value="Fixing SSE Registration with new Node API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing SSE Registration with new Node API" />
+    <MESSAGE value="Adding support for birthday signups." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding support for birthday signups." />
   </component>
 </project>

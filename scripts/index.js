@@ -73,15 +73,15 @@
     today.setMinutes(0);
     today.setSeconds(0);
     today.setMilliseconds(0);
-    $.get('server/birthday_bhajan_signup.php', function(events) {
+    $.get('https://slides.ssbcsj.org/sssbcsj_api/birthday/signups', function(events) {
       events = events || [];
       for (var i = 0, len = events.length; i < len; ++i) {
         var event = events[i];
-        event.start = new Date(event.start);
+        event.start = new Date(event.start.dateTime);
         event.start = new Date(
             event.start.toLocaleString('en-US',
                 {timeZone: 'America/Los_Angeles'}));
-        event.end = new Date(event.end);
+        event.end = new Date(event.end.dateTime);
         event.end = new Date(
             event.end.toLocaleString('en-US',
                 {timeZone: 'America/Los_Angeles'}));
