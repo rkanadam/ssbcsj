@@ -82,7 +82,7 @@
 
                     $.post(apiLocation, getFormData($this), function (response) {
                         alert(
-                            'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see Sudheesh @ smad4om@gmail.com, 408-836-0179');
+                            'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see DC @ ssbcsj.devotion@gmail.com or 408-667-9448');
                         window.location.reload();
                     }, 'json');
 
