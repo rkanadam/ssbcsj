@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Adding support for birthday signups.">
+    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Fixing SSE registration.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/birthday/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/birthday/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sse/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sse/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +62,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "last_opened_file_path": "/Users/rkanadam/workspace/ssbcsj",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rkanadam/workspace/ssbcsj&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/server/sse" />
@@ -230,7 +229,10 @@
       <workItem from="1628703441241" duration="9836000" />
       <workItem from="1629207640728" duration="926000" />
       <workItem from="1691351723610" duration="3682000" />
-      <workItem from="1691355444755" duration="4701000" />
+      <workItem from="1691355444755" duration="5450000" />
+      <workItem from="1692164025062" duration="1157000" />
+      <workItem from="1700844130789" duration="604000" />
+      <workItem from="1719185151988" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing SSE Registration with new Node API">
       <created>1611201746299</created>
@@ -344,7 +346,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691426942952</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixing feedback">
+      <created>1691500217140</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1691500217140</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updating confirmation message">
+      <created>1691500284568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1691500284568</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixing SSE registration.">
+      <created>1692164157268</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692164157268</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -416,9 +439,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Adding 2017" />
-    <MESSAGE value="Updating birthday bhajans" />
-    <MESSAGE value="Adding all locations for signup" />
     <MESSAGE value="Updating IP address" />
     <MESSAGE value="Update e-mail address" />
     <MESSAGE value="Opening up SSE registration" />
@@ -441,6 +461,9 @@
     <MESSAGE value="Fixing birthday bhajans sign up." />
     <MESSAGE value="Fixing SSE Registration with new Node API" />
     <MESSAGE value="Adding support for birthday signups." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding support for birthday signups." />
+    <MESSAGE value="Fixing feedback" />
+    <MESSAGE value="Updating confirmation message" />
+    <MESSAGE value="Fixing SSE registration." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing SSE registration." />
   </component>
 </project>
