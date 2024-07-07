@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Fixing SSE registration.">
+    <list default="true" id="4e5c4a48-17a3-4fb7-86de-98a1605ed58a" name="Default" comment="Updating SSE registration page">
+      <change afterPath="$PROJECT_DIR$/styles/images/ssio-logo-english.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sse/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sse/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +63,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rkanadam/workspace/ssbcsj&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "/Users/rkanadam/workspace/ssbcsj/styles/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/styles/images" />
       <recent name="$PROJECT_DIR$/server/sse" />
       <recent name="$PROJECT_DIR$/gpsrc" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/i2i/styles/images" />
-      <recent name="$PROJECT_DIR$/styles/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -232,7 +233,8 @@
       <workItem from="1691355444755" duration="5450000" />
       <workItem from="1692164025062" duration="1157000" />
       <workItem from="1700844130789" duration="604000" />
-      <workItem from="1719185151988" duration="9000" />
+      <workItem from="1719185151988" duration="353000" />
+      <workItem from="1720367742044" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing SSE Registration with new Node API">
       <created>1611201746299</created>
@@ -367,7 +369,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692164157268</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updating SSE registration page">
+      <created>1719185183490</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719185183490</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updating SSE registration page">
+      <created>1719185208068</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1719185208068</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -439,7 +455,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Updating IP address" />
     <MESSAGE value="Update e-mail address" />
     <MESSAGE value="Opening up SSE registration" />
     <MESSAGE value="Opening up Fremont on Thursdays" />
@@ -464,6 +479,7 @@
     <MESSAGE value="Fixing feedback" />
     <MESSAGE value="Updating confirmation message" />
     <MESSAGE value="Fixing SSE registration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing SSE registration." />
+    <MESSAGE value="Updating SSE registration page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating SSE registration page" />
   </component>
 </project>
