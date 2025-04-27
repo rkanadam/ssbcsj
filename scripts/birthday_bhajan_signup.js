@@ -4,20 +4,9 @@
         var reservedDates = [];
         // https://docs.google.com/spreadsheets/d/1W3DK8ySOsPGZDgCBQQRmc9KRO8C1OnEqSRnzrpXLOaA/edit?gid=87825228#gid=87825228
         var apiLocation = 'https://script.google.com/macros/s/AKfycbzT4Ee9ljsl5a2VkDzh68s77u8oOb8_6Pfk_jh5wXuJt-CGIINPlwKkMQSq2xoHhTWL/exec';
-        $.get(apiLocation, {"path": "areas"}, function (areas) {
-            const areaSet = new Set();
-            areas.forEach((area, index) => {
-                areaSet.add(area);
-            })
-            const cities = Array.from(areaSet.values()).map(area => {
-                return `<option value = "${area}">${area}</option>`
-            }).join("")
-            $("#city select").html(`<option value = ""></option>${cities}`);
-            $('#city select').selectpicker('refresh');
-        });
-        $("#city select").on("change", function () {
-            var $this = $(this);
-            var val = $this.val();
+
+        function loadSignups() {
+            var val = $("#city select").val();
             if (val) {
                 console.log("City", val, "selected");
             }
@@ -91,9 +80,25 @@
                 });
 
             }, 'json');
+        }
+
+        $.get(apiLocation, {"path": "areas"}, function (areas) {
+            const areaSet = new Set();
+            areas.forEach((area, index) => {
+                areaSet.add(area);
+            })
+            const cities = Array.from(areaSet.values()).map(area => {
+                return `<option value = "${area}">${area}</option>`
+            }).join("")
+            $("#city select").html(`<option value = ""></option>${cities}`);
+            $('#city select').selectpicker('refresh');
         });
+        $("#city select").on("change", loadSignups);
+
 
         $('select').selectpicker();
+
+        loadSignups();
 
 
     });

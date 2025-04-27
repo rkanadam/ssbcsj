@@ -132,7 +132,7 @@
                       event.summary.toLowerCase().indexOf('residence of') +
                       'residence of'.length));
             }
-          } else if (/celebration (at|in) the center/i.exec(event.summary)) {
+          } else if (/center/i.exec(event.summary)) {
             $event.find('.residence').text(' - Center');
           }
           $event.find('.address').text(event.location);
