@@ -73,21 +73,16 @@
     today.setMinutes(0);
     today.setSeconds(0);
     today.setMilliseconds(0);
-    $.get('https://slides.ssbcsj.org/sssbcsj_api/birthday/signups', function(events) {
+    var apiLocation = 'https://script.google.com/macros/s/AKfycbzT4Ee9ljsl5a2VkDzh68s77u8oOb8_6Pfk_jh5wXuJt-CGIINPlwKkMQSq2xoHhTWL/exec';
+    $.get(apiLocation, {"path": "signedUpEvents"}, function (events) {
       events = events || [];
       for (var i = 0, len = events.length; i < len; ++i) {
         var event = events[i];
-        event.start = new Date(event.start.dateTime);
-        event.start = new Date(
-            event.start.toLocaleString('en-US',
-                {timeZone: 'America/Los_Angeles'}));
-        event.end = new Date(event.end.dateTime);
-        event.end = new Date(
-            event.end.toLocaleString('en-US',
-                {timeZone: 'America/Los_Angeles'}));
+        event.start = new Date(event.start);
+        event.end = new Date(event.end);
         if (event.start.getHours() === 19 || event.start.getHours() === 20 ||
             event.start.getHours() === 17 ||
-            /celebration in the center/i.exec(event.summary) ||
+            /center/i.exec(event.title) ||
             event.start.getHours() === 5) {
           if (event.start.getTime() >= today.getTime()) {
             if (event.end.getTime() < now.getTime()) {
@@ -117,37 +112,37 @@
             $('#event0').parent().append($event);
             $event.html($('#event0').html());
           }
-          $event.find('.day').text(getUserFriendlyDayName(event.start));
-          if (event.summary &&
-              (event.summary.toLowerCase().indexOf('residence of') !== -1 ||
-                  event.summary.toLowerCase().indexOf('virtual') !== -1)) {
-            if (event.summary.toLowerCase().indexOf('virtual') !== -1) {
+          $event.find('.day').text(getUserFriendlyDayName(new Date(event.start)));
+          if (event.title &&
+              (event.title.toLowerCase().indexOf('residence of') !== -1 ||
+                  event.title.toLowerCase().indexOf('virtual') !== -1)) {
+            if (event.title.toLowerCase().indexOf('virtual') !== -1) {
               $event.find('.residence').
-                  text(' - ' + event.summary.substring(
-                      event.summary.toLowerCase().indexOf('virtual') +
+                  text(' - ' + event.title.substring(
+                      event.title.toLowerCase().indexOf('virtual') +
                       'virtual - '.length));
             } else {
               $event.find('.residence').
-                  text(' - ' + event.summary.substring(
-                      event.summary.toLowerCase().indexOf('residence of') +
+                  text(' - ' + event.title.substring(
+                      event.title.toLowerCase().indexOf('residence of') +
                       'residence of'.length));
             }
-          } else if (/center/i.exec(event.summary)) {
+          } else if (/center/i.exec(event.title)) {
             $event.find('.residence').text(' - Center');
           }
           $event.find('.address').text(event.location);
-          $event.find('date').text(event.start.getDate());
-          $event.find('.month').text(months[event.start.getMonth()]);
+          $event.find('date').text(new Date(event.start).getDate());
+          $event.find('.month').text(months[new Date(event.start).getMonth()]);
           $event.find('.summary').
-              text(/celebration in the center/i.exec(event.summary) ?
-                  event.summary :
-                  event.summary.split(/\-/).splice(2).join(' - '));
+              text(/celebration in the center/i.exec(event.title) ?
+                  event.title :
+                  event.title.split(/\-/).splice(2).join(' - '));
           $event.find('.address_link').
               attr('href', 'https://www.google.com/maps/dir/\'\'/' +
                   encodeURIComponent(event.location));
           $event.find('.address_link').attr('target', '_blank');
           $event.find('.time').
-              text(getUserFriendlyTime(event.start, event.end));
+              text(getUserFriendlyTime(new Date(event.start), new Date(event.end)));
           if (event.description) {
             var lines = $.trim(event.description).split('\n');
             var html = [];
@@ -204,9 +199,9 @@
                   text(months[event.start.getMonth()] + '/' +
                       event.start.getDate() + ' - ' +
                       (/celebration [in|at] the center/i.exec(event.summary) ?
-                          event.summary :
-                          event.summary.substr(
-                              event.summary.indexOf('Residence of'))));
+                          event.title :
+                          event.title.substr(
+                              event.title.indexOf('Residence of'))));
               $div.find('img').attr('src', src);
               $div.find('a').attr('href', src);
               if (first) {
