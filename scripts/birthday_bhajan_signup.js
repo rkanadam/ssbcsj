@@ -65,7 +65,7 @@
                             .then((response) => response.text())
                             .then((result) => {
                                 alert(
-                                    'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see DC @ ssbcsj.devotion@gmail.com or 925-642-2680');
+                                    'We have requested for your signup. You will receive a confirmation  e-mail soon! If not see DCs @ ssbcsj.devotion@gmail.com or 408-476-3675 or 925-336-7723');
                                 window.location.reload();
                             });
                     });
